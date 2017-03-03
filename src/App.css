@@ -55,7 +55,7 @@ h3 a:hover::after {
   width: 100%;
 }
 body {
-  background: #f2f5f6;
+  display: inline-block;
   background: #ffede6;
 }
 body * {
@@ -77,6 +77,70 @@ body i {
 }
 .App h1 {
   line-height: initial;
+}
+.App nav {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.App nav button {
+  background: transparent;
+  border: none;
+  color: #ffd000;
+  font-size: 3rem;
+  font-family: initial;
+  outline: none;
+  line-height: 1.1;
+  height: 36px;
+  width: 36px;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+.App nav.open {
+  margin-right: 2.25rem;
+}
+.App nav section h1 {
+  z-index: 1;
+  position: relative;
+}
+.App nav section .background {
+  position: absolute;
+  background: #ffe880;
+  height: 0px;
+  width: 0px;
+  left: 18px;
+  top: 18px;
+  z-index: 0;
+  border-radius: 100%;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+.App nav section .background ul {
+  position: relative;
+  left: -260px;
+  top: 22px;
+  transition: all 200ms ease-in-out;
+}
+.App nav section .background ul a {
+  text-decoration: none;
+  color: #fff;
+}
+.App nav section.open {
+  position: fixed;
+  margin-right: 4.75rem;
+}
+.App nav section.open h1 button {
+  color: #fff;
+}
+.App nav section.open .background {
+  left: -1482px;
+  top: -1482px;
+  height: 3000px;
+  width: 3000px;
+}
+.App nav section.open ul {
+  left: 1252px;
+  top: 1522px;
 }
 .App #content {
   margin-top: 6rem;
@@ -178,4 +242,71 @@ footer {
 }
 footer .side {
   float: right;
+}
+@media (max-width: 1139px) {
+  body .App {
+    border-width: 4px;
+  }
+}
+@media (max-width: 1138px) {
+  body .App {
+    border-width: 3px;
+  }
+}
+@media (max-width: 1137px) {
+  body .App {
+    border-width: 2px;
+  }
+}
+@media (max-width: 1136px) {
+  body .App {
+    border-width: 1px;
+  }
+}
+@media (max-width: 1135px) {
+  body {
+    padding-bottom: 10rem !important;
+  }
+  body .App {
+    border-width: 0;
+  }
+  body .App nav {
+    position: fixed;
+    right: 1.75rem;
+  }
+  body .App #content #main {
+    width: 100%;
+  }
+  body .App #content #side {
+    float: right;
+    width: 75%;
+  }
+  body .App #content #side section {
+    width: 100%;
+  }
+  body .App #content #side section h2 {
+    transform: translateX(-100%);
+    padding-right: 2rem;
+  }
+  body .App #content #side section:last-of-type {
+    margin-top: initial;
+  }
+}
+@media (max-width: 780px) {
+  body .App #content #main section h2 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  body .App #content #main section article .body,
+  body .App #content #main section article .date {
+    width: 100%;
+  }
+  body .App #content #side {
+    width: 100%;
+  }
+  body .App #content #side section h2 {
+    transform: none;
+  }
 }

@@ -1,0 +1,71 @@
+@media (max-width:1139px)
+  body
+    .App
+      border-width 4px
+
+@media (max-width:1138px)
+  body
+    .App
+      border-width 3px
+
+@media (max-width:1137px)
+  body
+    .App
+      border-width 2px
+
+@media (max-width:1136px)
+  body
+    .App
+      border-width 1px
+
+@media (max-width:1135px)
+  body
+    padding-bottom 10rem !important
+
+    .App
+      border-width 0
+
+      nav
+        position fixed
+        right 1.75rem
+
+      #content
+        #main
+          width 100%
+
+        #side
+          float right
+          width ((100/4)*3)%
+
+          section
+            width 100%
+
+            h2
+              transform translateX(-100%)
+              padding-right 2rem
+
+            &:last-of-type
+              margin-top initial
+
+@media (max-width:780px)
+  body
+    .App
+      #content
+        #main
+          section
+            h2
+              text-align left
+              margin-left 1rem
+              margin-bottom 1rem
+              width 100%
+
+            article
+              .body, .date
+                width 100%
+
+        #side
+          width 100%
+
+          section
+            h2
+              transform none

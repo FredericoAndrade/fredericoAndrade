@@ -8,7 +8,7 @@
 $sans = 'governorregular'
 $yellow = #ffd000
 $red = #C50F18
-$red = #4799FC
+$blue = #4799FC
 
 h1,
 h2
@@ -59,7 +59,7 @@ h3
         width 100%
 
 body
-  background #F2F5F6
+  display inline-block
   background #ffede6
 
   *
@@ -81,6 +81,76 @@ body
 
   h1
     line-height initial
+
+
+
+  nav
+    float right
+    position relative
+    z-index 2
+
+    button
+      background transparent
+      border none
+      color $yellow
+      font-size 3rem
+      font-family initial
+      outline none
+      line-height 1.1
+      height 36px
+      width 36px
+      padding 0px 0px
+      cursor pointer
+
+    &.open
+      margin-right 2.25rem
+
+    section
+      h1
+        z-index 1
+        position relative
+
+      $s = 3000
+
+      .background
+        position absolute
+        background lighten($yellow,50%)
+        height 0px
+        width 0px
+        left 18px
+        top 18px
+        z-index -0
+        border-radius 100%
+        transition all 200ms ease-in-out
+        overflow hidden
+
+        ul
+          position relative
+          left -260px
+          top 22px
+          transition all 200ms ease-in-out
+
+          a
+            text-decoration none
+            color white
+
+      &.open
+        position fixed
+        margin-right 4.75rem
+
+        h1
+          button
+            color white
+
+        .background
+          left -((($s)/2) - 18)px
+          top -((($s)/2) - 18)px
+          height ($s)px
+          width ($s)px
+
+        ul
+          left 1252px
+          top 1522px
 
   #content
     margin-top 6rem
@@ -184,3 +254,5 @@ footer
 
   .side
     float right
+
+@import "Mobile"
