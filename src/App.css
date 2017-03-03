@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'governorregular';
+  src: url("fonts/governor-webfont.woff2") format('woff2'), url("fonts/governor-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2 {
+  font-family: 'governorregular';
+  color: #ffd000;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.9rem;
+  width: 100%;
+}
+p,
+ul,
+li {
+  clear: both;
+  font-size: 1rem;
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+a::before {
+  content: "";
+  background: #ffd000;
+  position: absolute;
+  mix-blend-mode: lighten;
+  width: 0;
+  height: 2.5rem;
+  margin-top: -0.25rem;
+  margin-left: -0.25rem;
+  transition: width 0.1s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  border-radius: 0 100px 100px 0;
+}
+a:hover::before {
+  width: 110%;
+}
+body {
+  background: #f2f5f6;
+}
+body * {
+  line-height: 1.75rem;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+}
+body i {
+  float: initial;
+}
+.App {
+  margin: auto;
+  background: #fff;
+  width: 100%;
+  max-width: 1140px;
+  padding: 3.5rem 4.75rem 2.25rem 2.5rem;
+  border-right: 5px solid #ffd000;
+}
+.App h1 {
+  line-height: initial;
+}
+.App #content {
+  margin-top: 6rem;
+}
+.App #content > div {
+  float: left;
+}
+.App #content #main {
+  width: 66.66666666666667%;
+  padding-right: 1rem;
+}
+.App #content #main section {
+  width: 100%;
+}
+.App #content #main section:first-of-type article:first-of-type .date::after {
+  content: "";
+  position: absolute;
+  height: 3.25rem;
+  width: 4px;
+  margin-left: 14px;
+  margin-top: -0.25rem;
+  background: #ffd000;
+}
+.App #content #main section h2 {
+  width: 25%;
+  text-align: right;
+  margin-left: -1rem;
+}
+.App #content #main section article {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.App #content #main section article .date {
+  width: 25%;
+  padding-right: 1rem;
+}
+.App #content #main section article .date p {
+  text-align: right;
+  width: 100%;
+}
+.App #content #main section article .body {
+  float: right;
+  width: 75%;
+  padding-left: 1rem;
+}
+.App #content #main section article .body h3 {
+  line-height: 1rem;
+  margin-bottom: 0.75rem;
+}
+.App #content #main section article .body.more {
+  text-align: center;
+}
+.App #content #side {
+  width: 33.333333333333336%;
+  padding-left: 1rem;
+}
+.App #content #side section {
+  margin-bottom: 1.5rem;
+}
+.App #content #side section:last-of-type {
+  margin-top: 6.5rem;
+}
+footer {
+  width: 100%;
+  padding-top: 4rem;
+}
+footer .side {
+  float: right;
+}

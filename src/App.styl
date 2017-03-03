@@ -1,0 +1,150 @@
+@font-face
+    font-family 'governorregular'
+    src url('fonts/governor-webfont.woff2') format('woff2'),
+         url('fonts/governor-webfont.woff') format('woff')
+    font-weight normal
+    font-style normal
+
+$sans = 'governorregular'
+$yellow = #ffd000
+
+h1,
+h2
+  font-family $sans
+  color $yellow
+
+h1,
+h2,
+h3,
+ul,
+p
+  margin 0
+
+h1
+  font-size 3rem
+h2
+  font-size 1.5rem
+h3
+  font-size 1.9rem
+  width 100%
+
+p, ul, li
+  clear both
+  font-size 1rem
+
+ul
+  padding 0
+
+a
+  text-decoration none
+  color black
+  // width 100%
+  position relative
+
+  &::before
+    content ""
+    background $yellow
+    position absolute
+    mix-blend-mode lighten
+    width 0
+    height 2.5rem
+    margin-top -.25rem
+    margin-left -.25rem
+    transition width .1s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    border-radius 0 100px 100px 0
+
+  &:hover
+    &::before
+      width 110%
+
+body
+  background #F2F5F6
+
+  *
+    line-height 1.75rem
+    display inline-block
+    float left
+    box-sizing border-box
+
+  i
+    float initial
+
+.App
+  margin auto
+  background white
+  width 100%
+  max-width 1140px
+  padding 3.5rem 4.75rem 2.25rem 2.5rem
+  border-right 5px solid $yellow
+
+  h1
+    line-height initial
+
+  #content
+    margin-top 6rem
+    > div
+      float left
+
+    #main
+      width ((100/6)*4)%
+      padding-right 1rem
+
+      section
+        width 100%
+
+        &:first-of-type
+          article:first-of-type
+            .date::after
+              content ""
+              position absolute
+              height 3.25rem
+              width 4px
+              margin-left 14px
+              margin-top -.25rem
+              background $yellow
+
+        h2
+          width ((100/4)*1)%
+          text-align right
+          margin-left -1rem
+
+        article
+          width 100%
+          margin-bottom 1rem
+
+          .date
+            width ((100/4)*1)%
+            padding-right 1rem
+
+            p
+              text-align right
+              width 100%
+
+          .body
+            float right
+            width ((100/4)*3)%
+            padding-left 1rem
+
+            h3
+              line-height 1rem
+              margin-bottom .75rem
+
+            &.more
+              text-align center
+
+
+    #side
+      width ((100/6)*2)%
+      padding-left 1rem
+
+      section
+        margin-bottom 1.5rem
+
+        &:last-of-type
+          margin-top 6.5rem
+
+footer
+  width 100%
+  padding-top 4rem
+  .side
+    float right
