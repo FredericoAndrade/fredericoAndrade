@@ -7,7 +7,8 @@
 
 $sans = 'governorregular'
 $yellow = #ffd000
-$red
+$red = #C50F18
+$red = #4799FC
 
 h1,
 h2
@@ -36,29 +37,30 @@ p, ul, li
 ul
   padding 0
 
-a
-  text-decoration none
-  color black
-  position relative
+h3
+  a
+    text-decoration none
+    color black
+    position relative
 
-  &::before
-    content ""
-    background $yellow
-    position absolute
-    mix-blend-mode lighten
-    width 0
-    height 2.5rem
-    margin-top -.25rem
-    margin-left -.25rem
-    transition width .1s cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    border-radius 0 100px 100px 0
+    &::after
+      width 0
+      content ""
+      mix-blend-mode darken
+      background lighten($yellow, 50%)
+      height 12px
+      position absolute
+      left 0
+      top 8px
+      transition width 150ms ease-out
 
-  &:hover
-    &::before
-      width 110%
+    &:hover
+      &::after
+        width 100%
 
 body
   background #F2F5F6
+  background #ffede6
 
   *
     line-height 1.75rem
@@ -110,7 +112,7 @@ body
 
         article
           width 100%
-          margin-bottom 1rem
+          margin-bottom 1.75rem
 
           .date
             width ((100/4)*1)%
@@ -126,8 +128,30 @@ body
             padding-left 1rem
 
             h3
-              line-height 1rem
-              margin-bottom .75rem
+              margin-top -.25rem
+              margin-bottom .25rem
+
+            .description
+              a
+                float initial
+                color black
+                text-decoration none
+                font-variant small-caps
+                position relative
+
+                &::after
+                  width 100%
+                  content ""
+                  mix-blend-mode darken
+                  background lighten($yellow, 50%)
+                  height 7px
+                  position absolute
+                  left 0
+                  bottom 4px
+
+                &:hover
+                  &::after
+                    width 100%
 
             &.more
               text-align center
@@ -140,11 +164,23 @@ body
       section
         margin-bottom 1.5rem
 
+        ul, p
+          padding-top .25rem
+
+          &:first-of-type
+            padding 0
+
+        a
+          float initial
+          color black
+          text-decoration none
+
         &:last-of-type
-          margin-top 6.5rem
+          margin-top 11.75rem
 
 footer
   width 100%
   padding-top 4rem
+
   .side
     float right

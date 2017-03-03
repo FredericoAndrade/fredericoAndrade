@@ -35,28 +35,28 @@ li {
 ul {
   padding: 0;
 }
-a {
+h3 a {
   text-decoration: none;
   color: #000;
   position: relative;
 }
-a::before {
-  content: "";
-  background: #ffd000;
-  position: absolute;
-  mix-blend-mode: lighten;
+h3 a::after {
   width: 0;
-  height: 2.5rem;
-  margin-top: -0.25rem;
-  margin-left: -0.25rem;
-  transition: width 0.1s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  border-radius: 0 100px 100px 0;
+  content: "";
+  mix-blend-mode: darken;
+  background: #ffe880;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transition: width 150ms ease-out;
 }
-a:hover::before {
-  width: 110%;
+h3 a:hover::after {
+  width: 100%;
 }
 body {
   background: #f2f5f6;
+  background: #ffede6;
 }
 body * {
   line-height: 1.75rem;
@@ -107,7 +107,7 @@ body i {
 }
 .App #content #main section article {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 .App #content #main section article .date {
   width: 25%;
@@ -123,8 +123,28 @@ body i {
   padding-left: 1rem;
 }
 .App #content #main section article .body h3 {
-  line-height: 1rem;
-  margin-bottom: 0.75rem;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+}
+.App #content #main section article .body .description a {
+  float: initial;
+  color: #000;
+  text-decoration: none;
+  font-variant: small-caps;
+  position: relative;
+}
+.App #content #main section article .body .description a::after {
+  width: 100%;
+  content: "";
+  mix-blend-mode: darken;
+  background: #ffe880;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+}
+.App #content #main section article .body .description a:hover::after {
+  width: 100%;
 }
 .App #content #main section article .body.more {
   text-align: center;
@@ -136,8 +156,21 @@ body i {
 .App #content #side section {
   margin-bottom: 1.5rem;
 }
+.App #content #side section ul,
+.App #content #side section p {
+  padding-top: 0.25rem;
+}
+.App #content #side section ul:first-of-type,
+.App #content #side section p:first-of-type {
+  padding: 0;
+}
+.App #content #side section a {
+  float: initial;
+  color: #000;
+  text-decoration: none;
+}
 .App #content #side section:last-of-type {
-  margin-top: 6.5rem;
+  margin-top: 11.75rem;
 }
 footer {
   width: 100%;

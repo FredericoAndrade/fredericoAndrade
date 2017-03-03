@@ -16,7 +16,7 @@ class App extends Component {
                 </span>
                 <span className="body">
                   <h3><a href="https://www.wikitongues.org">Wikitongues</a></h3>
-                  <p className="description">Co-founder, chief platform officer, board member (volunteer). I crafted the organization’s brand meeting strategic goals, and produced all of the collateral (business cards, pamplhets, presentation materials, ads). I conceived, designed and implemented an open source tool Poly to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected Hack of the Month segment and raised a record breaking kickstarter campaign to build it and the distributed team of open source contributors that helps me maintain it.</p>
+                  <p className="description">Co-founder, chief platform officer, board member (volunteer). I crafted the organization’s brand meeting strategic goals, and produced all of the collateral (business cards, pamplhets, presentation materials, ads). I conceived, designed and implemented an open source tool <a href="https://poly.wikitongues.org">Poly</a> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and raised a <a href="https://www.kickstarter.com/projects/wikitongues/poly-share-and-learn-every-language-in-the-world">record breaking</a> kickstarter campaign to build it and the distributed team of open source contributors that helps me maintain it.</p>
                 </span>
               </article>
               <article>
@@ -25,7 +25,7 @@ class App extends Component {
                 </span>
                 <span className="body">
                   <h3><a href="https://www.amicushq.com">Amicus</a></h3>
-                  <p className="description">Product manager, front-end developer, ui/ux designer. I branded, led product design and strategy, and managed the implementation of Amicus Post, a tool that replaced the core business and was featured at NY Tech Meetup. Amicus Post is a widely used direct action tool for political advocacy and outreach, trusted by Airbnb, the Human Rights Campaign, Greenpeace, Everytown for Gun Safety and many more. Amicus has since rebranded the business to use the visual vocabulary I developed for Amicus Post.</p>
+                  <p className="description">Product manager, front-end developer, ui/ux designer. I branded, led product design and strategy, and managed the implementation of <a href="https://amicushq.com">Amicus Post</a>, a tool that replaced the core business and was featured at <a href="https://vimeo.com/101928830#t=2183s">NY Tech Meetup</a>. Amicus Post is a widely used direct action tool for political advocacy and outreach, trusted by Airbnb, the Human Rights Campaign, Greenpeace, Everytown for Gun Safety and many more. Amicus has since rebranded the business to use the visual vocabulary I developed for Amicus Post.</p>
                 </span>
               </article>
               <article>
@@ -34,7 +34,7 @@ class App extends Component {
                 </span>
                 <span className="body">
                   <h3>Additional Contracting</h3>
-                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites.  roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the  exibility to implement new stylistic approaches and usability feels. Clients include Airtable, Datamonkey, Quotidian Ventures, DV01, Matte, the National Sawdust and Vision Into Art.</p>
+                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites.  roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the  exibility to implement new stylistic approaches and usability feels. Clients include <a href="https://airtable.com">Airtable</a>, Datamonkey, <a href="http://www.quotidian.co/">Quotidian Ventures</a>, <a href="https://www.dv01.co">DV01</a>, <a href="https://matteprojects.com/">Matte</a>, the <a href="https://nationalsawdust.org/">National Sawdust</a> and <a href="http://visionintoart.com/">Vision Into Art</a>.</p>
                 </span>
               </article>
               <article>
@@ -48,7 +48,7 @@ class App extends Component {
                   <p>06.2016</p>
                 </span>
                 <span className="body">
-                  <h3>Creators and Creatives</h3>
+                  <h3><a href="https://creatorsandcreatives.com/as-languages-go-extinct-2595afdf2ed4#.cza79wqdf">Creators and Creatives</a></h3>
                   <p className="description">“In a time when languages are dying out at an unprecedented rate, Frederico Andrade strives to preserve the world’s linguistic diversity.”</p>
                 </span>
               </article>
@@ -57,8 +57,8 @@ class App extends Component {
                   <p>02.2016</p>
                 </span>
                 <span className="body">
-                  <h3>Public Radio International</h3>
-                  <p className="description">“ is nonprofit wants to build a tool to share [...] all the world’s languages”</p>
+                  <h3><a href="https://www.pri.org/stories/2016-02-23/nonprofit-wants-build-tool-share-and-document-all-world-s-languages">Public Radio International</a></h3>
+                  <p className="description">“This nonprofit wants to build a tool to share [...] all the world’s languages”</p>
                 </span>
               </article>
               <article>
@@ -66,7 +66,7 @@ class App extends Component {
                   <p>03.2015</p>
                 </span>
                 <span className="body">
-                  <h3>Record breaking Kickstarter campaign</h3>
+                  <h3><a href="https://www.kickstarter.com/projects/wikitongues/poly-share-and-learn-every-language-in-the-world">Record breaking Kickstarter campaign</a></h3>
                   <p className="description">Most funded campaign in the translation category</p>
                 </span>
               </article>
@@ -75,7 +75,7 @@ class App extends Component {
                   <p>06.2014</p>
                 </span>
                 <span className="body">
-                  <h3>New York Tech Meetup</h3>
+                  <h3><a href="https://vimeo.com/127205159#t=3133s">New York Tech Meetup</a></h3>
                   <p className="description">Hack of the month by invitation for Poly</p>
                 </span>
               </article>
@@ -84,7 +84,7 @@ class App extends Component {
                   <p>11.2012</p>
                 </span>
                 <span className="body">
-                  <h3>Wallpaper* Magazine, Lazy Bytes</h3>
+                  <h3><a href="http://www.wallpaper.com/lifestyle/epfl-ecal-lab-pushes-our-buttons-with-its-lazy-bytes-project">Wallpaper* Magazine, Lazy Bytes</a></h3>
                   <p className="description">“EPFL + ECAL lab pushes our buttons with its ‘lazy bytes’ project”</p>
                 </span>
               </article>
@@ -111,7 +111,7 @@ class App extends Component {
               <ul>
                 <li>faandrade@gmail.com</li>
                 <li>1 917 683 8299</li>
-                <li>github.com/fredericoAndrade</li>
+                <li><a href="">github.com/fredericoAndrade</a></li>
               </ul>
             </section>
             <section>
