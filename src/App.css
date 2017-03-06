@@ -55,6 +55,7 @@ h3 a:hover::after {
   width: 100%;
 }
 body {
+  float: left;
   display: inline-block;
   background: #ffede6;
 }
@@ -95,6 +96,7 @@ body i {
   width: 36px;
   padding: 0px 0px;
   cursor: pointer;
+  display: none;
 }
 .App nav.open {
   margin-right: 2.25rem;
@@ -293,6 +295,9 @@ footer .side {
   }
 }
 @media (max-width: 780px) {
+  body .App nav button {
+    display: block;
+  }
   body .App #content #main section h2 {
     text-align: left;
     margin-left: 1rem;

@@ -77,7 +77,7 @@ class App extends Component {
               <article>
                 <span className="body">
                   <h3><a href="https://www.amicushq.com">Amicus</a></h3>
-                  <p className="description">Product manager, front-end developer, ui/ux designer. I branded, led product design and strategy, and managed the implementation of <a href="https://amicushq.com">Amicus Post</a>, a tool that replaced the core business and was featured at <a href="https://vimeo.com/101928830#t=2183s">NY Tech Meetup</a>. Amicus Post is a widely used direct action tool for political advocacy and outreach, trusted by Airbnb, the Human Rights Campaign, Greenpeace, Everytown for Gun Safety and many more. Amicus has since rebranded the business to use the visual vocabulary I developed for Amicus Post.</p>
+                  <p className="description">Product manager, front-end developer, ui/ux designer at this Y Combinator company. I branded, led product design and strategy, and managed the implementation of <a href="https://amicushq.com">Amicus Post</a>, a tool that replaced the core business and was featured at <a href="https://vimeo.com/101928830#t=2183s">NY Tech Meetup</a>. Amicus Post is a widely used direct action tool for political advocacy and outreach, trusted by Airbnb, the Human Rights Campaign, Greenpeace, Everytown for Gun Safety and many more. Amicus has since rebranded the business to use the visual vocabulary I developed for Amicus Post.</p>
                 </span>
                 <span className="date">
                   <p>10.2013 to 05.2015</p>
@@ -109,6 +109,15 @@ class App extends Component {
               </article>
               <article>
                 <span className="body">
+                  <h3><a href="https://twitter.com/recursecenter/status/718834500541751296">Recurse Center Hackathon</a></h3>
+                  <p className="description">Partnered with prestigious computer programming school for Poly hackathon</p>
+                </span>
+                <span className="date">
+                  <p>04.2016</p>
+                </span>
+              </article>
+              <article>
+                <span className="body">
                   <h3><a href="https://www.pri.org/stories/2016-02-23/nonprofit-wants-build-tool-share-and-document-all-world-s-languages">Public Radio International</a></h3>
                   <p className="description">“This nonprofit wants to build a tool to share [...] all the world’s languages”</p>
                 </span>
@@ -134,7 +143,7 @@ class App extends Component {
                   <p>06.2014</p>
                 </span>
               </article>
-              <article>
+              {/*<article>
                 <span className="body">
                   <h3><a href="http://www.wallpaper.com/lifestyle/epfl-ecal-lab-pushes-our-buttons-with-its-lazy-bytes-project">Wallpaper* Magazine, Lazy Bytes</a></h3>
                   <p className="description">“EPFL + ECAL lab pushes our buttons with its ‘lazy bytes’ project”</p>
@@ -142,7 +151,7 @@ class App extends Component {
                 <span className="date">
                   <p>11.2012</p>
                 </span>
-              </article>
+              </article>*/}
               <article>
                 <div className="body more">...</div>
               </article>

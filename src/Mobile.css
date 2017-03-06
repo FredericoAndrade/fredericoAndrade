@@ -48,6 +48,9 @@
   }
 }
 @media (max-width: 780px) {
+  body .App nav button {
+    display: block;
+  }
   body .App #content #main section h2 {
     text-align: left;
     margin-left: 1rem;
