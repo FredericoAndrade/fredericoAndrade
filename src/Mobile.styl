@@ -25,9 +25,8 @@
     .App
       border-width 0
 
-      nav
-        position fixed
-        right 1.75rem
+      button
+        display block
 
       #content
         #main
@@ -50,9 +49,6 @@
 @media (max-width:780px)
   body
     .App
-      nav
-        button
-          display block
       #content
         #main
           section
@@ -72,3 +68,8 @@
           section
             h2
               transform none
+
+@media only screen and (max-device-width : 667px)
+  body
+    .App
+      padding 1.5rem 3.75rem 2.25rem 1.5rem

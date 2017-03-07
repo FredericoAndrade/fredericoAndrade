@@ -81,8 +81,9 @@ body i {
 }
 .App nav {
   float: right;
-  position: relative;
+  position: fixed;
   z-index: 2;
+  right: 1.75rem;
 }
 .App nav button {
   background: transparent;
@@ -272,9 +273,8 @@ footer .side {
   body .App {
     border-width: 0;
   }
-  body .App nav {
-    position: fixed;
-    right: 1.75rem;
+  body .App button {
+    display: block;
   }
   body .App #content #main {
     width: 100%;
@@ -295,9 +295,6 @@ footer .side {
   }
 }
 @media (max-width: 780px) {
-  body .App nav button {
-    display: block;
-  }
   body .App #content #main section h2 {
     text-align: left;
     margin-left: 1rem;
@@ -313,5 +310,10 @@ footer .side {
   }
   body .App #content #side section h2 {
     transform: none;
+  }
+}
+@media only screen and (max-device-width: 667px) {
+  body .App {
+    padding: 1.5rem 3.75rem 2.25rem 1.5rem;
   }
 }
