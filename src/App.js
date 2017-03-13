@@ -223,6 +223,9 @@ class App extends Component {
           </div>
         </div>
         <footer>
+          <div className="main">
+            <a className="body" href="./resume.pdf">Download this résumé</a>
+          </div>
           <div className="side">March 2017</div>
         </footer>
       </div>

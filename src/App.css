@@ -243,6 +243,17 @@ footer {
   width: 100%;
   padding-top: 4rem;
 }
+footer .main {
+  float: left;
+  width: 66.66666666666667%;
+}
+footer .main a {
+  padding-left: 1rem;
+  width: 75%;
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
 footer .side {
   float: right;
 }
