@@ -1,14 +1,4 @@
-@font-face
-    font-family 'governorregular'
-    src url('fonts/governor-webfont.woff2') format('woff2'),
-         url('fonts/governor-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
-
-$sans = 'governorregular'
-$yellow = #ffd000
-$red = #C50F18
-$blue = #4799FC
+@import 'vars'
 
 h1,
 h2
@@ -61,29 +51,42 @@ h3
 body
   float left
   display inline-block
-  background #ffede6
+  background $base
+  gradient()
+  width 100%
+
+  *
+    box-sizing border-box
+
+  .toggle
+    position absolute
+    top 0
+    right 0
+
+.App
+  margin auto
+  float left
+  display inline-block
+  width 100%
+  padding 3.5rem 4.75rem 2.25rem 2.5rem
+
+
+  &.resume
+    border-right 5px solid $yellow
+    max-width 1140px
+    background white
 
   *
     line-height 1.75rem
     display inline-block
     float left
-    box-sizing border-box
 
   i
     float initial
 
-.App
-  margin auto
-  background white
-  width 100%
-  max-width 1140px
-  padding 3.5rem 4.75rem 2.25rem 2.5rem
-  border-right 5px solid $yellow
-
   h1
     line-height initial
-
-
+    float left
 
   nav
     float right
@@ -270,3 +273,4 @@ footer
     float right
 
 @import "Mobile"
+@import "Gallery"

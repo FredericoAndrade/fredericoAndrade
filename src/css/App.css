@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'governorregular';
-  src: url("fonts/governor-webfont.woff2") format('woff2'), url("fonts/governor-webfont.woff") format('woff');
+  src: url("../fonts/governor-webfont.woff2") format('woff2'), url("../fonts/governor-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -58,26 +58,42 @@ body {
   float: left;
   display: inline-block;
   background: #ffede6;
+  background: #ffede6;
+  background: -webkit-linear-gradient(-135deg, #ffede6, #ffdcce);
+  background: linear-gradient(-135deg, #ffede6, #ffdcce);
+  width: 100%;
 }
 body * {
-  line-height: 1.75rem;
-  display: inline-block;
-  float: left;
   box-sizing: border-box;
 }
-body i {
-  float: initial;
+body .toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .App {
   margin: auto;
-  background: #fff;
+  float: left;
+  display: inline-block;
   width: 100%;
-  max-width: 1140px;
   padding: 3.5rem 4.75rem 2.25rem 2.5rem;
+}
+.App.resume {
   border-right: 5px solid #ffd000;
+  max-width: 1140px;
+  background: #fff;
+}
+.App * {
+  line-height: 1.75rem;
+  display: inline-block;
+  float: left;
+}
+.App i {
+  float: initial;
 }
 .App h1 {
   line-height: initial;
+  float: left;
 }
 .App nav {
   float: right;
@@ -327,4 +343,78 @@ footer .side {
   body .App {
     padding: 1.5rem 3.75rem 2.25rem 1.5rem;
   }
+}
+#galleryIndex {
+  float: none;
+  margin: 0rem auto 10rem;
+  display: table;
+}
+#galleryIndex li,
+#galleryIndex li a {
+  text-decoration: none;
+  line-height: 1.1;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #c05968;
+  list-style-type: none;
+  cursor: pointer;
+}
+#galleryIndex li:hover,
+#galleryIndex li a:hover {
+  color: #fff;
+}
+.gallery {
+  background: #fafafa;
+}
+.gallery .banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../public/bannerWikitongues.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.gallery .subnav {
+  position: fixed;
+  bottom: 0;
+  right: 5rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  border-radius: 2px;
+  float: right;
+  padding: 2rem;
+  width: 400px;
+}
+.gallery .subnav ul {
+  list-style-type: none;
+}
+.gallery .subnav ul li {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+.gallery .subnav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "adobe-garamond-pro", serif;
+}
+.gallery .content {
+  width: 1140px;
+  min-height: 100vh;
+  padding: 6rem 23rem 6rem 6rem;
+  margin: auto;
+  color: #000;
+}
+.gallery .content h1 {
+  font-family: "adobe-garamond-pro", serif;
+  font-size: 6rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.gallery .content .description {
+  column-count: 2;
+}
+.gallery .content section {
+  margin: 3rem;
+}
+.gallery .content section ul {
+  list-style-type: none;
 }
