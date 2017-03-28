@@ -4,6 +4,10 @@ import {
 } from 'react-router-dom'
 
 export default class Resume extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -26,6 +30,7 @@ export default class Resume extends React.Component {
     return (
       <div className="App resume tk-adobe-garamond-pro">
         <h1>Frederico<br/>Andrade</h1>
+        <Link to="/portfolio" className="linkTo r">Portfolio</Link>
         <nav className={this.renderMenu()}>
           <section className={this.renderMenu()}>
             <h1><button onClick={this.onClickNav}>*</button></h1>

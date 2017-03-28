@@ -1,0 +1,74 @@
+// .g = gallery page link
+// .l = left
+// .r = right
+
+.linkTo
+  font-weight bold
+  font-size 3rem
+  text-align center
+  color $red
+  position fixed
+  z-index 2
+  text-decoration none
+  bottom 1rem
+  line-height 1
+  border-top 2px solid $red
+  padding-top 1rem
+
+  &:hover
+    &::after
+      background #ff006a
+
+  &.l
+    left 2rem
+    &:hover
+      &::after
+        width 110%
+
+  &.r
+    right 2rem
+
+    &:hover
+      &::after
+        width 100%
+
+  &::after
+    width 0
+    content ""
+    mix-blend-mode darken
+    background #F2CDCA
+    height 20px
+    position absolute
+    left 0
+    top 30px
+    pointer-events none
+    transition width 150ms ease-out
+
+  &.g
+      position relative
+      display inline-block
+      bottom 0
+      font-size 1.4rem
+      padding-top 1rem
+      padding-bottom 1rem
+      padding-left 2rem
+      padding-right 2rem
+      border-color transparent
+
+      &::after
+        left 25px
+        height 18px
+        top 25px
+
+      &.r
+        float right
+        right 0
+        &:hover
+          &::after
+            width 60%
+
+      &.l
+        left 0
+        &:hover
+          &::after
+            width 80%

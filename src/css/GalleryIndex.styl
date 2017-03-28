@@ -1,0 +1,96 @@
+.toggleType
+  float left
+  position absolute
+  right 4rem
+  top 4rem
+  border 2px solid $red
+  color $red
+  width 240px
+
+  h3
+    font-family $sans
+    margin 0 auto
+    display block
+    float initial
+    padding 1.5rem 0
+    text-align center
+    border-bottom 2px solid $red
+
+  fieldset
+    border none
+    margin 0
+
+    input
+      display none
+
+    input:checked + label
+      &::after
+        width 106%
+        background #ff006a
+
+    label
+      clear both
+      float left
+      font-size 1.3rem
+      font-family $sans
+      line-height 2
+      position relative
+      cursor pointer
+
+      &:hover
+        &::after
+          width 106%
+
+      &::after
+        pointer-events none
+        width 0
+        content ""
+        mix-blend-mode darken
+        background #ffc6c1
+        height 9px
+        position absolute
+        left -3%
+        top 14px
+        transition width 100ms ease-out
+
+#galleryIndex
+  float none
+  margin 0rem auto 10rem
+  display table
+
+  li, li a
+    text-decoration none
+    line-height 1.1
+    font-size 5rem
+    font-weight bold
+    color $red
+    list-style-type none
+    cursor pointer
+    position relative
+
+    &::after
+      width 0
+      content ""
+      mix-blend-mode darken
+      background #ff006a
+      height 30px
+      position absolute
+      left -3%
+      top 30px
+      pointer-events none
+      transition width 150ms ease-out
+
+    &:hover
+      &::after
+        width 106%
+
+footer.index
+  color $red
+  width 670px
+  margin auto
+  float none
+  display block
+
+  p
+    font-size .8rem
+    line-height 1.2

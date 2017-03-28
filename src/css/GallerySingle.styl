@@ -1,0 +1,99 @@
+.gallery
+  .singleHead
+    display inline-block
+    width 100%
+    height 100vh
+
+  .banner
+    float left
+    background-color rgba(0,0,0,0.2)
+    height 93vh
+    width 100%
+    display inline-block
+
+    span
+      position absolute
+      top 0
+      height 93vh
+      left 0
+      right 0
+      background-color #222
+      z-index 1
+      opacity .5
+      filter blur(5px)
+      overflow hidden
+      background-size cover
+      background-repeat no-repeat
+
+    img
+      position relative
+      z-index 2
+      display block
+      margin 1rem auto
+      max-width 100%
+      max-height 95%
+      background white
+
+  nav
+    width 100%
+    float left
+
+  .tags
+    width 100%
+    float left
+
+    ul
+      list-style-type none
+
+      li
+        padding .3rem .4rem
+        margin 2px
+        background $red
+        color #FFE3D8
+        float left
+        clear none
+
+  .subnav
+    position fixed
+    bottom 0
+    right 5rem
+    background white
+    box-shadow 0 2px 4px rgba(0,0,0,.15)
+    border-radius 2px
+    float right
+    padding 2rem
+    width 400px
+
+    ul
+      list-style-type none
+
+      li
+        font-size 2.5rem
+        margin 1rem
+
+        a
+          text-decoration none
+          color black
+          font-family "adobe-garamond-pro",serif
+
+  .content
+    width 1140px
+    min-height 100vh
+    padding 6rem 23rem 6rem 6rem
+    margin auto
+    color black
+
+    h1
+      font-family "adobe-garamond-pro",serif
+      font-size 6rem
+      color black
+      margin-bottom 1rem
+
+    .description
+      column-count 2
+
+    section
+      margin 3rem
+
+      ul
+        list-style-type none
