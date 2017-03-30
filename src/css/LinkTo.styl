@@ -14,10 +14,11 @@
   line-height 1
   border-top 2px solid $red
   padding-top 1rem
+  cursor pointer
 
   &:hover
     &::after
-      background #ff006a
+      background-color $pink
 
   &.l
     left 2rem
@@ -36,7 +37,7 @@
     width 0
     content ""
     mix-blend-mode darken
-    background #F2CDCA
+    background-color #F2CDCA
     height 20px
     position absolute
     left 0
@@ -48,12 +49,14 @@
       position relative
       display inline-block
       bottom 0
-      font-size 1.4rem
-      padding-top 1rem
-      padding-bottom 1rem
-      padding-left 2rem
-      padding-right 2rem
-      border-color transparent
+      // width 150px
+      font-size 1rem
+      // padding-top 1rem
+      // padding-bottom 1rem
+      // padding-left 2rem
+      // padding-right 2rem
+      // border-color transparent
+      padding-top 1.2rem
 
       &::after
         left 25px
@@ -68,6 +71,7 @@
             width 60%
 
       &.l
+        float left
         left 0
         &:hover
           &::after

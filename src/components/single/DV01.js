@@ -18,18 +18,19 @@ export default class DV01 extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="DV01"
+            title="DV01"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="https://www.dv01.co/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Poly</h1>

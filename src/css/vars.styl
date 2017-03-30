@@ -6,12 +6,19 @@
     font-style normal
 
 $sans = 'governorregular'
-$yellow = #ffd000
+$serif = "adobe-garamond-pro",serif
+$yellow = #FFD000
 $red = #C05968
 $blue = #4799FC
-$base = #ffede6
+$base = #FFEDE6
+$pink = #FF006A
 
 gradient()
-  background $base
+  background-color $base
   background -webkit-linear-gradient(-135deg, $base, darken($base,5%))
   background linear-gradient(-135deg, $base, darken($base,5%))
+
+centerX()
+  position absolute
+  left 50%
+  transform translateX(-50%)

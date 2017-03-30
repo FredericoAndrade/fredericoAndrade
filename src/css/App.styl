@@ -42,7 +42,7 @@ h3
       width 0
       content ""
       mix-blend-mode darken
-      background lighten($yellow, 50%)
+      background-color lighten($yellow, 50%)
       height 12px
       position absolute
       left 0
@@ -56,7 +56,7 @@ h3
 body
   float left
   display inline-block
-  background $base
+  background-color $base
   gradient()
   width 100%
 
@@ -69,6 +69,8 @@ body
     right 0
 
 .App
+  position relative
+  min-height 100vh
   margin auto
   float left
   display inline-block
@@ -79,7 +81,7 @@ body
   &.resume
     border-right 5px solid $yellow
     max-width 1140px
-    background white
+    background-color white
 
   *
     line-height 1.75rem
@@ -100,7 +102,7 @@ body
     right 1.75rem
 
     button
-      background transparent
+      background-color transparent
       border none
       color $yellow
       font-size 3rem
@@ -125,7 +127,7 @@ body
 
       .background
         position absolute
-        background lighten($yellow,50%)
+        background-color lighten($yellow,50%)
         height 0px
         width 0px
         left 18px
@@ -184,7 +186,7 @@ body
               width 4px
               margin-left 14px
               margin-top -.25rem
-              background $yellow
+              background-color $yellow
 
         h2
           width ((100/4)*1)%
@@ -205,7 +207,7 @@ body
 
           .body
             float right
-            width ((100/4)*3)%
+            width ((100/4)*3+-1)%
             padding-left 1rem
 
             h3
@@ -224,7 +226,7 @@ body
                   width 100%
                   content ""
                   mix-blend-mode darken
-                  background lighten($yellow, 50%)
+                  background-color lighten($yellow, 50%)
                   height 7px
                   position absolute
                   left 0
@@ -281,3 +283,4 @@ footer
 @import "Mobile"
 @import "GalleryIndex"
 @import "GallerySingle"
+@import "Carousel"

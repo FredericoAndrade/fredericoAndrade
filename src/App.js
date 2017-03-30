@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={Resume}/>
+          <Route path="/resume" component={Resume}/>
           <Route path="/wikitongues" component={Wikitongues}/>
           <Route path="/poly" component={Poly}/>
           <Route path="/amicus" component={Amicus}/>
@@ -50,7 +50,7 @@ class App extends Component {
           <Route path="/matte" component={Matte}/>
           <Route path="/national-sawdust" component={NationalSawdust}/>
           <Route path="/vision-into-art" component={VisionIntoArt}/>
-          <Route path="/portfolio" component={Gallery}/>
+          <Route exact path="/" component={Gallery}/>
         </div>
       </Router>
     );

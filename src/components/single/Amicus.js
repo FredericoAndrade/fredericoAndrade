@@ -18,18 +18,31 @@ export default class Amicus extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="amicus"
+            title="Amicus"
+            images={
+              [{image:"media/amicus/design/banner.jpg",caption:""},
+              {image:"media/amicus/design/presentation/11.jpg",caption:""},
+              {image:"media/amicus/design/presentation/12.jpg",caption:""},
+              {image:"media/amicus/design/presentation/13.jpg",caption:""},
+              {image:"media/amicus/design/presentation/14.jpg",caption:""},
+              {image:"media/amicus/design/presentation/15.jpg",caption:""},
+              {image:"media/amicus/design/presentation/16.jpg",caption:""},
+              {image:"media/amicus/design/squirrel.jpg",caption:""},
+              {image:"media/amicus/interface/Postcard_Page_1.jpg",caption:""},
+              {image:"media/amicus/interface/Postcard_Page_2.jpg",caption:""},
+              {image:"media/amicus/interface/Postcard_Page_3.jpg",caption:""},
+              {image:"media/amicus/interface/Postcard_Page_4.jpg",caption:""},
+              {image:"media/amicus/interface/Postcard_Page_5.jpg",caption:""},
+            ]}
             visit="https://amicushq.com/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Amicus</h1>

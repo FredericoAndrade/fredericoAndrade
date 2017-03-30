@@ -26,7 +26,7 @@
     input:checked + label
       &::after
         width 106%
-        background #ff006a
+        background-color $pink
 
     label
       clear both
@@ -46,7 +46,7 @@
         width 0
         content ""
         mix-blend-mode darken
-        background #ffc6c1
+        background-color #ffc6c1
         height 9px
         position absolute
         left -3%
@@ -54,6 +54,7 @@
         transition width 100ms ease-out
 
 #galleryIndex
+  width 670px
   float none
   margin 0rem auto 10rem
   display table
@@ -72,7 +73,7 @@
       width 0
       content ""
       mix-blend-mode darken
-      background #ff006a
+      background-color $pink
       height 30px
       position absolute
       left -3%
@@ -87,9 +88,9 @@
 footer.index
   color $red
   width 670px
-  margin auto
-  float none
-  display block
+  bottom 1rem
+  margin-left -1rem
+  centerX()
 
   p
     font-size .8rem

@@ -18,18 +18,20 @@ export default class Quotidian extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="quotidian"
+            title="Quotidian Ventures"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="http://www.quotidian.co/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
+            />
 
           <div className="content">
             <h1>Quotidian Ventures</h1>

@@ -18,18 +18,19 @@ export default class Airtable extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="airtable"
+            title="Airtable"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="https://airtable.com/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Airtable</h1>

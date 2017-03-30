@@ -18,18 +18,19 @@ export default class SamGuest extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="samGuest"
+            title="Sam Guest"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="http://sam-guest.com/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Sam</h1>

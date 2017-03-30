@@ -18,18 +18,19 @@ export default class NationalSawdust extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="ns"
+            title="National Sawdust"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="https://nationalsawdust.org/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>National Sawdust</h1>

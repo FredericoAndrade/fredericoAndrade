@@ -18,18 +18,17 @@ export default class Enddash extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="endDash"
+            title="EndDash"
+            images={
+              [{image:"media/endDash/banner.png",caption:"Placeholder"},
+            ]}
             visit="http://www.enddash.com/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>EndDash</h1>

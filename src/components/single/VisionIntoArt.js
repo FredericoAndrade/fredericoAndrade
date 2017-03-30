@@ -18,18 +18,19 @@ export default class VisionIntoArt extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="via"
+            title="VisionIntoArt"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="http://visionintoart.com/"
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>VisionIntoArt</h1>

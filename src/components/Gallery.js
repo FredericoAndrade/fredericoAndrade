@@ -7,33 +7,33 @@ import {
 } from 'react-router-dom'
 
 const routes = [
-  { id: 0, title: "Wikitongues", path: "wikitongues"},
-  { id: 1, title: "Poly", path: "poly"},
-  { id: 2, title: "Amicus", path: "amicus"},
-  { id: 10, title: "EndDash", path: "enddash"},
-  { id: 11, title: "Sam Guest", path: "sam-guest"},
-  { id: 3, title: "Airtable", path: "airtable"},
-  { id: 4, title: "Datamonkey", path: "datamonkey"},
-  { id: 5, title: "Quotidian Ventures", path: "quotidian-ventures"},
-  { id: 6, title: "DV01", path: "dv01"},
-  { id: 7, title: "Matte", path: "matte"},
-  { id: 8, title: "National Sawdust", path: "national-sawdust"},
-  { id: 9, title: "Vision Into Art", path: "vision-into-art"}
+  { id:1, title: "Wikitongues", path: "wikitongues", show: true},
+  { id:2, title: "Poly", path: "poly", show: true},
+  { id:3, title: "Amicus", path: "amicus", show: true},
+  { id:4, title: "EndDash", path: "enddash", show: true},
+  { id:5, title: "Sam Guest", path: "sam-guest", show: true},
+  { id:6, title: "Airtable", path: "airtable", show: true},
+  { id:7, title: "Datamonkey", path: "datamonkey", show: true},
+  { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: true},
+  { id:9, title: "DV01", path: "dv01", show: true},
+  { id:10, title: "Matte", path: "matte", show: true},
+  { id:11, title: "National Sawdust", path: "national-sawdust", show: true},
+  { id:12, title: "Vision Into Art", path: "vision-into-art", show: true}
 ]
+
+var galleryIndex = routes.map(function(i) {
+  if(i.show) {
+    return (
+      <li key={i.id}>
+        <Link to={{ pathname:`${i.path}` }}>{i.title}</Link>
+      </li>
+    )
+  };
+});
 
 const GalleryIndex = () => (
   <ul id="galleryIndex">
-    {routes.map(i =>(
-      <li key={i.id}>
-        <Link
-          to={{
-            pathname:`${i.path}`
-          }}
-        >
-          {i.title}
-        </Link>
-      </li>
-      ))}
+    {galleryIndex}
   </ul>
 )
 
@@ -45,7 +45,7 @@ export default class Gallery extends React.Component {
   render() {
     return (
       <div className="App tk-adobe-garamond-pro">
-        <Link className="linkTo l" to="/">Résumé</Link>
+        <Link className="linkTo l" to="/resume">&lsaquo;  Résumé</Link>
         <GalleryIndex/>
         <section className="toggleType">
           <h3>Displaying</h3>

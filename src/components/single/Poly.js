@@ -18,18 +18,26 @@ export default class Poly extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="poly"
+            title="Poly"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
             visit="https://www.poly.wikitongues.org/"
+            images={
+              [{image:"media/poly/interface/interfaceMobile.jpg",caption:"Mobile interfaces"},
+              {image:"media/poly/logo/logomark.jpg",caption:"Logomark"},
+              {image:"media/poly/logo/mascotFull.jpg",caption:"Poly mascot"},
+              {image:"media/poly/logo/poster.jpg",caption:"Promotional poster"},
+              {image:"media/poly/logo/banner.jpg",caption:"Publishing banner"},
+              ]}
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Poly</h1>

@@ -18,17 +18,18 @@ export default class Datamonkey extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            path="datamonkey"
+            title="Datamonkey"
+            images={
+              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            ]}
+            tags={
+              ["ui",
+              "ux",
+              "development",
+              "logo",
+              "print",
+              "branding"]}
             />
-
-          <div className="tags">
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Logo</li>
-              <li>Brand</li>
-            </ul>
-          </div>
 
           <div className="content">
             <h1>Poly</h1>

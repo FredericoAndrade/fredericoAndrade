@@ -1,0 +1,138 @@
+.media
+  width 100%
+  height 93vh
+  display inline-block
+  background-color #000
+  overflow-x hidden
+  padding 0 3rem 0 3rem
+  position relative
+
+  .single
+    float left
+    max-width 100%
+    centerX()
+
+    .slick-list
+      .slick-track
+        position relative !important
+        left initial !important
+
+        .slick-slide
+          float none !important
+          margin auto
+
+  .slick-slider,
+    float left
+    height 100%
+    width 100%
+    position relative
+    padding-top 3rem
+
+    .slick-arrow
+      background-color transparent
+      z-index 10
+      color white
+      font-weight 100
+      font-family $serif
+      font-size 6rem
+      border none
+      position absolute
+      right -3rem
+      top 50%
+      transform translateY(-50%)
+      line-height 0
+      outline none
+      padding 0 0 0.7rem
+      border-radius 100%
+      width 50px
+      height 50px
+      text-shadow 0 1px 2px rgba(0,0,0,0.15)
+
+      &:hover
+        text-shadow 0 2px 4px rgba(0,0,0,0.15)
+
+      &.slick-prev
+        left -3rem
+        transform translateY(-50%) rotateY(180deg)
+
+    .slick-list
+      height 93% !important
+
+      .slick-track
+        position absolute
+        left 0
+        height inherit
+        overflow-y hidden
+
+        .slick-slide
+          float left
+          opacity .7
+          transition opacity 300ms ease-out
+          height 100%
+
+          img
+            height 93%
+            display block
+            padding-right 4px
+            margin auto
+
+          p
+            clear both
+            display block
+            float left
+            width 100%
+            text-align center
+            font-size 0.8rem
+            line-height 3
+            color #777
+            font-family "mr-eaves-xl-sans-narrow", sans-serif
+            font-weight 100
+
+            span
+              margin-left 20px
+
+          &.slick-active
+            opacity 1
+
+    .slick-dots
+      centerX()
+      top 0
+      list-style-type none
+      margin .8rem 0
+
+      li
+        float left
+        clear none
+
+        &.slick-active
+          button
+            &::before
+              opacity 1
+
+        button
+          font-size 0
+          line-height 0
+          display block
+          width 20px
+          height 20px
+          padding 5px
+          cursor pointer
+          color transparent
+          border 0
+          outline none
+          background transparent
+          position relative
+
+          &::before
+            font-size 14px
+            line-height 18px
+            position absolute
+            top 0px
+            left 0px
+            width 20px
+            height 20px
+            content "•"
+            text-align center
+            opacity 0.25
+            color white
+            -webkit-font-smoothing antialiased
