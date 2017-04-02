@@ -33,9 +33,24 @@ export default class Matte extends React.Component {
             />
 
           <div className="content">
-            <h1>Poly</h1>
-            <h3 id="logo">Logo</h3>
-            <h3 id="interface">Interface</h3>
+            <div className="block three-col">
+              <section className="one-col">
+                <h3>What is<br/> EndDash</h3>
+                <p>EndDash is a two-way-binding javascript templating framework built on top of semantic HTML. It was developed by the engineers at Amicus when I was at the company. Once it reached a mature enough stage to be opened to the general public, it needed a documentation site. To that end, I designed and built the docs.</p>
+              </section>
+              <section className="one-col">
+                <h3>Concept</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+              <section className="one-col">
+                <h3>Process</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+              <section className="one-col">
+                <h3>Design</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+            </div>
           </div>
         </div>
       </div>

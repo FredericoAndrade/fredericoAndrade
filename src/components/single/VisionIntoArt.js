@@ -33,11 +33,15 @@ export default class VisionIntoArt extends React.Component {
             />
 
           <div className="content">
-            <h1>VisionIntoArt</h1>
+            <div className="block three-col">
+              <section className="one-col">
+                <h3>Concept</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+            </div>
           </div>
         </div>
       </div>
-
 
     )
   }

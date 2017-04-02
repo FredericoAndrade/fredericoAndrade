@@ -36,8 +36,16 @@ export default class SingleHead extends React.Component {
       return(
         <Slider {...settings}>
           {images.map(function(i,index) {
-            return <div><img key={ index } src={i.image} alt=""/><p className=".tk-mr-eaves-xl-sans-narrow">{index+1} / {images.length} <span>{i.caption}</span></p></div>
+            return <div><img key={ index } src={i.image} alt=""/><p>{index+1} / {images.length} <span>{i.caption}</span></p></div>
           })}
+          <div className="last-slide">
+            <h3>More projects</h3>
+            <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/interfaceMobile.jpg)"}}></div>{/*<img src="media/poly/interface/interfaceMobile.jpg" alt=""/>*/}<p><span>Poly</span></p></Link>
+            <Link to="/quotidian"><div className="image" style={{backgroundImage:"url(media/quotidian/page.jpg)"}}></div>{/*<img src="media/quotidian/page.jpg" alt=""/>*/}<p><span>Quotidian Ventures</span></p></Link>
+            <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div>{/*<img src="media/wikitongues/website.png" alt=""/>*/}<p><span>Wikitongues</span></p></Link>
+            <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div>{/*<img src="media/poly/logo/banner.jpg" alt=""/>*/}<p><span>Amicus</span></p></Link>
+            <Link to="/national-sawdust"><div className="image" style={{backgroundImage:"url(media/endDash/banner.png)"}}></div>{/*<img src="media/poly/logo/banner.jpg" alt=""/>*/}<p><span>EndDash</span></p></Link>
+          </div>
         </Slider>
       )
     } else {

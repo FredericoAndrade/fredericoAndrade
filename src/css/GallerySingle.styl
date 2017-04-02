@@ -1,4 +1,3 @@
-$dist = 10px
 $darkRed = #21000b
 
 .gallery
@@ -57,7 +56,6 @@ $darkRed = #21000b
           width 100%
 
   .content
-    min-height 100vh
     margin auto
     color $red
     margin-top 5rem
@@ -96,15 +94,18 @@ $darkRed = #21000b
 
       &.three-col
         .one-col
+          // clear left
           width (100/3)%
           float left
+
         .two-col
           width (2*(100/3))%
           float right
 
-      section, figure
+      section,
+      figure
         margin 0
-        padding 1rem
+        padding 0 1rem
         display inline-block
 
         img
@@ -119,6 +120,7 @@ $darkRed = #21000b
 
       p
         text-align justify
+        text-indent 1rem
 
         em,
         a
@@ -139,10 +141,11 @@ $darkRed = #21000b
       figcaption
         text-align center
 
+$distance = 5px
     h3
       &::before
-        margin-left -(16+$dist)px
-        margin-right $dist
+        margin-left -(16+$distance)px
+        margin-right $distance
         content "\A7"
         float left
 

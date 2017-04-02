@@ -20,19 +20,11 @@ export default class Amicus extends React.Component {
           <SingleHead
             title="Amicus"
             images={
-              [{image:"media/amicus/design/banner.jpg",caption:""},
-              {image:"media/amicus/design/presentation/11.jpg",caption:""},
-              {image:"media/amicus/design/presentation/12.jpg",caption:""},
-              {image:"media/amicus/design/presentation/13.jpg",caption:""},
-              {image:"media/amicus/design/presentation/14.jpg",caption:""},
-              {image:"media/amicus/design/presentation/15.jpg",caption:""},
-              {image:"media/amicus/design/presentation/16.jpg",caption:""},
-              {image:"media/amicus/design/squirrel.jpg",caption:""},
-              {image:"media/amicus/interface/Postcard_Page_1.jpg",caption:""},
-              {image:"media/amicus/interface/Postcard_Page_2.jpg",caption:""},
-              {image:"media/amicus/interface/Postcard_Page_3.jpg",caption:""},
-              {image:"media/amicus/interface/Postcard_Page_4.jpg",caption:""},
-              {image:"media/amicus/interface/Postcard_Page_5.jpg",caption:""},
+              [{image:"media/amicus/design/page.jpg",caption:"Amicus Post is a tool to streamline direct mail campaigns."},
+              {image:"media/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
+              {image:"media/amicus/design/presentation.jpg",caption:"Amicus Post had to be accessible and fun, so an illustrated aesthetic fit really well."},
+              {image:"media/amicus/nytm.jpg",caption:"Founder Seth Bannon presents my tool Amicus Post at the New York Tech Meetup"},
+              {image:"media/amicus/design/squirrel.jpg",caption:"Amicus had a wondeful workplace culture, which we sought to capture in our outreach."},
             ]}
             visit="https://amicushq.com/"
             tags={
@@ -45,40 +37,20 @@ export default class Amicus extends React.Component {
             />
 
           <div className="content">
-            <h1>Amicus</h1>
-            <p className="description">EndDash is a two-way-binding javascript templating framework built on top of semantic HTML. It was developed by the engineers at Amicus when I was at the company. Once it reached a mature enough stage to be opened to the general public, it needed a documentation site. To that end, I designed and built the docs.</p>
-            <section>
-            <h3 id="logo">Logo</h3>
-            <p>The Wikitongues logo went through a long iteration process to arrive at the current glyph.</p>
-            </section>
-            <section>
-            <h3 id="brand">Brand</h3>
-            <ul>
-              <li>Colors</li>
-              <li>Imagery</li>
-              <li>Grid</li>
-              <li>Graphics</li>
-            </ul>
-            </section>
-            <section>
-            <h3 id="collateral">Collateral</h3>
-            <ul>
-              <li>Business cards</li>
-              <li>Pamphlets</li>
-              <li>Table banner</li>
-              <li>Stickers</li>
-              <li>Mugs</li>
-              <li>Catalogs</li>
-            </ul>
-            </section>
-            <section>
-            <h3 id="website">Website</h3>
-            <ul>
-              <li>Version 1</li>
-              <li>Version 2</li>
-              <li>Version 3</li>
-            </ul>
-            </section>
+            <div className="block three-col">
+              <section className="one-col">
+                <h3>Concept</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+              <section className="one-col">
+                <h3>Process</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+              <section className="one-col">
+                <h3>Design</h3>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              </section>
+            </div>
           </div>
         </div>
       </div>

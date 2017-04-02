@@ -20,7 +20,9 @@ export default class Quotidian extends React.Component {
           <SingleHead
             title="Quotidian Ventures"
             images={
-              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+              [{image:"media/quotidian/page.jpg",caption:"Quotidian Ventures needed a no-frills website to display their portfolio."},
+              {image:"media/quotidian/companies.jpg",caption:"The portfolio displays each company proudly with large logos."},
+              {image:"media/quotidian/about.jpg",caption:"Sparce colors and direct messaging build a results-first brand."},
             ]}
             visit="http://www.quotidian.co/"
             tags={
@@ -34,7 +36,16 @@ export default class Quotidian extends React.Component {
             />
 
           <div className="content">
-            <h1>Quotidian Ventures</h1>
+            <div className="block three-col">
+              <section className="one-col">
+                <h3>What is <br/>Quotidian Ventures</h3>
+                <p>Quotidian Ventures is an early stage investment fund that focuses on businesses with a strategic advantage in their respective industries.</p>
+              </section>
+              <section className="one-col">
+                <h3>Concept</h3>
+                <p>The roll of a website for a fund like Quotidian is to demonstrate their portfolio, and mark a strong web presence.</p>
+              </section>
+            </div>
           </div>
         </div>
       </div>
