@@ -814,6 +814,7 @@ ul {
   position: relative;
   opacity: 0.6;
   transition: opacity 100ms ease-in-out;
+  cursor: pointer;
 }
 .media .slick-slider .slick-list .slick-track .slick-slide.last-slide a:first-of-type,
 .media float left .slick-list .slick-track .slick-slide.last-slide a:first-of-type {
