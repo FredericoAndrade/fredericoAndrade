@@ -1,3 +1,14 @@
+@media (max-width:1400px)
+  body
+    .App
+      &.resume
+        button
+          display block
+          color $red
+
+        a.linkTo.r
+          display none
+
 @media (max-width:1139px)
   body
     .App
@@ -25,8 +36,10 @@
     .App
       border-width 0
 
-      button
-        display block
+      &.resume
+        button
+          color $yellow
+          text-shadow none
 
       #content
         #main

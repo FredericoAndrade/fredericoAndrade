@@ -37,6 +37,12 @@ export default class Resume extends React.Component {
             <div className="background">
               <ul>
                 <li>
+                  <h2><Link to="/">Portfolio</Link></h2>
+                </li>
+                <li>
+                  <h1>Resume</h1>
+                </li>
+                <li>
                   <h2><a onClick={this.onClickNav} href="#Experience">Experience</a></h2>
                 </li>
                 <li>

@@ -36,7 +36,7 @@ export default class SingleHead extends React.Component {
       return(
         <Slider {...settings}>
           {images.map(function(i,index) {
-            return <div><img key={ index } src={i.image} alt=""/><p>{index+1} / {images.length} <span>{i.caption}</span></p></div>
+            return <div key={ index }><img src={i.image} alt=""/><p>{index+1} / {images.length} <span>{i.caption}</span></p></div>
           })}
           <div className="last-slide">
             <h3>More projects</h3>

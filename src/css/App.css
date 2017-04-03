@@ -351,6 +351,15 @@ footer .side {
 .linkTo.g.l:hover::after {
   width: 80%;
 }
+@media (max-width: 1400px) {
+  body .App.resume button {
+    display: block;
+    color: #c05968;
+  }
+  body .App.resume a.linkTo.r {
+    display: none;
+  }
+}
 @media (max-width: 1139px) {
   body .App {
     border-width: 4px;
@@ -378,8 +387,9 @@ footer .side {
   body .App {
     border-width: 0;
   }
-  body .App button {
-    display: block;
+  body .App.resume button {
+    color: #ffd000;
+    text-shadow: none;
   }
   body .App #content #main {
     width: 100%;
@@ -423,6 +433,7 @@ footer .side {
   }
 }
 .toggleType {
+  display: none;
   float: left;
   position: absolute;
   right: 4rem;
@@ -761,7 +772,7 @@ ul {
   font-size: 0.8rem;
   line-height: 4;
   color: #777;
-  font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+  font-family: "cronos-pro-caption", serif;
   font-weight: 100;
 }
 .media .slick-slider .slick-list .slick-track .slick-slide p span,
@@ -784,7 +795,7 @@ ul {
 .media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3,
 .media float left .slick-list .slick-track .slick-slide.last-slide h3 {
   color: #ffede6 !important;
-  font-family: "mr-eaves-xl-sans-narrow", sans-serif;
+  font-family: "cronos-pro-caption", serif;
   text-align: center;
   margin-bottom: 10px;
 }
