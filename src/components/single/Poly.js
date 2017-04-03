@@ -44,6 +44,7 @@ export default class Poly extends React.Component {
                 <p>Poly is Wikitongues' first foray into building apps. Recognizing that awareness-raising, while an important layer of the organization's mission, does not go far enough to provide access to the language.</p>
                 <p>The application empowers anyone to produce language documentation and lessons, and is being used by Wikitongues to collect introductory phrases in the world's less documented languages.</p>
               </section>
+              <section className="two-col" style={{height:"400px"}}><h3></h3></section>
               <section className="one-col">
                 <h3>Concept</h3>
                 <p>They needed a website to accompany the grand opening of the venue</p>

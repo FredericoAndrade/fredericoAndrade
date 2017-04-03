@@ -668,7 +668,7 @@ footer.index p {
 .gallery .content .block p a::after {
   content: "";
   width: 100%;
-  background-color: #ff5f9c;
+  background-color: #ffada8;
   position: absolute;
   mix-blend-mode: darken;
   left: 2px;

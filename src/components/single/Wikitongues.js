@@ -45,15 +45,16 @@ export default class Wikitongues extends React.Component {
                 <h3>What is <br/> Wikitongues</h3>
                 <p>Wikitongues is a movement for language rights. Together with speakers and signers from every language in the world, Wikitongues is raising awareness about linguistic diversity and rallying to defend it</p>
               </section>
-              <figure className="two-col">
-                <img src="media/wikitongues/logo/lockups/horizontal.png" alt=""/>
-                <figcaption>The Wikitongues logo represents a human waving their arms</figcaption>
-              </figure>
+              {/*<figure className="two-col">
+                              <img src="media/wikitongues/logo/lockups/horizontal.png" alt=""/>
+                              <figcaption>The Wikitongues logo represents a human waving their arms</figcaption>
+                            </figure>*/}
+              <section className="two-col" style={{height:"400px"}}></section>
               <section className="one-col">
-                <h3>What I did</h3>
-                <p>I co-founded this non-profit with my colleague Daniel Bogre Udell. I've operated as chief platform officer and am a board member. I crafted the organization’s <em>brand</em> to meet carefully crafted strategic goals, and <em>desinged and produced</em> all of the collateral (business cards, pamplhets, presentation materials, ads).</p>
+                <h3>Design</h3>
+                <p>I co-founded this non-profit with my colleague Daniel Bogre Udell. I've operated as chief platform officer and am a board member. I crafted the organization’s brand to meet carefully crafted strategic goals, and desinged and produced all of the collateral (business cards, pamplhets, presentation materials, ads).</p>
                 <br/>
-                <p>I <em>designed</em> and <em>implemented</em> an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
+                <p>I designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
               </section>
             </div>
           </div>
