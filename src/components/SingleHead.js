@@ -85,7 +85,7 @@ export default class SingleHead extends React.Component {
         <div className="media">
           {this.renderCarousel()}
         </div>
-        {this.renderTags()}
+        {/*{this.renderTags()}*/}
       </div>
     )
   }
