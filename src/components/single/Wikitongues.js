@@ -27,6 +27,7 @@ export default class Wikitongues extends React.Component {
               {image:"media/wikitongues/banner.jpg",caption:"The Wikitongues banner is carefully designed to provide a unique human insight into the project"},
               {image:"media/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
               {image:"media/wikitongues/businessCards.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
+              {image:"media/wikitongues/logo/logoVariations.png",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
               ]}
             tags={
               ["ui",
