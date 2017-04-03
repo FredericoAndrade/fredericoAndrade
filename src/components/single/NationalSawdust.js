@@ -40,7 +40,7 @@ export default class NationalSawdust extends React.Component {
                 <p>National Sawdust is an acclaimed performance arts institution in Williamsburg, Brooklyn.</p>
                 <p>I had the opportunity to design and build their official website in time with their grand opening.</p>
               </section>
-              <section className="two-col" style={{height:"400px"}}></section>
+              <section className="two-col" style={{height:"540px"}}></section>
               <section className="one-col">
                 <h3>Concept</h3>
                 <p>They needed a website to accompany the grand opening of the venue</p>

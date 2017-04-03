@@ -33,7 +33,6 @@ export default class Quotidian extends React.Component {
               "print",
               "branding"]}
             />
-            />
 
           <div className="content">
             <div className="block three-col">
