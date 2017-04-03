@@ -22,7 +22,7 @@ export default class Poly extends React.Component {
             visit="https://www.poly.wikitongues.org/"
             images={[
               {image:"media/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
-              {image:"media/poly/interface/interface.jpg",caption:"Poly needs to be accessible to people all over the world."},
+              {image:"media/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
               // {image:"media/poly/logo/logomark.jpg",caption:"The Poly Logomark"},
               // {image:"media/poly/logo/mascotFull.jpg",caption:""},
               {image:"media/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
