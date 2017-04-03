@@ -41,6 +41,7 @@ export default class Quotidian extends React.Component {
                 <h3>What is <br/>Quotidian Ventures</h3>
                 <p>Quotidian Ventures is an early stage investment fund that focuses on businesses with a strategic advantage in their respective industries.</p>
               </section>
+              <section className="two-col" style={{height:"400px"}}></section>
               <section className="one-col">
                 <h3>Concept</h3>
                 <p>The roll of a website for a fund like Quotidian is to demonstrate their portfolio, and mark a strong web presence.</p>
