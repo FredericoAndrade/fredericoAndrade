@@ -640,7 +640,7 @@ footer.index p {
 .gallery .content .block section,
 .gallery .content .block figure {
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
   display: inline-block;
 }
 .gallery .content .block section img,
