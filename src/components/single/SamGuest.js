@@ -37,10 +37,10 @@ export default class SamGuest extends React.Component {
           <div className="content">
             <div className="block three-col">
               <section className="one-col">
-                <h3>Concept</h3>
+                <h1>Sam Guest</h1>
                 <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
               </section>
-              <section className="two-col" style={{height:"400px"}}></section>
+              <section className="two-col" style={{height:"730px"}}></section>
               <section className="one-col">
                 <h3>Process</h3>
                 <p>Iterating closely with Sam, a non-aesthetic surfaced, that is both alien to the non-technical among the millenial generation, and deeply structural to the internet, while still having room for editorial character.</p>

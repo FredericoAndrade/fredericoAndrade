@@ -1,11 +1,11 @@
 import React from 'react';
 // import { Component } from 'react';
 import SingleHead from '../SingleHead'
-// import {
+import {
   // BrowserRouter as Router,
   // Route,
-  // Link
-// } from 'react-router-dom'
+  Link
+} from 'react-router-dom'
 
 export default class Poly extends React.Component {
   componentDidMount() {
@@ -19,7 +19,7 @@ export default class Poly extends React.Component {
 
           <SingleHead
             title="Poly"
-            visit="https://www.poly.wikitongues.org/"
+            visit="https://poly.wikitongues.org/"
             images={[
               {image:"media/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
               {image:"media/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
@@ -40,23 +40,14 @@ export default class Poly extends React.Component {
           <div className="content">
             <div className="block three-col">
               <section className="one-col">
-                <h3>What is <br/>Poly</h3>
-                <p>Poly is Wikitongues' first foray into building apps. Recognizing that awareness-raising, while an important layer of the organization's mission, does not go far enough to provide access to the language.</p>
+                <h1>Poly</h1>
+                <p>Poly is <Link to="/wikitongues">Wikitongues</Link>' first foray into building apps. Recognizing that awareness-raising, while an important layer of the organization's mission, does not go far enough to provide access to the language, the organiztion resolved to develop the platform to empower speakers and signers of every language in the world to share document their own languages on an easy and simple platform.</p>
                 <p>The application empowers anyone to produce language documentation and lessons, and is being used by Wikitongues to collect introductory phrases in the world's less documented languages.</p>
-              </section>
-              <section className="two-col" style={{height:"610px"}}></section>
-              <section className="one-col">
-                <h3>Concept</h3>
-                <p>They needed a website to accompany the grand opening of the venue</p>
-                <p>Iterating closely with Sam, a non-aesthetic surfaced, that is both alien to the non-technical among the millenial generation, and deeply structural, while still having room for editorial character.</p>
               </section>
               <section className="one-col">
                 <h3>Process</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
-              </section>
-              <section className="one-col">
-                <h3>Design</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+                <p>The development process for Poly has been long and involved, and as any dynamic technology, will never be complete. I realized from the onset that the only feasible way for Wikitongues to produce technology was if it was done inhouse, removing the financial restrictions. As such, I took it upon myself to learn all of the requisite technologies to develop the application, leveraging my experience with front-end development as an entry point.</p>
+                <p>I built our first prototype in Ember.js and Firebase, and had the opportunity to demonstrate it at the New York Tech Meetup. At that moment, the core functionalities were designed, and the behavior of the app had shaped up.</p>
               </section>
             </div>
           </div>

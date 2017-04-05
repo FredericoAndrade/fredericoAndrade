@@ -79,6 +79,7 @@ $darkRed = #21000b
 
     h3
       width initial
+      margin-top 2rem
 
     .block
       padding 1rem 6rem
@@ -94,13 +95,20 @@ $darkRed = #21000b
 
       &.three-col
         .one-col
-          // clear left
           width (100/3)%
           float left
+
+          h1
+            line-height .9
+            margin-left 0
+            white-space nowrap
 
         .two-col
           width (2*(100/3))%
           float right
+
+          .one-col
+            width 50%
 
       section,
       figure
@@ -114,12 +122,12 @@ $darkRed = #21000b
       p,
       figcaption,
       a
-        font-size 0.8rem
+        font-size 1.1rem
         line-height 1.4
         color darken(#00307c,10%)
 
       p
-        text-align justify
+        // text-align justify
         text-indent 1rem
 
         em,
@@ -135,19 +143,24 @@ $darkRed = #21000b
             position absolute
             mix-blend-mode darken
             left 2px
-            top 8px
+            top 11px
             height 6px
+            transition background-color 150ms ease-in-out
+
+          &:hover
+            &::after
+              background-color #f79999
 
       figcaption
         text-align center
 
 $distance = 5px
-    h3
-      &::before
-        margin-left -(16+$distance)px
-        margin-right $distance
-        content "\A7"
-        float left
+    // h3
+      // &::before
+      //   margin-left -(16+$distance)px
+      //   margin-right $distance
+      //   content "\A7"
+      //   float left
 
     ul
       list-style-type none

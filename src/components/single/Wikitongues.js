@@ -25,7 +25,8 @@ export default class Wikitongues extends React.Component {
               {image:"media/wikitongues/logo/lockups/caligraphic.jpg",caption:"The caligraphic Wikitongues glyph depicts a person with outstretched arms."},
               {image:"media/wikitongues/website.png",caption:"The Wikitongues website is the organization's point of contact with the world."},
               {image:"media/wikitongues/banner.jpg",caption:"The Wikitongues banner is carefully designed to provide a unique human insight into the project"},
-              {image:"media/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
+              {image:"media/wikitongues/pamphlet2.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
+              // {image:"media/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
               {image:"media/wikitongues/businessCards.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
               {image:"media/wikitongues/logo/logoVariations.png",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamplhets"},
               ]}
@@ -42,7 +43,7 @@ export default class Wikitongues extends React.Component {
             <div className="block three-col">
 
               <section className="one-col">
-                <h3>What is <br/> Wikitongues</h3>
+                <h1>Wikitongues</h1>
                 <p>Wikitongues is a movement for language rights. Together with speakers and signers from every language in the world, Wikitongues is raising awareness about linguistic diversity and rallying to defend it</p>
               </section>
               {/*<figure className="two-col">

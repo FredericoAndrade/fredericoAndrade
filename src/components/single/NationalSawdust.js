@@ -36,23 +36,15 @@ export default class NationalSawdust extends React.Component {
           <div className="content">
             <div className="block three-col">
               <section className="one-col">
-                <h3>What is <br/>National Sawdust</h3>
+                <h1>National Sawdust</h1>
                 <p>National Sawdust is an acclaimed performance arts institution in Williamsburg, Brooklyn.</p>
                 <p>I had the opportunity to design and build their official website in time with their grand opening.</p>
               </section>
               <section className="two-col" style={{height:"540px"}}></section>
               <section className="one-col">
-                <h3>Concept</h3>
-                <p>They needed a website to accompany the grand opening of the venue</p>
-                <p>Iterating closely with Sam, a non-aesthetic surfaced, that is both alien to the non-technical among the millenial generation, and deeply structural, while still having room for editorial character.</p>
-              </section>
-              <section className="one-col">
                 <h3>Process</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
-              </section>
-              <section className="one-col">
-                <h3>Design</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+                <p>They needed a website to accompany the grand opening of the venue, on which they could publish their schedule, sell tickets to events and showcase partners and performers.</p>
+                <p>I worked with wordpress developer Daniel Udell and iterated closely with the National Sawdust team to design and build a platform that was flexible enough to support their varied needs, both e-commerce and content-wise.</p>
               </section>
             </div>
           </div>

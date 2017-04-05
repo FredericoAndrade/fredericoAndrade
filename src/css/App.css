@@ -616,6 +616,7 @@ footer.index p {
 }
 .gallery .content h3 {
   width: initial;
+  margin-top: 2rem;
 }
 .gallery .content .block {
   padding: 1rem 6rem;
@@ -633,9 +634,17 @@ footer.index p {
   width: 33.333333333333336%;
   float: left;
 }
+.gallery .content .block.three-col .one-col h1 {
+  line-height: 0.9;
+  margin-left: 0;
+  white-space: nowrap;
+}
 .gallery .content .block.three-col .two-col {
   width: 66.66666666666667%;
   float: right;
+}
+.gallery .content .block.three-col .two-col .one-col {
+  width: 50%;
 }
 .gallery .content .block section,
 .gallery .content .block figure {
@@ -650,12 +659,11 @@ footer.index p {
 .gallery .content .block p,
 .gallery .content .block figcaption,
 .gallery .content .block a {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   color: #002b70;
 }
 .gallery .content .block p {
-  text-align: justify;
   text-indent: 1rem;
 }
 .gallery .content .block p em,
@@ -672,17 +680,16 @@ footer.index p {
   position: absolute;
   mix-blend-mode: darken;
   left: 2px;
-  top: 8px;
+  top: 11px;
   height: 6px;
+  transition: background-color 150ms ease-in-out;
+}
+.gallery .content .block p em:hover::after,
+.gallery .content .block p a:hover::after {
+  background-color: #f79999;
 }
 .gallery .content .block figcaption {
   text-align: center;
-}
-h3::before {
-  margin-left: -21px;
-  margin-right: 5px;
-  content: "\A7";
-  float: left;
 }
 ul {
   list-style-type: none;
