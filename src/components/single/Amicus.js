@@ -43,11 +43,7 @@ export default class Amicus extends React.Component {
                 <p>Amicus is a company that helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines; interaction design and branding.</p>
               </section>
               <section className="two-col">
-                <h3>Interaction</h3>
-                <p>I joined Amicus right as they looked to develop a new direct mail tool that they could sell to their advocacy clients such as the Democratic Congressional Campaign Comittee (DCCC), as well as local political campaigns.</p>
-                <p>The tool, called Amicus Post, was very successful, and went on to replace the company's main product.</p>
-                {/*<section className="one-col"></section>
-                <section className="one-col"></section>*/}
+                <p>I joined Amicus right as they looked to develop a new direct mail tool that they could sell to their advocacy clients such as the Democratic Congressional Campaign Comittee (DCCC), as well as local political campaigns. The tool, called Amicus Post, was very successful, and went on to replace the company's main product.</p>
                 <p>Both Amicus Post and the call tool were built on top of an in-house framework called <Link to="/enddash">EndDash</Link>, itself built on top of backbone.js. I was charged with building a documentation site for it around the time it was publically announced.</p>
                 <h3>Branding</h3>
                 <p>The Amicus brand was mature by the time I joined the company, but they still needed a few pieces of collateral produced, such as business cards and stickers.</p>

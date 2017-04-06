@@ -40,9 +40,7 @@ export default class Quotidian extends React.Component {
               <section className="one-col">
                 <p>Quotidian Ventures is an early stage investment fund that focuses on businesses with a strategic advantage in their respective industries.</p>
               </section>
-              <section className="two-col" style={{height:"400px"}}></section>
-              <section className="one-col">
-                <h3>Process</h3>
+              <section className="two-col">
                 <p>Quotidian Ventures needed a portfolio website that provided an overview with contact information, without removing the focus from their brand and portfolio.</p>
                 <p>The portfolio page brings evidence to all of Quotidian's portfolio companies with prominent logos. The fund preferred to let each company best represent themselves instead of producing original coverage, by linking to each of them.</p>
               </section>

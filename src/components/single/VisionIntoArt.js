@@ -19,24 +19,25 @@ export default class VisionIntoArt extends React.Component {
 
           <SingleHead
             title="VisionIntoArt"
-            images={
-              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+            images={[
+              {image:"media/via/page.jpg",caption:"With a focus on e-commerce, the VisionIntoArt website lists the production company's projects"},
+              {image:"media/via/single.png",caption:"Projects are extremely rich with content, and has quite the story to tell."},
             ]}
             visit="http://visionintoart.com/"
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
+            tags={[
+              "html5",
+              "css3",
+              "stylus",
+              "javascript"
+              ]}
             />
 
           <div className="content">
             <div className="block three-col">
+              <h1>VisionIntoArt</h1>
               <section className="one-col">
-                <h3>Concept</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+                <p>VisionIntoArt is a Brooklyn based music production company specializing in multidisciplinary new music.</p>
+                <p>Daniel Udell and I built the site on Wordpress following designs produced by Mogollon.</p>
               </section>
             </div>
           </div>

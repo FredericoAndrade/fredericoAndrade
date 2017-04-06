@@ -18,9 +18,9 @@ export default class DV01 extends React.Component {
         <div className="wrapper">
 
           <SingleHead
-            title="DV01"
+            title="dv01"
             images={
-              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+              [{image:"media/dv01/page.jpg",caption:"I was hired to audit the highly complex interface for clarity and power of interaction."},
             ]}
             visit="https://www.dv01.co/"
             tags={
@@ -34,17 +34,13 @@ export default class DV01 extends React.Component {
 
           <div className="content">
             <div className="block three-col">
+            <h1>dv01</h1>
               <section className="one-col">
-                <h3>Concept</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+                <p>dv01 is a financial technology platform that streamlines consumer and mortgage loan data—making markets transparent and efficient for institutional investors and safer for the world.</p>
               </section>
-              <section className="one-col">
-                <h3>Process</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
-              </section>
-              <section className="one-col">
-                <h3>Design</h3>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+              <section className="two-col">
+                <p>I was hired as a contractor to lead the company through a product audit, bringing to light infrastructural product decisions that needed to take place as the platform matured in the direction of the mission. That involved working with internal stakeholders to gather domain specific knowledge and to empower decisions to be made by the team.</p>
+                <p>Additionally, I took a design pass at the platform's homepage and dashboard infrastructure</p>
               </section>
             </div>
           </div>

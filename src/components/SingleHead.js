@@ -40,11 +40,11 @@ export default class SingleHead extends React.Component {
           })}
           <div className="last-slide">
             <h3>More projects</h3>
-            <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/mobile.jpg)"}}></div>{/*<img src="media/poly/interface/interfaceMobile.jpg" alt=""/>*/}<p><span>Poly</span></p></Link>
-            <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div>{/*<img src="media/wikitongues/website.png" alt=""/>*/}<p><span>Wikitongues</span></p></Link>
-            <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div>{/*<img src="media/poly/logo/banner.jpg" alt=""/>*/}<p><span>Amicus</span></p></Link>
-            <Link to="/quotidian-ventures"><div className="image" style={{backgroundImage:"url(media/quotidian/page.jpg)"}}></div>{/*<img src="media/quotidian/page.jpg" alt=""/>*/}<p><span>Quotidian Ventures</span></p></Link>
-            <Link to="/national-sawdust"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div>{/*<img src="media/poly/logo/banner.jpg" alt=""/>*/}<p><span>National Sawdust</span></p></Link>
+            <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/mobile.jpg)"}}></div><p><span>Poly</span></p></Link>
+            <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div><p><span>Wikitongues</span></p></Link>
+            <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div><p><span>Amicus</span></p></Link>
+            <Link to="/quotidian-ventures"><div className="image" style={{backgroundImage:"url(media/quotidian/page.jpg)"}}></div><p><span>Quotidian Ventures</span></p></Link>
+            <Link to="/national-sawdust"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div><p><span>National Sawdust</span></p></Link>
           </div>
         </Slider>
       )

@@ -25,13 +25,11 @@ export default class SamGuest extends React.Component {
               {image:"media/samGuest/single.jpg",caption:"With a bare minimum of context, each project relies on press coverage to tell the story."},
               {image:"media/samGuest/about.png",caption:"The about page leaves the viewer with more questions than it answers."},
             ]}
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
+            tags={[
+              "interface design",
+              "html5",
+              "css3"
+              ]}
             />
 
           <div className="content">

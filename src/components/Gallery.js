@@ -10,15 +10,17 @@ const routes = [
   { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
   { id:2, title: "Poly", path: "poly", show: 1},
   { id:3, title: "Amicus", path: "amicus", show: 1},
-  { id:4, title: "EndDash", path: "enddash", show: 0},
+  { id:4, title: "EndDash", path: "enddash", show: 1},
   { id:6, title: "Airtable", path: "airtable", show: 0},
   { id:7, title: "Datamonkey", path: "datamonkey", show: 0},
   { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: 1},
-  { id:9, title: "DV01", path: "dv01", show: 0},
+  { id:9, title: "dv01", path: "dv01", show: 1},
   { id:10, title: "Matte", path: "matte", show: 0},
   { id:11, title: "National Sawdust", path: "national-sawdust", show: 1},
-  { id:12, title: "Vision Into Art", path: "vision-into-art", show: 0},
-  { id:5, title: "Sam Guest", path: "sam-guest", show: 1}
+  { id:12, title: "VisionIntoArt", path: "visionIntoArt", show: 1},
+  { id:5, title: "Sam Guest", path: "sam-guest", show: 1},
+  { id:13, title: "Matchbook", path: "matchbook", show: 1},
+  { id:14, title: "Michelle Bogre", path: "michelle-bogre", show: 0},
 ]
 
 var galleryIndex = routes.map(function(i) {
