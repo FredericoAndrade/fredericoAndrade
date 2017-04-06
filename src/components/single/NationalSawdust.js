@@ -19,11 +19,11 @@ export default class NationalSawdust extends React.Component {
 
           <SingleHead
             title="National Sawdust"
+            visit="https://nationalsawdust.org/"
             images={
               [{image:"media/ns/banner.jpg",caption:"National Sawdust is a performance arts institution in Brooklyn, NY."},
               {image:"media/ns/page.jpg",caption:"Artist profile page"},
             ]}
-            visit="https://nationalsawdust.org/"
             tags={
               ["ui",
               "ux",
@@ -35,8 +35,8 @@ export default class NationalSawdust extends React.Component {
 
           <div className="content">
             <div className="block three-col">
+              <h1>National Sawdust</h1>
               <section className="one-col">
-                <h1>National Sawdust</h1>
                 <p>National Sawdust is an acclaimed performance arts institution in Williamsburg, Brooklyn.</p>
                 <p>I had the opportunity to design and build their official website in time with their grand opening.</p>
               </section>

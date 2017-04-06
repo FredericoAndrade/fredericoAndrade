@@ -19,12 +19,12 @@ export default class SamGuest extends React.Component {
 
           <SingleHead
             title="Sam Guest"
-            images={
-              [{image:"media/samGuest/page.jpg",caption:"Film director Sam Guest requested a page unlike anything he's seen before. Turns out he'd been craving some HTML."},
-              {image:"media/samGuest/single.jpg",caption:"Stripped of ornament, the single project page displays the subject, with a bare minimum of context."},
-              {image:"media/samGuest/about.png",caption:"In staying with the aesthetic, the about page leaves the viewer with more questions than it answers."},
-            ]}
             visit="http://sam-guest.com/"
+            images={
+              [{image:"media/samGuest/page.jpg",caption:"Film director Sam Guest needed a website that followed in line with his aesthetic sensibilities - no frills."},
+              {image:"media/samGuest/single.jpg",caption:"With a bare minimum of context, each project relies on press coverage to tell the story."},
+              {image:"media/samGuest/about.png",caption:"The about page leaves the viewer with more questions than it answers."},
+            ]}
             tags={
               ["ui",
               "ux",
@@ -36,18 +36,14 @@ export default class SamGuest extends React.Component {
 
           <div className="content">
             <div className="block three-col">
+              <h1>Sam Guest</h1>
               <section className="one-col">
-                <h1>Sam Guest</h1>
-                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone- to showcase their work.</p>
+                <p>When film director Sam Guest approached me to build him a website, he was after something unique. After all, film director websites have one purpose and one purpose alone - to showcase their work.</p>
               </section>
-              <section className="two-col" style={{height:"730px"}}></section>
-              <section className="one-col">
-                <h3>Process</h3>
-                <p>Iterating closely with Sam, a non-aesthetic surfaced, that is both alien to the non-technical among the millenial generation, and deeply structural to the internet, while still having room for editorial character.</p>
-              </section>
-              <section className="one-col">
-                <h3>Design</h3>
-                <p>The website features a range of details that venture from the default. Careful consideration was given to preserve the unstyled, purely functional aesthetic. Slightly altered colors, unusual spacing, tracking and line heights, and careful positioning of elements in the window makes for an interesting experience across all devices.</p>
+              <section className="two-col">
+                <p>Iterating closely with Guest, a non-aesthetic surfaced that is both alien to the non-technical among us, and deeply structural to the internet, while still having room for editorial character.</p>
+                <p>The website features a range of details that push the it beyond the familiar. Careful consideration was given to preserve the unstyled, purely functional aesthetic. Slightly altered colors and typography, unusual spacing, tracking and line heights, and careful positioning of elements in the window makes for an interesting experience. A resume-style list of work showcases everything that Guest wishes to show. Careful consideration was given to making sure the website is fast and accessible across platforms.</p>
+                <p>The website needed to be maintainable by the director himself, with a minimum learning curve. We opted against a CMS, preferring instead to interface with the content directly in markup.</p>
               </section>
             </div>
           </div>

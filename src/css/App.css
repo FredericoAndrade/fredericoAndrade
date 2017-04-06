@@ -649,7 +649,7 @@ footer.index p {
 .gallery .content .block section,
 .gallery .content .block figure {
   margin: 0;
-  padding: 0 1rem 2rem;
+  padding: 1rem 1rem 1rem;
   display: inline-block;
 }
 .gallery .content .block section img,
@@ -663,8 +663,12 @@ footer.index p {
   line-height: 1.4;
   color: #002b70;
 }
+.gallery .content .block figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+}
 .gallery .content .block p {
-  text-indent: 1rem;
+  text-indent: 1.5rem;
 }
 .gallery .content .block p em,
 .gallery .content .block p a {
@@ -691,7 +695,7 @@ footer.index p {
 .gallery .content .block figcaption {
   text-align: center;
 }
-ul {
+.gallery .content ul {
   list-style-type: none;
 }
 .media {

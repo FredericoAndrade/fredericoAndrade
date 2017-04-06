@@ -25,7 +25,7 @@ export default class Amicus extends React.Component {
               {image:"media/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
               {image:"media/amicus/design/presentation.png",caption:"Amicus Post had to be accessible and fun, so an illustrated aesthetic fit really well."},
               {image:"media/amicus/nytm.jpg",caption:"Founder Seth Bannon presents my tool Amicus Post at the New York Tech Meetup"},
-              {image:"media/amicus/design/squirrel.jpg",caption:"Amicus had a wondeful workplace culture, which we sought to capture in our outreach."},
+              {image:"media/amicus/design/squirrel.jpg",caption:"Amicus had a wonderful workplace culture, which we sought to capture in our outreach."},
             ]}
             tags={
               ["ui",
@@ -38,8 +38,8 @@ export default class Amicus extends React.Component {
 
           <div className="content">
             <div className="block three-col">
+              <h1>Amicus</h1>
               <section className="one-col">
-                <h1>Amicus</h1>
                 <p>Amicus is a company that helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines; interaction design and branding.</p>
               </section>
               <section className="two-col">
