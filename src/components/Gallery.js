@@ -54,7 +54,8 @@ export default class Gallery extends React.Component {
           <h3>Displaying</h3>
           <fieldset>
             <input id="client" name="display" type="radio" defaultChecked/><label htmlFor="client">By Client</label>
-            <input id="discipline" name="display" type="radio"/><label htmlFor="discipline">By Discipline</label>
+            {/*<input id="discipline" name="display" type="radio"/><label htmlFor="discipline">By Discipline</label>*/}
+            <Link to="overview">By Image</Link>
           </fieldset>
         </section>
         <footer className="index"><p>I am always looking for new and exciting opportunities to do good work.</p><p>For inquiries, please don't hesitate to contact me at faandrade@gmail.com.</p></footer>

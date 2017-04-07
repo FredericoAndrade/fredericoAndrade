@@ -434,6 +434,7 @@ footer .side {
 }
 .toggleType {
   display: none;
+  background-color: #ffede6;
   float: left;
   position: absolute;
   right: 4rem;
@@ -465,7 +466,12 @@ footer .side {
   width: 106%;
   background-color: #ff006a;
 }
-.toggleType fieldset label {
+.toggleType fieldset a {
+  text-decoration: none;
+  color: #c05968;
+}
+.toggleType fieldset label,
+.toggleType fieldset a {
   clear: both;
   float: left;
   font-size: 1.3rem;
@@ -474,10 +480,12 @@ footer .side {
   position: relative;
   cursor: pointer;
 }
-.toggleType fieldset label:hover::after {
+.toggleType fieldset label:hover::after,
+.toggleType fieldset a:hover::after {
   width: 106%;
 }
-.toggleType fieldset label::after {
+.toggleType fieldset label::after,
+.toggleType fieldset a::after {
   pointer-events: none;
   width: 0;
   content: "";
@@ -765,6 +773,21 @@ footer.index p {
   opacity: 0.7;
   transition: opacity 300ms ease-out;
   height: 100%;
+  position: relative;
+}
+.media .slick-slider .slick-list .slick-track .slick-slide a.overview,
+.media float left .slick-list .slick-track .slick-slide a.overview {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  height: initial;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 1rem 2rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  font-size: 3rem;
 }
 .media .slick-slider .slick-list .slick-track .slick-slide img,
 .media float left .slick-list .slick-track .slick-slide img {

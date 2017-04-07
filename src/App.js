@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Resume from './components/Resume'
+import Overview from './components/Overview'
 import Wikitongues from './components/single/Wikitongues'
 import Poly from './components/single/Poly'
 import Amicus from './components/single/Amicus'
@@ -40,6 +41,7 @@ class App extends Component {
       <Router>
         <div>
           <Route path="/resume" component={Resume}/>
+          <Route path="/overview" component={Overview}/>
           <Route path="/wikitongues" component={Wikitongues}/>
           <Route path="/poly" component={Poly}/>
           <Route path="/amicus" component={Amicus}/>
