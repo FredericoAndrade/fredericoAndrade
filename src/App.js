@@ -14,6 +14,7 @@ import NationalSawdust from './components/single/NationalSawdust'
 import VisionIntoArt from './components/single/VisionIntoArt'
 import Matchbook from './components/single/Matchbook'
 import MichelleBogre from './components/single/MichelleBogre'
+import MeAndYou from './components/single/MeAndYou'
 import Gallery from './components/Gallery'
 import './css/App.css';
 import {
@@ -54,6 +55,7 @@ class App extends Component {
           <Route path="/visionIntoArt" component={VisionIntoArt}/>
           <Route path="/matchbook" component={Matchbook}/>
           <Route path="/michelle-bogre" component={MichelleBogre}/>
+          <Route path="/me-and-you" component={MeAndYou}/>
           <Route exact path="/" component={Gallery}/>
         </div>
       </Router>
