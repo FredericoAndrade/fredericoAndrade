@@ -21,12 +21,12 @@ export default class Poly extends React.Component {
             title="Poly"
             visit="https://poly.wikitongues.org/"
             images={[
-              {image:"media/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
-              {image:"media/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
-              // {image:"media/poly/logo/logomark.jpg",caption:"The Poly Logomark"},
-              // {image:"media/poly/logo/mascotFull.jpg",caption:""},
-              {image:"media/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
-              {image:"media/poly/logo/banner.jpg",caption:"Publishing banner"},
+              {image:"media/poly/interface/page.jpg",placeholder:"placeholder/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
+              {image:"media/poly/interface/mobile.jpg",placeholder:"placeholder/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
+              // {image:"media/poly/logo/logomark.jpg",placeholder:"placeholder/poly/logo/logomark.jpg",caption:"The Poly Logomark"},
+              // {image:"media/poly/logo/mascotFull.jpg",placeholder:"placeholder/poly/logo/mascotFull.jpg",caption:""},
+              {image:"media/poly/logo/poster.jpg",placeholder:"placeholder/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
+              {image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Publishing banner"},
               ]}
             tags={
               ["ui",

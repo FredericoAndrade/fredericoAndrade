@@ -20,9 +20,9 @@ export default class MeAndYou extends React.Component {
           <SingleHead
             title="MeAndYou"
             images={[
-              {image:"media/meAndYou/page.jpg",caption:"The brand has a very loose, unconstrained feel, and the site had to convey that."},
-              {image:"media/meAndYou/detail.png",caption:"Large images prominently display the company's strengths in art direction and design."},
-              {image:"media/meAndYou/product.png",caption:"In selling products, it is important to offer the user varied coverage."},
+              {image:"media/meAndYou/page.jpg",placeholder:"placeholder/meAndYou/page.jpg",caption:"The brand has a very loose, unconstrained feel, and the site had to convey that."},
+              {image:"media/meAndYou/detail.png",placeholder:"placeholder/meAndYou/detail.png",caption:"Large images prominently display the company's strengths in art direction and design."},
+              {image:"media/meAndYou/product.png",placeholder:"placeholder/meAndYou/product.png",caption:"In selling products, it is important to offer the user varied coverage."},
             ]}
             visit="https://www.itsmeandyou.com/"
             tags={

@@ -20,9 +20,9 @@ export default class Enddash extends React.Component {
           <SingleHead
             title="EndDash"
             images={[
-              {image:"media/enddash/page.jpg",caption:"Before announcing the launch of the framework on Hacker News, it needed a shiny documentation page."},
-              {image:"media/enddash/menu.png",caption:"Attention to detail adds delight to every interaction."},
-              {image:"media/enddash/easterEgg.gif",caption:"We hid some Easter eggs throughout the site to surprise people trying to break stuff. 👀"},
+              {image:"media/enddash/page.jpg",placeholder:"placeholder/enddash/page.jpg",caption:"Before announcing the launch of the framework on Hacker News, it needed a shiny documentation page."},
+              {image:"media/enddash/menu.png",placeholder:"placeholder/enddash/menu.png",caption:"Attention to detail adds delight to every interaction."},
+              {image:"media/enddash/easterEgg.gif",placeholder:"placeholder/enddash/easterEgg.gif",caption:"We hid some Easter eggs throughout the site to surprise people trying to break stuff. 👀"},
 
             ]}
             visit="http://www.enddash.com/"

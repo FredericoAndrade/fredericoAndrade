@@ -20,8 +20,8 @@ export default class VisionIntoArt extends React.Component {
           <SingleHead
             title="VisionIntoArt"
             images={[
-              {image:"media/via/page.jpg",caption:"With a focus on e-commerce, the VisionIntoArt website lists the production company's projects"},
-              {image:"media/via/single.png",caption:"Projects are extremely rich with content, and has quite the story to tell."},
+              {image:"media/via/page.jpg",placeholder:"placeholder/via/page.jpg",caption:"With a focus on e-commerce, the VisionIntoArt website lists the production company's projects"},
+              {image:"media/via/single.png",placeholder:"placeholder/via/single.png",caption:"Projects are extremely rich with content, and has quite the story to tell."},
             ]}
             visit="http://visionintoart.com/"
             tags={[

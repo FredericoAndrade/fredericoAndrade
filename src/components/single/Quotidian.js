@@ -21,9 +21,9 @@ export default class Quotidian extends React.Component {
             title="Quotidian Ventures"
             visit="http://www.quotidian.co/"
             images={
-              [{image:"media/quotidian/page.jpg",caption:"Quotidian Ventures needed a no-frills website to display their portfolio."},
-              {image:"media/quotidian/companies.jpg",caption:"The portfolio displays each company proudly with large logos."},
-              {image:"media/quotidian/about.jpg",caption:"Sparse colors and direct messaging build a results-first brand."},
+              [{image:"media/quotidian/page.jpg",placeholder:"placeholder/quotidian/page.jpg",caption:"Quotidian Ventures needed a no-frills website to display their portfolio."},
+              {image:"media/quotidian/companies.jpg",placeholder:"placeholder/quotidian/companies.jpg",caption:"The portfolio displays each company proudly with large logos."},
+              {image:"media/quotidian/about.jpg",placeholder:"placeholder/quotidian/about.jpg",caption:"Sparse colors and direct messaging build a results-first brand."},
             ]}
             tags={
               ["ui",

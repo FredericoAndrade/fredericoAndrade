@@ -2,6 +2,7 @@ import React from 'react';
 // import { Component } from 'react';
 import CarouselArrow from './CarouselArrow'
 var Slider = require('react-slick');
+import ProgressiveImage from 'react-progressive-image'
 import {
   // BrowserRouter as Router,
   // Route,
@@ -36,7 +37,14 @@ export default class SingleHead extends React.Component {
       return(
         <Slider {...settings}>
           {images.map(function(i,index) {
-            return <div key={ index }><img src={i.image} alt=""/><p>{index+1} / {images.length} <span>{i.caption}</span></p></div>
+            return (
+              <div key={ index }>
+                <ProgressiveImage src={i.image} placeholder={i.placeholder}>
+                  {(src) => <img src={src} alt=""/>}
+                </ProgressiveImage>
+                <p>{index+1} / {images.length} <span>{i.caption}</span></p>
+              </div>
+            )
           })}
           <div className="last-slide">
             <h3>More projects</h3>

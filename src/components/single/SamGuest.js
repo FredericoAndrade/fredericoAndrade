@@ -21,9 +21,9 @@ export default class SamGuest extends React.Component {
             title="Sam Guest"
             visit="http://sam-guest.com/"
             images={
-              [{image:"media/samGuest/page.jpg",caption:"Film director Sam Guest needed a website that followed in line with his aesthetic sensibilities - no frills."},
-              {image:"media/samGuest/single.jpg",caption:"With a bare minimum of context, each project relies on press coverage to tell the story."},
-              {image:"media/samGuest/about.png",caption:"The about page leaves the viewer with more questions than it answers."},
+              [{image:"media/samGuest/page.jpg",placeholder:"placeholder/samGuest/page.jpg",caption:"Film director Sam Guest needed a website that followed in line with his aesthetic sensibilities - no frills."},
+              {image:"media/samGuest/single.jpg",placeholder:"placeholder/samGuest/single.jpg",caption:"With a bare minimum of context, each project relies on press coverage to tell the story."},
+              {image:"media/samGuest/about.png",placeholder:"placeholder/samGuest/about.png",caption:"The about page leaves the viewer with more questions than it answers."},
             ]}
             tags={[
               "interface design",
