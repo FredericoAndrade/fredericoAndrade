@@ -21,8 +21,8 @@ export default class NationalSawdust extends React.Component {
             title="National Sawdust"
             visit="https://nationalsawdust.org/"
             images={
-              [{image:"media/ns/banner.jpg",caption:"Prominent imagery puts artists and curators at the forefront, giving visitors a window into each of their process."},
-              {image:"media/ns/page.jpg",caption:"Artist profile page"},
+              [{image:"media/ns/banner.jpg",placeholder:"placeholder/ns/banner.jpg",caption:"Prominent imagery puts artists and curators at the forefront, giving visitors a window into each of their process."},
+              {image:"media/ns/page.jpg",placeholder:"placeholder/ns/page.jpg",caption:"Artist profile page"},
             ]}
             tags={
               ["ui",

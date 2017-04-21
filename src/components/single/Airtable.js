@@ -20,7 +20,7 @@ export default class Airtable extends React.Component {
           <SingleHead
             title="Airtable"
             images={
-              [{image:"media/poly/logo/banner.jpg",caption:"Placeholder"},
+              [{image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Placeholder"},
             ]}
             visit="https://airtable.com/"
             tags={
