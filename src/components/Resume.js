@@ -98,7 +98,7 @@ export default class Resume extends React.Component {
               <article>
                 <span className="body">
                   <h3>Additional Contracting</h3>
-                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites.  roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the  exibility to implement new stylistic approaches and usability feels. Clients include <Link to="/airtable">Airtable</Link>, <Link to="/datamonkey">Datamonkey</Link>, <Link to="/quotidian-ventures">Quotidian Ventures</Link>, <Link to="/"dv01>DV01</Link>, <Link to="/matte">Matte</Link>, the <Link to="/nationa-sawdust">National Sawdust</Link> and <Link to="/vision-into-art">Vision Into Art</Link>.</p>
+                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites.  roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the  exibility to implement new stylistic approaches and usability feels. Clients include <Link to="/airtable">Airtable</Link>, <Link to="/datamonkey">Datamonkey</Link>, <Link to="/quotidian-ventures">Quotidian Ventures</Link>, <Link to="/dv01">DV01</Link>, <Link to="/matte">Matte</Link>, the <Link to="/nationa-sawdust">National Sawdust</Link> and <Link to="/vision-into-art">Vision Into Art</Link>.</p>
                 </span>
                 <span className="date">
                   <p>08.2013 to 12.2015</p>
