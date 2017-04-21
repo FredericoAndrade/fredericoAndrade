@@ -28,7 +28,7 @@ export default class Wikitongues extends React.Component {
               {image:"media/wikitongues/pamphlet.jpg",placeholder:"placeholder/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamphlets"},
               {image:"media/wikitongues/businessCards.jpg",placeholder:"placeholder/wikitongues/businessCards.jpg",caption:"The back of each Wikitongues business card has the phrase 'Every language in the world' in the language of choice of the owner."},
               {image:"media/wikitongues/calligraphic.jpg",placeholder:"placeholder/wikitongues/calligraphic.jpg",caption:"The calligraphic treatment of the Wikitongues logo was made to be animated."},
-              {image:"media/wikitongues/logoVariations.png",placeholder:"placeholder/wikitongues/logoVariations.png",caption:"The Wikitongues logo depicting a person with outstretched arms went through dozens of variations before arriving at its current form."},
+              // {image:"media/wikitongues/logoVariations.png",placeholder:"placeholder/wikitongues/logoVariations.png",caption:"The Wikitongues logo depicting a person with outstretched arms went through dozens of variations before arriving at its current form."},
               ]}
             tags={
               ["ui",
@@ -48,11 +48,12 @@ export default class Wikitongues extends React.Component {
                 <p>As platform officer, I crafted the organization’s brand to meet carefully crafted strategic goals, and designed and produced all of the collateral (<a href="https://www.wikitongues.org">website</a>, business cards, pamplhets, presentation materials and ads, as well as t-shirts, mugs, stickers etc).</p>
               </section>
               <section className="two-col">
-                <p>I designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
+                <p>The world is huge, and there are tonnes of people on it. The organization's primary activity involves collecting and publishing video oral histories of speakers and signers from language communities all over the world.</p>
                 <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LwEwEEsBOhI?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
-                  <figcaption>Our Kickstarter fundraising video</figcaption>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-oarxcgzsXY?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen></iframe>
+                  <figcaption>A typical Wikitongues video.</figcaption>
                 </figure>
+                <p>In the video above, courtesy of volunteer Sarah Doyle, Lopez tells us a story in his mother language Nafasana, native to the South Pacific Ocean nation of Vanuatu. Until the time of publishing, there were no other materials about the language community available anywhere on the internet. For all intents and purposes, Wikitongues was the first organization to attest the existence of this language community.</p>
               </section>
               <section className="two-col">
                 <figure>
@@ -61,6 +62,21 @@ export default class Wikitongues extends React.Component {
                     {(src) => <img src={src} alt=""/>}
                   </ProgressiveImage>
                   <figcaption>The Wikitongues Poly logo</figcaption>
+                </figure>
+              </section>
+              <section className="one-col">
+              <figure>
+                <ProgressiveImage src="media/wikitongues/logoVariations.png" placeholder="placeholder/wikitongues/logoVariations.png">
+                  {(src) => <img src={src} alt="" style={{backgroundColor:"black", padding:"2px"}}/>}
+                </ProgressiveImage>
+                <figcaption>The Wikitongues logo represent a person waving out, arms outstretched.</figcaption>
+              </figure>
+              </section>
+              <section className="two-col">
+                <p>I designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
+                <figure>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LwEwEEsBOhI?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
+                  <figcaption>Our Kickstarter fundraising video</figcaption>
                 </figure>
               </section>
             </div>

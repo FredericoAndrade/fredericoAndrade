@@ -632,7 +632,6 @@ footer.index p {
 }
 .gallery .content .block.three-col .one-col {
   width: 33.333333333333336%;
-  float: left;
 }
 .gallery .content .block.three-col .one-col h1 {
   line-height: 0.9;
@@ -641,7 +640,6 @@ footer.index p {
 }
 .gallery .content .block.three-col .two-col {
   width: 66.66666666666667%;
-  float: right;
 }
 .gallery .content .block.three-col .two-col .one-col {
   width: 50%;
@@ -651,6 +649,7 @@ footer.index p {
   margin: 0;
   padding: 1rem 1rem 1rem;
   display: inline-block;
+  float: left;
 }
 .gallery .content .block section img,
 .gallery .content .block figure img {
