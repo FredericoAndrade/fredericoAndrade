@@ -49,8 +49,14 @@ export default class Wikitongues extends React.Component {
               <section className="two-col">
                 <p>I designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
                 <figure>
-                  <img src="media/wikitongues/nytm.png" alt=""/>
-                  <figcaption>I had the opportunity to present an early version of Poly at the New York Tech Meetup</figcaption>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LwEwEEsBOhI?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
+                  <figcaption>Our application video</figcaption>
+                </figure>
+              </section>
+              <section className="two-col">
+                <figure>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/tVRpjqQSLIg?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
+                  <figcaption>The Wikitongues Poly logo</figcaption>
                 </figure>
               </section>
             </div>

@@ -49,6 +49,12 @@ export default class Amicus extends React.Component {
                 <p>The Amicus brand was mature by the time I joined the company, but they still needed a few pieces of collateral produced, such as business cards and stickers.</p>
                 <p>Then with the advent of Amicus Post, the opportunity arose to distinguish it from the call tool through visual identity. The tool was intended to be very easy to use, and targeted a broad demographic, with users ranging form teenagers to the elderly. Therefore the image of the product needed to be soft and playful. I took queues from Roald Dahl's illustrations to produce a youthful, though sober, approach to this community-oriented product.</p>
               </section>
+              <section className="one-col">
+                <figure>
+                  <img src="media/amicus/interface/fullSite.jpg" alt=""/>
+                  <figcaption>A video demo of the Poly app</figcaption>
+                </figure>
+              </section>
             </div>
           </div>
         </div>

@@ -49,6 +49,12 @@ export default class Poly extends React.Component {
                 <p>The development process for Poly has been long and involved, and as any dynamic technology, will never be complete. I realized from the onset that the only feasible way for Wikitongues to produce technology was if it was done inhouse, removing the financial restrictions. As such, I took it upon myself to learn all of the requisite technologies to develop the application, leveraging my experience with front-end development as an entry point.</p>
                 <p>I built our first prototype in Ember.js and Firebase, and had the opportunity to demonstrate it at the New York Tech Meetup. At that moment, the core functionalities were designed, and the behavior of the app had shaped up.</p>
               </section>
+              <section className="two-col">
+                <figure>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Uy3w-cNABBg?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen></iframe>
+                  <figcaption>A video demo of the Poly app</figcaption>
+                </figure>
+              </section>
             </div>
           </div>
         </div>
