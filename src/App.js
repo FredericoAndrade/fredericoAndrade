@@ -21,8 +21,6 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
-let hashHistory = Router.hashHistory;
-
 
 class App extends Component {
 
@@ -41,7 +39,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router history={hashHistory}>
+      <Router>
         <div>
           <Route path="/resume" component={Resume}/>
           <Route path="/wikitongues" component={Wikitongues}/>
