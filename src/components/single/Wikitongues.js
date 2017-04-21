@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Component } from 'react';
 import SingleHead from '../SingleHead'
+import ProgressiveImage from 'react-progressive-image'
 import {
   // BrowserRouter as Router,
   // Route,
@@ -55,7 +56,10 @@ export default class Wikitongues extends React.Component {
               </section>
               <section className="two-col">
                 <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/tVRpjqQSLIg?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
+                  {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/tVRpjqQSLIg?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>*/}
+                  <ProgressiveImage src="media/wikitongues/logo.gif" placeholder="placeholder/wikitongues/logo.gif">
+                    {(src) => <img src={src} alt=""/>}
+                  </ProgressiveImage>
                   <figcaption>The Wikitongues Poly logo</figcaption>
                 </figure>
               </section>
