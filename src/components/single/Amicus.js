@@ -52,7 +52,7 @@ export default class Amicus extends React.Component {
               <section className="one-col">
                 <figure>
                   <img src="media/amicus/interface/fullSite.jpg" alt=""/>
-                  <figcaption>A video demo of the Poly app</figcaption>
+                  <figcaption>The Amicus Post website</figcaption>
                 </figure>
               </section>
             </div>
