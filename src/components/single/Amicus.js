@@ -41,6 +41,10 @@ export default class Amicus extends React.Component {
               <h1>Amicus</h1>
               <section className="one-col">
                 <p>Amicus is a company that helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines; interaction design and branding.</p>
+                <figure>
+                  <img src="media/amicus/interface/fullSite.jpg" alt=""/>
+                  <figcaption>The Amicus Post website</figcaption>
+                </figure>
               </section>
               <section className="two-col">
                 <p>I joined Amicus right as they looked to develop a new direct mail tool that they could sell to their advocacy clients such as the Democratic Congressional Campaign Comittee (DCCC), as well as local political campaigns. The tool, called Amicus Post, was very successful, and went on to replace the company's main product.</p>
@@ -48,12 +52,6 @@ export default class Amicus extends React.Component {
                 <h3>Branding</h3>
                 <p>The Amicus brand was mature by the time I joined the company, but they still needed a few pieces of collateral produced, such as business cards and stickers.</p>
                 <p>Then with the advent of Amicus Post, the opportunity arose to distinguish it from the call tool through visual identity. The tool was intended to be very easy to use, and targeted a broad demographic, with users ranging form teenagers to the elderly. Therefore the image of the product needed to be soft and playful. I took queues from Roald Dahl's illustrations to produce a youthful, though sober, approach to this community-oriented product.</p>
-              </section>
-              <section className="one-col">
-                <figure>
-                  <img src="media/amicus/interface/fullSite.jpg" alt=""/>
-                  <figcaption>The Amicus Post website</figcaption>
-                </figure>
               </section>
             </div>
           </div>
