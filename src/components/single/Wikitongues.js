@@ -2,11 +2,11 @@ import React from 'react';
 // import { Component } from 'react';
 import SingleHead from '../SingleHead'
 import ProgressiveImage from 'react-progressive-image'
-import {
+// import {
   // BrowserRouter as Router,
   // Route,
-  Link
-} from 'react-router-dom'
+  // Link
+// } from 'react-router-dom'
 
 
 export default class Wikitongues extends React.Component {
@@ -46,6 +46,7 @@ export default class Wikitongues extends React.Component {
                 <p>Wikitongues is a movement for language rights. Together with speakers and signers from every language in the world, Wikitongues is raising awareness about linguistic diversity and rallying to defend it</p>
                 <p>I co-founded this non-profit organization with Daniel Bogre Udell in June of 2014, and have worked increasingly more since. I've operated as chief platform officer and am a voting member of the board of directors.</p>
                 <p>As platform officer, I crafted the organization’s brand to meet carefully crafted strategic goals, and designed and produced all of the collateral (<a href="https://www.wikitongues.org">website</a>, business cards, pamplhets, presentation materials and ads, as well as t-shirts, mugs, stickers etc).</p>
+                <p>To date, we have collected and published over 400 videos in almost as many unique languages. Our content has received over three and a half million views, and is growing by more than one hundred thousand views a month.</p>
               </section>
               <section className="two-col">
                 <p>The world is huge, and there are tonnes of people on it. The organization's primary activity involves collecting and publishing video oral histories of speakers and signers from language communities all over the world.</p>
@@ -54,10 +55,11 @@ export default class Wikitongues extends React.Component {
                   <figcaption>A typical Wikitongues video.</figcaption>
                 </figure>
                 <p>In the video above, courtesy of volunteer Sarah Doyle, Lopez tells us a story in his mother language Nafasana, native to the South Pacific Ocean nation of Vanuatu. Until the time of publishing, there were no other materials about the language community available anywhere on the internet. For all intents and purposes, Wikitongues was the first organization to attest the existence of this language community.</p>
+                <br/>
+                <br/>
               </section>
               <section className="two-col">
                 <figure>
-                  {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/tVRpjqQSLIg?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>*/}
                   <ProgressiveImage src="media/wikitongues/logo.gif" placeholder="placeholder/wikitongues/logo.gif">
                     {(src) => <img src={src} alt=""/>}
                   </ProgressiveImage>
@@ -65,9 +67,22 @@ export default class Wikitongues extends React.Component {
                 </figure>
               </section>
               <section className="one-col">
+                <p>From the onset, we realized that the organization had to be perceived as legitimate and established. To that end, all of our brand elements are designed to reflect the global scope of the mission and convey the sense that it is achievable with the right effort.</p>
+                <p>The logo itself resulted from an exploration of the core values of the organization; focusing on the concept of communication, a graphic symbol that could be easily reproduced required a strong silhouette.</p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+              </section>
+              <section className="one-col">
+                <p>We experimented with the idea of different writing systems but moved away from that because a large number of languages are not written. A truly human project needed to account for that as well.</p>
+                <p>Other explorations looked at animals who communicate with each other. Symbols like dogs or birds were graphically interesting, but were a bit too literal. We sought something more primordial, like a gesture, a hand painting on a cave wall.</p>
+                <p>That's when we got to the current symbol representing a person with outstretched arms, waving hello. The warmth and friendliness came through in this easily recognizable, instantly distinguishable glyph.</p>
+              </section>
+              <section className="two-col">
               <figure>
                 <ProgressiveImage src="media/wikitongues/logoVariations.png" placeholder="placeholder/wikitongues/logoVariations.png">
-                  {(src) => <img src={src} alt="" style={{backgroundColor:"black", padding:"2px"}}/>}
+                  {(src) => <img src={src} alt=""/>}
                 </ProgressiveImage>
                 <figcaption>The Wikitongues logo represent a person waving out, arms outstretched.</figcaption>
               </figure>

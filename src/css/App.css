@@ -644,15 +644,22 @@ footer.index p {
 .gallery .content .block.three-col .two-col .one-col {
   width: 50%;
 }
+.gallery .content .block.three-col .three-col {
+  padding: 0;
+  width: 100%;
+}
 .gallery .content .block section,
 .gallery .content .block figure {
   margin: 0;
   padding: 1rem 1rem 1rem;
   display: inline-block;
   float: left;
+  width: 100%;
 }
 .gallery .content .block section img,
-.gallery .content .block figure img {
+.gallery .content .block figure img,
+.gallery .content .block section iframe,
+.gallery .content .block figure iframe {
   width: 100%;
 }
 .gallery .content .block p,
