@@ -59,9 +59,7 @@ export default class Poly extends React.Component {
                   <ProgressiveImage src="media/poly/poly.jpg" placeholder="placeholder/poly/poly.jpg">
                     {(src) => <img src={src} alt=""/>}
                   </ProgressiveImage>
-                  <figcaption>Poly pencil tests</figcaption>
-                </figure>
-                <figure>
+
                   <ProgressiveImage src="media/poly/pencilTests.png" placeholder="placeholder/poly/pencilTests.png">
                     {(src) => <img src={src} alt=""/>}
                   </ProgressiveImage>
