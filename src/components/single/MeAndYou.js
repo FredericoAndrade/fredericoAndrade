@@ -25,13 +25,6 @@ export default class MeAndYou extends React.Component {
               {image:"media/meAndYou/product.png",placeholder:"placeholder/meAndYou/product.png",caption:"In selling products, it is important to offer the user varied coverage."},
             ]}
             visit="https://www.itsmeandyou.com/"
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">

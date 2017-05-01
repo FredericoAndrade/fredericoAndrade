@@ -19,17 +19,10 @@ export default class Matte extends React.Component {
 
           <SingleHead
             title="Matte"
-            images={
-              [{image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Placeholder"},
+            images={[
+              {image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Placeholder"},
             ]}
             visit="https://matteprojects.com/"
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">

@@ -19,16 +19,9 @@ export default class Datamonkey extends React.Component {
 
           <SingleHead
             title="Datamonkey"
-            images={
-              [{image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Placeholder"},
+            images={[
+              {image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Placeholder"},
             ]}
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">

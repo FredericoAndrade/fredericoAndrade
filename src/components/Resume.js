@@ -29,49 +29,9 @@ export default class Resume extends React.Component {
   render() {
     return (
       <div className="App resume tk-adobe-garamond-pro">
-        <h1>Frederico<br/>Andrade</h1>
-        <Link to="/" className="linkTo r">Portfolio  &rsaquo;</Link>
-        <nav className={this.renderMenu()}>
-          <section className={this.renderMenu()}>
-            <h1><button onClick={this.onClickNav}>*</button></h1>
-            <div className="background">
-              <ul>
-                <li>
-                  <h2><Link to="/">Portfolio</Link></h2>
-                </li>
-                <li>
-                  <h1>Resume</h1>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Experience">Experience</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Awards">Awards, Press</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Education">Education</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Contact">Contact</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Statement">Statement</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Disciplines">Disciplines</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Software">Software</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Languages">Languages</a></h2>
-                </li>
-                <li>
-                  <h2><a onClick={this.onClickNav} href="#Wikitongues">Wikitongues</a></h2>
-                </li>
-              </ul>
-            </div>
-          </section>
+        <h1><Link to="/">Frederico<br/>Andrade</Link></h1>
+        <nav>
+          <Link to="/"><h3>Portfolio</h3></Link>
         </nav>
         <div id="content">
           <div id="main">
@@ -80,7 +40,7 @@ export default class Resume extends React.Component {
               <article>
                 <span className="body">
                   <h3><Link to="/wikitongues">Wikitongues</Link></h3>
-                  <p className="description">Co-founder, chief platform officer, board member (volunteer). I crafted the organization’s brand meeting strategic goals, and produced all of the collateral (business cards, pamplhets, presentation materials, ads). I conceived, designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and raised a <a href="https://www.kickstarter.com/projects/wikitongues/poly-share-and-learn-every-language-in-the-world">record breaking</a> kickstarter campaign to build it and the distributed team of open source contributors that helps me maintain it.</p>
+                  <p className="description">Co-founder, chief platform officer, board member (volunteer). I crafted the organization’s brand meeting strategic goals, and produced all of the collateral (business cards, pamplhets, presentation materials, ads). I conceived, designed and implemented an open source tool <a href="https://poly.wikitongues.org">Poly</a> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and raised a <a href="https://www.kickstarter.com/projects/wikitongues/poly-share-and-learn-every-language-in-the-world">record breaking</a> kickstarter campaign to build it and the distributed team of open source contributors that helps me maintain it.</p>
                 </span>
                 <span className="date">
                   <p>2013 to date <br/> Full-time from 01.2016</p>
@@ -97,8 +57,8 @@ export default class Resume extends React.Component {
               </article>
               <article>
                 <span className="body">
-                  <h3>Additional Contracting</h3>
-                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites.  roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the  exibility to implement new stylistic approaches and usability feels. Clients include <Link to="/airtable">Airtable</Link>, <Link to="/datamonkey">Datamonkey</Link>, <Link to="/quotidian-ventures">Quotidian Ventures</Link>, <Link to="/dv01">DV01</Link>, <Link to="/matte">Matte</Link>, the <Link to="/nationa-sawdust">National Sawdust</Link> and <Link to="/vision-into-art">Vision Into Art</Link>.</p>
+                  <h3><Link to="/more">Additional Contracting</Link></h3>
+                  <p className="description">Design and implementation of branding, product ui/ux and marketing websites. roughout the last few years, I have taken on a range of contracting opportunities to broaden my horizons and network, and have the exibility to implement new stylistic approaches and usability feels. Clients include <a href="https://www.airtable.com">Airtable</a>, Datamonkey, <a href="http://www.quotidian.co/">Quotidian Ventures</a>, <a href="https://www.dv01.co/">DV01</a>, <a href="https://matteprojects.com/">Matte</a>, the <a href="https://nationalsawdust.org/">National Sawdust</a> and <a href="http://visionintoart.com/">Vision Into Art</a>.</p>
                 </span>
                 <span className="date">
                   <p>08.2013 to 12.2015</p>
@@ -180,10 +140,6 @@ export default class Resume extends React.Component {
                 <li>1 917 683 8299</li>
                 <li><a href="">github.com/fredericoAndrade</a></li>
               </ul>
-            </section>
-            <section id="Statement">
-              <h2>Statement</h2>
-              <p>I was awarded the prestigious O-1 visa recognizing my work at Wikitongues and other NY tech companies. Recent responsibilities include producing Poly, a world-class web app, building and maintaining an open source developer community to support it, and bringing in top talent to the organization’s board of directors. In addition, I implemented creative strategies and partnerships to nurture and edify the organization as it scales.</p>
             </section>
             <section id="Disciplines">
               <h2>Disciplines</h2>

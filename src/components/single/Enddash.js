@@ -26,14 +26,6 @@ export default class Enddash extends React.Component {
 
             ]}
             visit="http://www.enddash.com/"
-            tags={[
-              "interface design",
-              "interaction design",
-              "html5",
-              "css3",
-              "stylus",
-              "javascript"
-              ]}
             />
 
           <div className="content">
@@ -47,16 +39,6 @@ export default class Enddash extends React.Component {
                 <p>The aesthetic of the page was also derived from Amicus' own brand – the same color palette reinforces the relationship to the parent company.</p>
               </section>
             </div>
-
-            {/*<img src="media/endDash/detail.png" width="370" alt=""/>
-                        <img src="media/endDash/nestedNav.png" width="370" alt=""/>
-                        <img src="media/endDash/screen1.png" width="670" alt=""/>
-                        <img src="media/endDash/screen2.png" width="670" alt=""/>
-                        <img src="media/endDash/screen3.png" width="670" alt=""/>
-                        <video src="media/endDash/easterEgg.mov" width="670" autoPlay loop></video>
-                        <video src="media/endDash/interaction.mov" width="670" autoPlay loop></video>
-                        <video src="media/endDash/logo.mov" autoPlay loop></video>*/}
-
           </div>
         </div>
       </div>

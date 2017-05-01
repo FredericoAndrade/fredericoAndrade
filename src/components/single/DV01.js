@@ -24,13 +24,6 @@ export default class DV01 extends React.Component {
               {image:"media/dv01/detail.jpg",placeholder:"placeholder/dv01/detail.jpg",caption:"Along with the product itself, branding work was done to convey reliability and power."},
             ]}
             visit="https://www.dv01.co/"
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">

@@ -24,11 +24,6 @@ export default class Matchbook extends React.Component {
               {image:"media/matchbook/page.jpeg",placeholder:"placeholder/matchbook/page.jpeg",caption:"An embellished calligraphic aesthetic."},
             ]}
             visit="https://itunes.apple.com/us/app/matchbook-save-and-remember-great-restaurants-and-bars/id427740544?mt=8"
-            tags={[
-              "interface design",
-              "html5",
-              "css3"
-              ]}
             />
 
           <div className="content">

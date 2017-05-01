@@ -30,13 +30,6 @@ export default class Wikitongues extends React.Component {
               {image:"media/wikitongues/calligraphic.jpg",placeholder:"placeholder/wikitongues/calligraphic.jpg",caption:"The calligraphic treatment of the Wikitongues logo was made to be animated."},
               // {image:"media/wikitongues/logoVariations.png",placeholder:"placeholder/wikitongues/logoVariations.png",caption:"The Wikitongues logo depicting a person with outstretched arms went through dozens of variations before arriving at its current form."},
               ]}
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">
@@ -58,6 +51,7 @@ export default class Wikitongues extends React.Component {
                 <br/>
                 <br/>
               </section>
+              <span><h3>Logo and brand</h3></span>
               <section className="two-col">
                 <figure>
                   <ProgressiveImage src="media/wikitongues/logo.gif" placeholder="placeholder/wikitongues/logo.gif">
@@ -87,13 +81,6 @@ export default class Wikitongues extends React.Component {
                 <figcaption>The Wikitongues logo represent a person waving out, arms outstretched.</figcaption>
               </figure>
               </section>
-              {/*<section className="two-col">
-                              <p>I designed and implemented an open source tool <Link to="/poly">Poly</Link> to advance the organziation’s mission, presented it by invitation at the New York Tech Meetup’s respected <a href="https://vimeo.com/127205159#t=3133s">Hack of the Month</a> segment and <a href="http://kck.st/poly">raised a record breaking kickstarter campaign</a> to build it and the distributed team of open source contributors that helps me maintain it. (They even made us a fancy custom URL '<a href="http://kck.st/poly">kck.st/poly</a>')</p>
-                              <figure>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LwEwEEsBOhI?rel=0&controls=0&showinfo=0" frameBorder="0" allowFullScreen ></iframe>
-                                <figcaption>Our Kickstarter fundraising video</figcaption>
-                              </figure>
-                            </section>*/}
             </div>
           </div>
         </div>

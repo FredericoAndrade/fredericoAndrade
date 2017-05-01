@@ -7,18 +7,18 @@ import {
 } from 'react-router-dom'
 
 const routes = [
-  { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
   { id:2, title: "Poly", path: "poly", show: 1},
+  { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
   { id:3, title: "Amicus", path: "amicus", show: 1},
   { id:4, title: "EndDash", path: "enddash", show: 1},
-  { id:15, title: "Me And You", path: "me-and-you", show:1},
-  { id:9, title: "dv01", path: "dv01", show: 1},
-  { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: 1},
-  { id:5, title: "Sam Guest", path: "sam-guest", show: 1},
+  { id:15, title: "Me And You", path: "me-and-you", show:0},
+  { id:9, title: "dv01", path: "dv01", show: 0},
+  { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: 0},
+  { id:5, title: "Sam Guest", path: "sam-guest", show: 0},
   { id:10, title: "Matte", path: "matte", show: 0},
-  { id:11, title: "National Sawdust", path: "national-sawdust", show: 1},
-  { id:12, title: "VisionIntoArt", path: "visionIntoArt", show: 1},
-  { id:13, title: "Matchbook", path: "matchbook", show: 1},
+  { id:11, title: "National Sawdust", path: "national-sawdust", show: 0},
+  { id:12, title: "VisionIntoArt", path: "visionIntoArt", show: 0},
+  { id:13, title: "Matchbook", path: "matchbook", show: 0},
   { id:14, title: "Michelle Bogre", path: "michelle-bogre", show: 0},
   { id:6, title: "Airtable", path: "airtable", show: 0},
   { id:7, title: "Datamonkey", path: "datamonkey", show: 0},
@@ -39,6 +39,13 @@ var galleryIndex = routes.map(function(i) {
 const GalleryIndex = () => (
   <ul id="galleryIndex">
     {galleryIndex}
+
+    <li>
+      <Link to="/more">More projects</Link>
+    </li>
+    <li>
+      <Link to="/resume">Résumé</Link>
+    </li>
   </ul>
 )
 
@@ -50,15 +57,7 @@ export default class Gallery extends React.Component {
   render() {
     return (
       <div className="App tk-adobe-garamond-pro">
-        <Link className="linkTo l" to="/resume">&lsaquo;  Résumé</Link>
         <GalleryIndex/>
-        <section className="toggleType">
-          <h3>Displaying</h3>
-          <fieldset>
-            <input id="client" name="display" type="radio" defaultChecked/><label htmlFor="client">By Client</label>
-            <input id="discipline" name="display" type="radio"/><label htmlFor="discipline">By Discipline</label>
-          </fieldset>
-        </section>
         <footer className="index"><p>I am always looking for new and exciting opportunities to do good work.</p><p>For inquiries, please don't hesitate to contact me at faandrade@gmail.com.</p></footer>
       </div>
     )

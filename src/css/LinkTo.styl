@@ -12,50 +12,14 @@
   text-decoration none
   bottom 1rem
   line-height 1
-  border-top 2px solid $red
   padding-top 1rem
   cursor pointer
-
-  &:hover
-    &::after
-      background-color $pink
-
-  &.l
-    left 2rem
-    &:hover
-      &::after
-        width 110%
-
-  &.r
-    right 2rem
-
-    &:hover
-      &::after
-        width 100%
-
-  &::after
-    width 0
-    content ""
-    mix-blend-mode darken
-    background-color #F2CDCA
-    height 20px
-    position absolute
-    left 0
-    top 30px
-    pointer-events none
-    transition width 150ms ease-out
 
   &.g
       position relative
       display inline-block
       bottom 0
-      // width 150px
       font-size 1rem
-      // padding-top 1rem
-      // padding-bottom 1rem
-      // padding-left 2rem
-      // padding-right 2rem
-      // border-color transparent
       padding-top 1.2rem
 
       &::after

@@ -24,12 +24,6 @@ export default class VisionIntoArt extends React.Component {
               {image:"media/via/single.png",placeholder:"placeholder/via/single.png",caption:"Projects are extremely rich with content, and has quite the story to tell."},
             ]}
             visit="http://visionintoart.com/"
-            tags={[
-              "html5",
-              "css3",
-              "stylus",
-              "javascript"
-              ]}
             />
 
           <div className="content">

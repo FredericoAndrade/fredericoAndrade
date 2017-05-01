@@ -16,6 +16,7 @@ import Matchbook from './components/single/Matchbook'
 import MichelleBogre from './components/single/MichelleBogre'
 import MeAndYou from './components/single/MeAndYou'
 import Gallery from './components/Gallery'
+import More from './components/single/More'
 import './css/App.css';
 import {
   BrowserRouter as Router,
@@ -57,6 +58,7 @@ class App extends Component {
           <Route path="/matchbook" component={Matchbook}/>
           <Route path="/michelle-bogre" component={MichelleBogre}/>
           <Route path="/me-and-you" component={MeAndYou}/>
+          <Route path="/more" component={More}/>
           <Route exact path="/" component={Gallery}/>
         </div>
       </Router>

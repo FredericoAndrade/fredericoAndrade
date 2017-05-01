@@ -19,17 +19,10 @@ export default class MichelleBogre extends React.Component {
 
           <SingleHead
             title="Michelle Bogre"
-            images={
-              [{image:"media/dv01/page.jpg",placeholder:"placeholder/dv01/page.jpg",caption:"I was hired to audit the highly complex interface for clarity and power of interaction."},
+            images={[
+              {image:"media/dv01/page.jpg",placeholder:"placeholder/dv01/page.jpg",caption:"I was hired to audit the highly complex interface for clarity and power of interaction."},
             ]}
             visit="https://www.dv01.co/"
-            tags={
-              ["ui",
-              "ux",
-              "development",
-              "logo",
-              "print",
-              "branding"]}
             />
 
           <div className="content">

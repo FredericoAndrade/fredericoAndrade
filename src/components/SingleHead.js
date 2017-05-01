@@ -51,8 +51,8 @@ export default class SingleHead extends React.Component {
             <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/mobile.jpg)"}}></div><p><span>Poly</span></p></Link>
             <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div><p><span>Wikitongues</span></p></Link>
             <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div><p><span>Amicus</span></p></Link>
-            <Link to="/quotidian-ventures"><div className="image" style={{backgroundImage:"url(media/quotidian/page.jpg)"}}></div><p><span>Quotidian Ventures</span></p></Link>
-            <Link to="/national-sawdust"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div><p><span>National Sawdust</span></p></Link>
+            <Link to="/enddash"><div className="image" style={{backgroundImage:"url(media/enddash/page.jpg)"}}></div><p><span>EndDash</span></p></Link>
+            <Link to="/more"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div><p><span>More projects</span></p></Link>
           </div>
         </Slider>
       )
@@ -93,7 +93,6 @@ export default class SingleHead extends React.Component {
         <div className="media">
           {this.renderCarousel()}
         </div>
-        {/*{this.renderTags()}*/}
       </div>
     )
   }

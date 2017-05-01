@@ -1,170 +1,68 @@
-@import 'vars'
-
-body
-  margin 0
-  padding 0
-  font-family sans-serif
-
-h1,
-h2
-  font-family $sans
-  color $yellow
-
-h1,
-h2,
-h3,
-ul,
-p
-  margin 0
-
-h1
-  font-size 3rem
-h2
-  font-size 1.5rem
-h3
-  font-size 1.9rem
-  width 100%
-
-p, ul, li
-  clear both
-  font-size 1rem
-
-ul
-  padding 0
-
-h3
-  a
-    text-decoration none
-    color black
-    position relative
-
-    &::after
-      width 0
-      content ""
-      mix-blend-mode darken
-      background-color lighten($yellow, 50%)
-      height 12px
-      position absolute
-      left 0
-      top 8px
-      transition width 150ms ease-out
-
-    &:hover
-      &::after
-        width 100%
-
-body
-  float left
-  display inline-block
-  background-color $base
-  gradient()
-  width 100%
-
-  *
-    box-sizing border-box
-
-  .toggle
-    position absolute
-    top 0
-    right 0
-
 .App
-  margin auto
-  float left
-  display inline-block
-  width 100%
-  padding 3.5rem 4.75rem 2.25rem 2.5rem
-
-
   &.resume
-    border-right 5px solid $yellow
     max-width 1140px
-    background-color white
+    padding 0 4.75rem 0 2.5rem
+    margin 3.5rem auto 2.25rem
+    display table
+    float none
+    border-right 3px solid $red
+    border-left 3px solid $red
 
-  *
-    line-height 1.75rem
-    display inline-block
-    float left
+    nav
+      float right
+      a
+        position relative
+        margin-top 4.2rem
 
-  i
-    float initial
+        &::after
+          width 0
+          content ""
+          mix-blend-mode darken
+          background-color $pink
+          height 12px
+          position absolute
+          left 0
+          top 8px
+          transition width 150ms ease-out
 
-  h1
-    line-height initial
-    float left
+        &:hover
+          &::after
+            width 100%
 
-  nav
-    float right
-    position fixed
-    z-index 2
-    right 1.75rem
-
-    button
-      background-color transparent
-      border none
-      color $yellow
-      font-size 3rem
-      font-family initial
-      outline none
-      line-height 1.1
-      height 36px
-      width 36px
-      padding 0px 0px
-      cursor pointer
-      display none
-
-    &.open
-      margin-right 2.25rem
-
-    section
-      h1
-        z-index 1
+    h1
+      a
+        color #C05968
+        text-decoration none
+        line-height 1
         position relative
 
-      $s = 3000
+        &::after,
+        &::before
+          width 0
+          content ""
+          mix-blend-mode darken
+          background-color $pink
+          height 40%
+          position absolute
+          left 0
+          top 8px
+          transition width 150ms ease-out
 
-      .background
-        position absolute
-        background-color lighten($yellow,50%)
-        height 0px
-        width 0px
-        left 18px
-        top 18px
-        z-index -0
-        border-radius 100%
-        transition all 200ms ease-in-out
-        overflow hidden
+        &::before
+          top 50%
+          left -2%
 
-        ul
-          position relative
-          left -260px
-          top 22px
-          transition all 200ms ease-in-out
+        &:hover
+          &::after
+            width 100%
 
-          a
-            text-decoration none
-            color white
-
-      &.open
-        position fixed
-        margin-right 4.75rem
-
-        h1
-          button
-            color white
-
-        .background
-          left -((($s)/2) - 18)px
-          top -((($s)/2) - 18)px
-          height ($s)px
-          width ($s)px
-
-        ul
-          left 1252px
-          top 1522px
+          &::before
+            width 86%
 
   #content
     margin-top 6rem
+    color $copy
+
     > div
       float left
 
@@ -220,7 +118,7 @@ body
             .description
               a
                 float initial
-                color black
+                color $copy
                 text-decoration none
                 font-variant small-caps
                 position relative
@@ -229,15 +127,17 @@ body
                   width 100%
                   content ""
                   mix-blend-mode darken
-                  background-color lighten($yellow, 50%)
-                  height 7px
+                  background-color #ffada8
                   position absolute
-                  left 0
-                  bottom 4px
+                  left 2px
+                  top 11px
+                  height 6px
+                  transition background-color 150ms ease-in-out
 
                 &:hover
                   &::after
                     width 100%
+                    background-color #f79999
 
             &.more
               text-align center
@@ -258,8 +158,25 @@ body
 
         a
           float initial
-          color black
+          color $copy
           text-decoration none
+          position relative
+
+          &::after
+            width 100%
+            content ""
+            mix-blend-mode darken
+            background-color #ffada8
+            position absolute
+            left 2px
+            top 11px
+            height 6px
+            transition background-color 150ms ease-in-out
+
+          &:hover
+            &::after
+              width 100%
+              background-color #f79999
 
         &:last-of-type
           margin-top 11.75rem
@@ -277,10 +194,11 @@ footer
       width 75%
       float right
       text-decoration none
-      color black
+      color $copy
 
   .side
     float right
+    color $copy
 
 @import "LinkTo"
 @import "Mobile"

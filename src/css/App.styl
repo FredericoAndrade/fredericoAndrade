@@ -33,9 +33,10 @@ ul
   padding 0
 
 h3
+  color $red
   a
     text-decoration none
-    color black
+    color $red
     position relative
 
     &::after
@@ -43,6 +44,7 @@ h3
       content ""
       mix-blend-mode darken
       background-color lighten($yellow, 50%)
+      background-color $pink
       height 12px
       position absolute
       left 0
@@ -77,12 +79,6 @@ body
   width 100%
   padding 3.5rem 4.75rem 2.25rem 2.5rem
 
-
-  &.resume
-    border-right 5px solid $yellow
-    max-width 1140px
-    background-color white
-
   *
     line-height 1.75rem
     display inline-block
@@ -95,195 +91,9 @@ body
     line-height initial
     float left
 
-  nav
-    float right
-    position fixed
-    z-index 2
-    right 1.75rem
-
-    button
-      background-color transparent
-      border none
-      color $yellow
-      font-size 3rem
-      font-family initial
-      outline none
-      line-height 1.1
-      height 36px
-      width 36px
-      padding 0px 0px
-      cursor pointer
-      display none
-
-    &.open
-      margin-right 2.25rem
-
-    section
-      h1
-        z-index 1
-        position relative
-
-      $s = 3000
-
-      .background
-        position absolute
-        background-color lighten($yellow,50%)
-        height 0px
-        width 0px
-        left 18px
-        top 18px
-        z-index -0
-        border-radius 100%
-        transition all 200ms ease-in-out
-        overflow hidden
-
-        ul
-          position relative
-          left -260px
-          top 22px
-          transition all 200ms ease-in-out
-
-          a
-            text-decoration none
-            color white
-
-      &.open
-        position fixed
-        margin-right 4.75rem
-
-        h1
-          button
-            color white
-
-        .background
-          left -((($s)/2) - 18)px
-          top -((($s)/2) - 18)px
-          height ($s)px
-          width ($s)px
-
-        ul
-          left 1252px
-          top 1522px
-
-  #content
-    margin-top 6rem
-    > div
-      float left
-
-    #main
-      width ((100/6)*4)%
-      padding-right 1rem
-
-      section
-        width 100%
-
-        &:first-of-type
-          article:first-of-type
-            .date::after
-              content ""
-              position absolute
-              height 3.25rem
-              width 4px
-              margin-left 14px
-              margin-top -.25rem
-              background-color $yellow
-
-        h2
-          width ((100/4)*1)%
-          text-align right
-          margin-left -1rem
-
-        article
-          width 100%
-          margin-bottom 1.75rem
-
-          .date
-            width ((100/4)*1)%
-            padding-right 1rem
-
-            p
-              text-align right
-              width 100%
-
-          .body
-            float right
-            width ((100/4)*3+-1)%
-            padding-left 1rem
-
-            h3
-              margin-top -.25rem
-              margin-bottom .25rem
-
-              &::before
-                content ""
-
-            .description
-              a
-                float initial
-                color black
-                text-decoration none
-                font-variant small-caps
-                position relative
-
-                &::after
-                  width 100%
-                  content ""
-                  mix-blend-mode darken
-                  background-color lighten($yellow, 50%)
-                  height 7px
-                  position absolute
-                  left 0
-                  bottom 4px
-
-                &:hover
-                  &::after
-                    width 100%
-
-            &.more
-              text-align center
-
-
-    #side
-      width ((100/6)*2)%
-      padding-left 1rem
-
-      section
-        margin-bottom 1.5rem
-
-        ul, p
-          padding-top .25rem
-
-          &:first-of-type
-            padding 0
-
-        a
-          float initial
-          color black
-          text-decoration none
-
-        &:last-of-type
-          margin-top 11.75rem
-
-footer
-  width 100%
-  padding-top 4rem
-
-  .main
-    float left
-    width ((100/3)*2)%
-
-    a
-      padding-left 1rem
-      width 75%
-      float right
-      text-decoration none
-      color black
-
-  .side
-    float right
-
 @import "LinkTo"
 @import "Mobile"
 @import "GalleryIndex"
 @import "GallerySingle"
 @import "Carousel"
+@import "Resume"
