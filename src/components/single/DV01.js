@@ -1,11 +1,5 @@
 import React from 'react';
-// import { Component } from 'react';
 import SingleHead from '../SingleHead'
-// import {
-  // BrowserRouter as Router,
-  // Route,
-  // Link
-// } from 'react-router-dom'
 
 export default class DV01 extends React.Component {
   componentDidMount() {

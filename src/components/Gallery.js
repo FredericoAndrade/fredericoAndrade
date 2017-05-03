@@ -1,10 +1,5 @@
 import React from 'react';
-// import { Component } from 'react';
-import {
-  // BrowserRouter as Router,
-  // Route,
-  Link
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const routes = [
   { id:2, title: "Poly", path: "poly", show: 1},

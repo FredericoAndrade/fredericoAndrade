@@ -1,9 +1,7 @@
 import React from 'react';
 import SingleHead from '../SingleHead'
 import ProgressiveImage from 'react-progressive-image'
-import {
-  Link
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class Poly extends React.Component {
   componentDidMount() {

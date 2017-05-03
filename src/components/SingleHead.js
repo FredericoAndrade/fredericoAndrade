@@ -1,14 +1,8 @@
 import React from 'react';
-// import { Component } from 'react';
 import CarouselArrow from './CarouselArrow'
-// var Slider = require('react-slick');
 import Slider from 'react-slick'
 import ProgressiveImage from 'react-progressive-image'
-import {
-  // BrowserRouter as Router,
-  // Route,
-  Link
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class SingleHead extends React.Component {
 

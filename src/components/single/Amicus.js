@@ -1,12 +1,7 @@
 import React from 'react';
-// import { Component } from 'react';
 import SingleHead from '../SingleHead'
 import ProgressiveImage from 'react-progressive-image'
-import {
-  // BrowserRouter as Router,
-  // Route,
-  Link
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class Amicus extends React.Component {
   componentDidMount() {
