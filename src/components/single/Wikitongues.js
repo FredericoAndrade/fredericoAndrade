@@ -1,6 +1,7 @@
 import React from 'react';
 import SingleHead from '../SingleHead'
-import ProgressiveImage from 'react-progressive-image'
+// import ProgressiveImage from 'react-progressive-image'
+var ProgressiveImage = require('react-progressive-image');
 
 
 export default class Wikitongues extends React.Component {
