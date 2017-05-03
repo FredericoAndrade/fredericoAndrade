@@ -27,7 +27,6 @@ export default class Poly extends React.Component {
               {image:"media/poly/interface/process3.jpg",placeholder:"placeholder/poly/interface/process3.jpg",caption:"For all of the simplicity from the user's side, Poly has a lot of complexity."},
               {image:"media/poly/logo/poster.jpg",placeholder:"placeholder/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
               // {image:"media/poly/logo/logomark.jpg",placeholder:"placeholder/poly/logo/logomark.jpg",caption:"The Poly Logomark"},
-              // {image:"media/poly/logo/mascotFull.jpg",placeholder:"placeholder/poly/logo/mascotFull.jpg",caption:""},
               // {image:"media/poly/logo/banner.jpg",placeholder:"placeholder/poly/logo/banner.jpg",caption:"Publishing banner"},
               ]}
             />
@@ -47,6 +46,7 @@ export default class Poly extends React.Component {
                 </figure>
                 <p>I built our first prototype in Ember.js and Firebase, and had the opportunity to demonstrate it at the New York Tech Meetup. At that moment, the core functionalities were designed, and the behavior of the app had shaped up.</p>
               </section>
+              <span><h3>Product design</h3></span>
               <section className="two-col">
                 <figure>
                   <ProgressiveImage src="media/poly/interface/process.png" placeholder="placeholder/poly/interface/process.png">

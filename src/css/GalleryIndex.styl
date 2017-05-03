@@ -1,3 +1,22 @@
+$width = 730px
+
+h1.statement
+  font-size 7rem
+  font-size 14vh
+  line-height 1
+  max-width $width
+  margin 5vh auto
+  float none
+  display block
+
+  span
+    font-size 2rem
+    font-size 4vh
+    text-align center
+    margin-top 8vh
+    width 100%
+    font-style italic
+
 .toggleType
   display none
   float left
@@ -58,10 +77,22 @@
         transition width 100ms ease-out
 
 #galleryIndex
-  width 670px
+  width $width
   float none
-  margin 0rem auto 6rem
+  margin 0rem auto 5rem
   display table
+
+  .breadcrumb
+    margin 12vh 0
+    text-align center
+    display block
+    position relative
+    font-style italic
+    color $red
+    float none
+    clear both
+    font-size 2rem
+    font-size 4vh
 
   li, li a
     text-decoration none
@@ -89,8 +120,22 @@
       &::after
         width 106%
 
+    &.extras
+      &.first
+        margin-top 5vh
+
+      a
+        font-size 3rem
+        font-style italic
+
+    &.extras,
+    &.extras a
+      &::after
+        top 15px
+        height 20px
+
 footer.index
-  width 670px
+  width $width
   float none
   margin 0rem auto
   display table
@@ -100,3 +145,26 @@ footer.index
   p
     font-size .8rem
     line-height 1.2
+
+    a
+      line-height 1.2
+      float initial
+      color $red
+      text-decoration none
+      font-variant small-caps
+      position relative
+
+      &::after
+        width 95%
+        content ""
+        mix-blend-mode darken
+        background-color #ffada8
+        position absolute
+        left 4px
+        top 7px
+        height 6px
+        transition background-color 150ms ease-in-out
+
+      &:hover
+        &::after
+          background-color #f79999

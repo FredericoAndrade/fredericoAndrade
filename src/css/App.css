@@ -75,6 +75,9 @@ body {
 body * {
   box-sizing: border-box;
 }
+body *::selection {
+  background-color: #ffacc1;
+}
 body .toggle {
   position: absolute;
   top: 0;
@@ -120,6 +123,7 @@ body .toggle {
   bottom: 0;
   font-size: 1rem;
   padding-top: 1.2rem;
+  border-top: 2px solid #c05968;
 }
 .linkTo.g::after {
   left: 25px;
@@ -221,6 +225,23 @@ body .toggle {
     padding: 1.5rem 3.75rem 2.25rem 1.5rem;
   }
 }
+h1.statement {
+  font-size: 7rem;
+  font-size: 14vh;
+  line-height: 1;
+  max-width: 730px;
+  margin: 5vh auto;
+  float: none;
+  display: block;
+}
+h1.statement span {
+  font-size: 2rem;
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 8vh;
+  width: 100%;
+  font-style: italic;
+}
 .toggleType {
   display: none;
   float: left;
@@ -279,10 +300,22 @@ body .toggle {
   transition: width 100ms ease-out;
 }
 #galleryIndex {
-  width: 670px;
+  width: 730px;
   float: none;
-  margin: 0rem auto 6rem;
+  margin: 0rem auto 5rem;
   display: table;
+}
+#galleryIndex .breadcrumb {
+  margin: 12vh 0;
+  text-align: center;
+  display: block;
+  position: relative;
+  font-style: italic;
+  color: #c05968;
+  float: none;
+  clear: both;
+  font-size: 2rem;
+  font-size: 4vh;
 }
 #galleryIndex li,
 #galleryIndex li a {
@@ -312,8 +345,24 @@ body .toggle {
 #galleryIndex li a:hover::after {
   width: 106%;
 }
+#galleryIndex li.extras.first,
+#galleryIndex li a.extras.first {
+  margin-top: 5vh;
+}
+#galleryIndex li.extras a,
+#galleryIndex li a.extras a {
+  font-size: 3rem;
+  font-style: italic;
+}
+#galleryIndex li.extras::after,
+#galleryIndex li a.extras::after,
+#galleryIndex li.extras a::after,
+#galleryIndex li a.extras a::after {
+  top: 15px;
+  height: 20px;
+}
 footer.index {
-  width: 670px;
+  width: 730px;
   float: none;
   margin: 0rem auto;
   display: table;
@@ -323,6 +372,28 @@ footer.index {
 footer.index p {
   font-size: 0.8rem;
   line-height: 1.2;
+}
+footer.index p a {
+  line-height: 1.2;
+  float: initial;
+  color: #c05968;
+  text-decoration: none;
+  font-variant: small-caps;
+  position: relative;
+}
+footer.index p a::after {
+  width: 95%;
+  content: "";
+  mix-blend-mode: darken;
+  background-color: #ffada8;
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  height: 6px;
+  transition: background-color 150ms ease-in-out;
+}
+footer.index p a:hover::after {
+  background-color: #f79999;
 }
 .gallery .singleHead {
   display: inline-block;
@@ -952,6 +1023,7 @@ footer .side {
   bottom: 0;
   font-size: 1rem;
   padding-top: 1.2rem;
+  border-top: 2px solid #c05968;
 }
 .linkTo.g::after {
   left: 25px;
@@ -1053,6 +1125,23 @@ footer .side {
     padding: 1.5rem 3.75rem 2.25rem 1.5rem;
   }
 }
+h1.statement {
+  font-size: 7rem;
+  font-size: 14vh;
+  line-height: 1;
+  max-width: 730px;
+  margin: 5vh auto;
+  float: none;
+  display: block;
+}
+h1.statement span {
+  font-size: 2rem;
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 8vh;
+  width: 100%;
+  font-style: italic;
+}
 .toggleType {
   display: none;
   float: left;
@@ -1111,10 +1200,22 @@ footer .side {
   transition: width 100ms ease-out;
 }
 #galleryIndex {
-  width: 670px;
+  width: 730px;
   float: none;
-  margin: 0rem auto 6rem;
+  margin: 0rem auto 5rem;
   display: table;
+}
+#galleryIndex .breadcrumb {
+  margin: 12vh 0;
+  text-align: center;
+  display: block;
+  position: relative;
+  font-style: italic;
+  color: #c05968;
+  float: none;
+  clear: both;
+  font-size: 2rem;
+  font-size: 4vh;
 }
 #galleryIndex li,
 #galleryIndex li a {
@@ -1144,8 +1245,24 @@ footer .side {
 #galleryIndex li a:hover::after {
   width: 106%;
 }
+#galleryIndex li.extras.first,
+#galleryIndex li a.extras.first {
+  margin-top: 5vh;
+}
+#galleryIndex li.extras a,
+#galleryIndex li a.extras a {
+  font-size: 3rem;
+  font-style: italic;
+}
+#galleryIndex li.extras::after,
+#galleryIndex li a.extras::after,
+#galleryIndex li.extras a::after,
+#galleryIndex li a.extras a::after {
+  top: 15px;
+  height: 20px;
+}
 footer.index {
-  width: 670px;
+  width: 730px;
   float: none;
   margin: 0rem auto;
   display: table;
@@ -1155,6 +1272,28 @@ footer.index {
 footer.index p {
   font-size: 0.8rem;
   line-height: 1.2;
+}
+footer.index p a {
+  line-height: 1.2;
+  float: initial;
+  color: #c05968;
+  text-decoration: none;
+  font-variant: small-caps;
+  position: relative;
+}
+footer.index p a::after {
+  width: 95%;
+  content: "";
+  mix-blend-mode: darken;
+  background-color: #ffada8;
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  height: 6px;
+  transition: background-color 150ms ease-in-out;
+}
+footer.index p a:hover::after {
+  background-color: #f79999;
 }
 .gallery .singleHead {
   display: inline-block;

@@ -10,7 +10,7 @@ const routes = [
   { id:2, title: "Poly", path: "poly", show: 1},
   { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
   { id:3, title: "Amicus", path: "amicus", show: 1},
-  { id:4, title: "EndDash", path: "enddash", show: 1},
+  { id:4, title: "EndDash", path: "enddash", show: 0},
   { id:15, title: "Me And You", path: "me-and-you", show:0},
   { id:9, title: "dv01", path: "dv01", show: 0},
   { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: 0},
@@ -38,12 +38,12 @@ var galleryIndex = routes.map(function(i) {
 
 const GalleryIndex = () => (
   <ul id="galleryIndex">
+    <h3 className="breadcrumb">Check out some of his work</h3>
     {galleryIndex}
-
-    <li>
+    <li className="extras first">
       <Link to="/more">More projects</Link>
     </li>
-    <li>
+    <li className="extras">
       <Link to="/resume">Résumé</Link>
     </li>
   </ul>
@@ -57,8 +57,13 @@ export default class Gallery extends React.Component {
   render() {
     return (
       <div className="App tk-adobe-garamond-pro">
+        <h1 className="statement tk-adobe-garamond-pro">Freddie is a product strategist & visual designer.</h1>
         <GalleryIndex/>
-        <footer className="index"><p>I am always looking for new and exciting opportunities to do good work.</p><p>For inquiries, please don't hesitate to contact me at faandrade@gmail.com.</p></footer>
+        <footer className="index">
+          <p>Freddie is open to new and exciting opportunities to do good work.</p>
+          <p>For inquiries, please don't hesitate to reach out at faandrade@gmail.com.</p>
+          <p>This website is made with <a href="https://facebook.github.io/react/">React.js</a>, is hosted on <a href="https://www.heroku.com">Heroku</a> and uses some <a href="https://github.com/akiran/react-slick">wonderful</a> <a href="https://github.com/FormidableLabs/react-progressive-image">components</a>! The code is all on <a href="https://github.com/fredericoandrade/fredericoandrade">Github</a> too.</p>
+        </footer>
       </div>
     )
   }
