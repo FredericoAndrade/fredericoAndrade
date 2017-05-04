@@ -41,6 +41,9 @@ const GalleryIndex = () => (
     <li className="extras first">
       <Link to="/resume">Résumé</Link>
     </li>
+    <li className="extras">
+      <a href="./portfolio.pdf">More work</a>
+    </li>
   </ul>
 )
 
