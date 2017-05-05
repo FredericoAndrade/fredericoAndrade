@@ -254,8 +254,11 @@ body .toggle {
   body .gallery .wrapper .singleHead .media {
     height: 50vh;
   }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track {
+    height: 35vh;
+  }
   body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide {
-    height: 70%;
+    height: 100%;
   }
   body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide img {
     height: 100%;
@@ -1190,8 +1193,11 @@ footer .side {
   body .gallery .wrapper .singleHead .media {
     height: 50vh;
   }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track {
+    height: 35vh;
+  }
   body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide {
-    height: 70%;
+    height: 100%;
   }
   body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide img {
     height: 100%;

@@ -13,7 +13,7 @@ export default class SingleHead extends React.Component {
     return (
       // <div className="singleHead">
         <nav>
-          <Link to="/" className="linkTo l g">&lsaquo;  Portfolio</Link>
+          <Link to="/" className="linkTo l g">&lsaquo;  Home</Link>
           <h2>{this.props.title}</h2>
           {this.renderVisit()}
         </nav>
