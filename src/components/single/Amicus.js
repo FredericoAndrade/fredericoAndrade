@@ -57,7 +57,7 @@ export default class Amicus extends React.Component {
               <section className="two-col">
                 <p>The tool took the shape of a two-step process in which the user approves and customizes a postcard with a picture and signature, and then selects friends from facebook to receive real, physical copies of the postcard at home. How, you might ask? </p><p>Magic.</p>
               </section>
-              <span><h3>Amicus Admin Redesign</h3></span>
+              <span><h3>Admin Redesign</h3></span>
               <section className="two-col">
                 <p>The need to redesign the admin interface came from the need to scale. The original admin tool required significant training, and as the organization took on new clients, onboarding time became an expensive resource.</p>
               </section>
@@ -84,7 +84,7 @@ export default class Amicus extends React.Component {
                   <figcaption>Admin interface update sketch</figcaption>
                 </figure>
               </section>
-              <span><h3>Post Brand</h3></span>
+              <span><h3>Amicus Post Brand</h3></span>
               <section className="two-col">
                 <p>The Amicus brand was mature by the time I joined the company, but they still needed a few pieces of collateral produced, such as business cards and stickers. Then with the advent of Amicus Post, the opportunity arose to distinguish it from the call tool through visual identity.</p>
               </section>

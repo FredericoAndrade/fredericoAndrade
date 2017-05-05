@@ -222,7 +222,24 @@ body .toggle {
 }
 @media only screen and (max-device-width: 667px) {
   body .App {
-    padding: 1.5rem 3.75rem 2.25rem 1.5rem;
+    padding: 1.5rem 1.5rem 2.25rem 1.5rem;
+  }
+  body .App h1.statement {
+    font-size: 21vw;
+    margin-top: 0;
+  }
+  body .App #galleryIndex {
+    max-width: 100%;
+    display: block;
+  }
+  body .App #galleryIndex li a {
+    font-size: 3.8rem;
+  }
+  body .App footer {
+    max-width: 100%;
+  }
+  body .gallery {
+    max-width: 100%;
   }
 }
 h1.statement {
@@ -519,6 +536,11 @@ footer.index p a:hover::after {
   display: block;
   float: none;
   width: 100%;
+}
+.gallery .content .block section .b,
+.gallery .content .block figure .b {
+  background: #706a6a;
+  border: 5px solid #706a6a;
 }
 .gallery .content .block section img,
 .gallery .content .block figure img,
@@ -1006,6 +1028,16 @@ footer .side {
   float: right;
   color: #002b70;
 }
+@media only screen and (max-device-width: 667px) {
+  body .App.resume {
+    max-width: 100%;
+    margin-top: 0;
+    padding: 1.5rem 1.5rem 2.25rem 1.5rem;
+  }
+  body .App.resume footer .main a {
+    float: left;
+  }
+}
 .linkTo {
   font-weight: bold;
   font-size: 3rem;
@@ -1124,7 +1156,24 @@ footer .side {
 }
 @media only screen and (max-device-width: 667px) {
   body .App {
-    padding: 1.5rem 3.75rem 2.25rem 1.5rem;
+    padding: 1.5rem 1.5rem 2.25rem 1.5rem;
+  }
+  body .App h1.statement {
+    font-size: 21vw;
+    margin-top: 0;
+  }
+  body .App #galleryIndex {
+    max-width: 100%;
+    display: block;
+  }
+  body .App #galleryIndex li a {
+    font-size: 3.8rem;
+  }
+  body .App footer {
+    max-width: 100%;
+  }
+  body .gallery {
+    max-width: 100%;
   }
 }
 h1.statement {
@@ -1421,6 +1470,11 @@ footer.index p a:hover::after {
   display: block;
   float: none;
   width: 100%;
+}
+.gallery .content .block section .b,
+.gallery .content .block figure .b {
+  background: #706a6a;
+  border: 5px solid #706a6a;
 }
 .gallery .content .block section img,
 .gallery .content .block figure img,

@@ -200,6 +200,19 @@ footer
     float right
     color $copy
 
+@media only screen and (max-device-width : 667px)
+  body
+    .App
+      &.resume
+        max-width 100%
+        margin-top 0
+        padding 1.5rem 1.5rem 2.25rem 1.5rem
+
+        footer
+          .main
+            a
+              float left
+
 @import "LinkTo"
 @import "Mobile"
 @import "GalleryIndex"

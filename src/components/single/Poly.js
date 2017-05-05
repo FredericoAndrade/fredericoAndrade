@@ -49,13 +49,13 @@ export default class Poly extends React.Component {
               <section className="three-col">
                 <figure>
                   <ProgressiveImage src="media/poly/interface/interface.png" placeholder="placeholder/poly/interface/interface.png">
-                    {(src) => <img src={src} alt="" style={{background:"#948e8e",border:"5px solid #948e8e"}}/>}
+                    {(src) => <img src={src} alt="" className="b"/>}
                   </ProgressiveImage>
                   <figcaption>Poly guides users to create phrasebooks</figcaption>
                 </figure>
                 <figure>
                   <ProgressiveImage src="media/poly/interface/process.png" placeholder="placeholder/poly/interface/process.png">
-                    {(src) => <img src={src} alt="" style={{background:"#948e8e",border:"5px solid #948e8e"}}/>}
+                    {(src) => <img src={src} alt="" className="b"/>}
                   </ProgressiveImage>
                   <figcaption>First Poly interface sketches</figcaption>
                 </figure>
@@ -71,7 +71,7 @@ export default class Poly extends React.Component {
                   </ProgressiveImage>
 
                   <ProgressiveImage src="media/poly/pencilTests.png" placeholder="placeholder/poly/pencilTests.png">
-                    {(src) => <img src={src} alt="" style={{background:"#948e8e",border:"3px solid #948e8e"}}/>}
+                    {(src) => <img src={src} alt="" className="b"/>}
                   </ProgressiveImage>
                   <figcaption>Poly character pencil tests</figcaption>
                 </figure>

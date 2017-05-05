@@ -63,7 +63,7 @@ export default class Wikitongues extends React.Component {
               </section>
               <figure>
                 <ProgressiveImage src="media/wikitongues/logoVariations.png" placeholder="placeholder/wikitongues/logoVariations.png">
-                  {(src) => <img src={src} alt=""/>}
+                  {(src) => <img src={src} alt="" className="b"/>}
                 </ProgressiveImage>
                 <figcaption>The Wikitongues logo represent a person waving out, arms outstretched.</figcaption>
               </figure>
