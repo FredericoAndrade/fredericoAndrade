@@ -241,6 +241,9 @@ body .toggle {
   body .gallery {
     max-width: 100%;
   }
+  body .gallery .wrapper .singleHead {
+    height: 59vh;
+  }
   body .gallery .wrapper .singleHead nav h2 {
     margin: auto;
     display: inline-block;
@@ -250,6 +253,15 @@ body .toggle {
   }
   body .gallery .wrapper .singleHead .media {
     height: 50vh;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide {
+    height: 70%;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide img {
+    height: 100%;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide p {
+    display: none;
   }
   body .gallery .wrapper .content .block {
     padding: 1rem 0;
@@ -638,15 +650,14 @@ footer.index p a:hover::after {
   padding: 0 3rem 0 3rem;
   position: relative;
 }
-.media .slick-slider,
-.media float left {
+.media .slick-slider {
+  float: left;
   height: 100%;
   width: 100%;
   position: relative;
   padding-top: 3rem;
 }
-.media .slick-slider .slick-arrow,
-.media float left .slick-arrow {
+.media .slick-slider .slick-arrow {
   background-color: transparent;
   z-index: 10;
   color: #fff;
@@ -666,46 +677,38 @@ footer.index p a:hover::after {
   height: 50px;
   text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
-.media .slick-slider .slick-arrow.slick-disabled,
-.media float left .slick-arrow.slick-disabled {
+.media .slick-slider .slick-arrow.slick-disabled {
   color: #444;
 }
-.media .slick-slider .slick-arrow:hover,
-.media float left .slick-arrow:hover {
+.media .slick-slider .slick-arrow:hover {
   text-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
-.media .slick-slider .slick-arrow.slick-prev,
-.media float left .slick-arrow.slick-prev {
+.media .slick-slider .slick-arrow.slick-prev {
   left: -3rem;
   transform: translateY(-50%) rotateY(180deg);
 }
-.media .slick-slider .slick-list,
-.media float left .slick-list {
+.media .slick-slider .slick-list {
   height: 93%;
 }
-.media .slick-slider .slick-list .slick-track,
-.media float left .slick-list .slick-track {
+.media .slick-slider .slick-list .slick-track {
   position: absolute;
   left: 0;
   height: inherit;
   overflow-y: hidden;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide,
-.media float left .slick-list .slick-track .slick-slide {
+.media .slick-slider .slick-list .slick-track .slick-slide {
   float: left;
   opacity: 0.7;
   transition: opacity 300ms ease-out;
   height: 100%;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide img,
-.media float left .slick-list .slick-track .slick-slide img {
+.media .slick-slider .slick-list .slick-track .slick-slide img {
   height: 93%;
   display: block;
   padding-right: 4px;
   margin: auto;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide p,
-.media float left .slick-list .slick-track .slick-slide p {
+.media .slick-slider .slick-list .slick-track .slick-slide p {
   clear: both;
   display: block;
   float: left;
@@ -717,36 +720,29 @@ footer.index p a:hover::after {
   font-family: "cronos-pro-caption", sans-serif;
   font-weight: 100;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide p span,
-.media float left .slick-list .slick-track .slick-slide p span {
+.media .slick-slider .slick-list .slick-track .slick-slide p span {
   margin-left: 20px;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.slick-active,
-.media float left .slick-list .slick-track .slick-slide.slick-active {
+.media .slick-slider .slick-list .slick-track .slick-slide.slick-active {
   opacity: 1;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide,
-.media float left .slick-list .slick-track .slick-slide.last-slide {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide {
   width: 1300px;
   width: 93vw;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide:hover a,
-.media float left .slick-list .slick-track .slick-slide.last-slide:hover a {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide:hover a {
   opacity: 0.6 !important;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3,
-.media float left .slick-list .slick-track .slick-slide.last-slide h3 {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3 {
   color: #ffede6 !important;
   font-family: "cronos-pro-caption", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3::before,
-.media float left .slick-list .slick-track .slick-slide.last-slide h3::before {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3::before {
   content: "";
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a,
-.media float left .slick-list .slick-track .slick-slide.last-slide a {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a {
   display: inline-block;
   float: left;
   width: 50%;
@@ -757,35 +753,29 @@ footer.index p a:hover::after {
   transition: opacity 100ms ease-in-out;
   cursor: pointer;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a:first-of-type,
-.media float left .slick-list .slick-track .slick-slide.last-slide a:first-of-type {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a:first-of-type {
   opacity: 1;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a:hover,
-.media float left .slick-list .slick-track .slick-slide.last-slide a:hover {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a:hover {
   opacity: 1 !important;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a p,
-.media float left .slick-list .slick-track .slick-slide.last-slide a p {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a p {
   line-height: 3;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a .image,
-.media float left .slick-list .slick-track .slick-slide.last-slide a .image {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a .image {
   width: 100%;
   height: 285px;
   height: 35vh;
   background-position: center;
   background-size: cover;
 }
-.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a img,
-.media float left .slick-list .slick-track .slick-slide.last-slide a img {
+.media .slick-slider .slick-list .slick-track .slick-slide.last-slide a img {
   height: initial;
   max-width: 100%;
   max-height: 285px;
   padding-right: 0;
 }
-.media .slick-slider .slick-dots,
-.media float left .slick-dots {
+.media .slick-slider .slick-dots {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -793,17 +783,14 @@ footer.index p a:hover::after {
   list-style-type: none;
   margin: 0.8rem 0;
 }
-.media .slick-slider .slick-dots li,
-.media float left .slick-dots li {
+.media .slick-slider .slick-dots li {
   float: left;
   clear: none;
 }
-.media .slick-slider .slick-dots li.slick-active button::before,
-.media float left .slick-dots li.slick-active button::before {
+.media .slick-slider .slick-dots li.slick-active button::before {
   opacity: 1;
 }
-.media .slick-slider .slick-dots li button,
-.media float left .slick-dots li button {
+.media .slick-slider .slick-dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -817,8 +804,7 @@ footer.index p a:hover::after {
   background: transparent;
   position: relative;
 }
-.media .slick-slider .slick-dots li button::before,
-.media float left .slick-dots li button::before {
+.media .slick-slider .slick-dots li button::before {
   font-size: 14px;
   line-height: 18px;
   position: absolute;
@@ -1191,6 +1177,9 @@ footer .side {
   body .gallery {
     max-width: 100%;
   }
+  body .gallery .wrapper .singleHead {
+    height: 59vh;
+  }
   body .gallery .wrapper .singleHead nav h2 {
     margin: auto;
     display: inline-block;
@@ -1200,6 +1189,15 @@ footer .side {
   }
   body .gallery .wrapper .singleHead .media {
     height: 50vh;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide {
+    height: 70%;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide img {
+    height: 100%;
+  }
+  body .gallery .wrapper .singleHead .media .slick-slider .slick-list .slick-track .slick-slide p {
+    display: none;
   }
   body .gallery .wrapper .content .block {
     padding: 1rem 0;
