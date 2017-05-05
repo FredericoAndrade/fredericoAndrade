@@ -241,6 +241,22 @@ body .toggle {
   body .gallery {
     max-width: 100%;
   }
+  body .gallery .wrapper .singleHead nav h2 {
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body .gallery .wrapper .singleHead .media {
+    height: 50vh;
+  }
+  body .gallery .wrapper .content .block {
+    padding: 1rem 0;
+  }
+  body .gallery .wrapper .content .block .two-col {
+    width: 80%;
+  }
 }
 h1.statement {
   font-size: 7rem;
@@ -1174,6 +1190,22 @@ footer .side {
   }
   body .gallery {
     max-width: 100%;
+  }
+  body .gallery .wrapper .singleHead nav h2 {
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body .gallery .wrapper .singleHead .media {
+    height: 50vh;
+  }
+  body .gallery .wrapper .content .block {
+    padding: 1rem 0;
+  }
+  body .gallery .wrapper .content .block .two-col {
+    width: 80%;
   }
 }
 h1.statement {
