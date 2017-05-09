@@ -14,7 +14,6 @@ export default class More extends React.Component {
         <div className="wrapper">
           <div className="singleHead">
             <Head
-              title="Wikitongues"
               visit="https://wikitongues.org/"
             />
             <Carousel

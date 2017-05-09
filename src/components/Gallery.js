@@ -42,7 +42,7 @@ const GalleryIndex = () => (
       <Link to="/resume">Résumé</Link>
     </li>
     <li className="extras">
-      <a href="./portfolio.pdf">More work</a>
+      <a href="https://www.dropbox.com/s/p9cd2kqqwa7qgc1/Abridged%20Portfolio.pdf?dl=0">More work <span>(pdf)</span></a>
     </li>
   </ul>
 )
@@ -55,7 +55,7 @@ export default class Gallery extends React.Component {
   render() {
     return (
       <div className="App tk-adobe-garamond-pro">
-        <h1 className="statement tk-adobe-garamond-pro">Freddie is a product strategist & visual designer.</h1>
+        <h1 className="statement tk-adobe-garamond-pro">Freddie: Product design.</h1>
         <GalleryIndex/>
         <footer className="index">
           <p>All work is Freddie's unless otherwise explicitly stated</p>

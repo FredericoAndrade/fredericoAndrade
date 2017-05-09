@@ -15,19 +15,10 @@ export default class Amicus extends React.Component {
         <div className="wrapper">
           <div className="singleHead">
             <Head
-              title="Amicus"
-            visit="https://www.amicushq.com/"
-            />
-            <Carousel
-            images={[
-              {image:"media/amicus/interface/page.jpg",placeholder:"placeholder/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
-              {image:"media/amicus/design/page.jpg",placeholder:"placeholder/amicus/design/page.jpg",caption:"Amicus Post is a tool to streamline direct mail campaigns."},
-              {image:"media/amicus/design/presentation.png",placeholder:"placeholder/amicus/design/presentation.png",caption:"Amicus Post had to be accessible and fun, so an illustrated aesthetic fit really well."},
-              // {image:"media/amicus/nytm.jpg",placeholder:"placeholder/amicus/nytm.jpg",caption:"Founder Seth Bannon presents my tool Amicus Post at the New York Tech Meetup"},
-            ]}
+              visit="https://www.amicushq.com/"
             />
           </div>
-
+          <figure className="fold" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Amicus</h1>
@@ -121,6 +112,14 @@ export default class Amicus extends React.Component {
 
             </div>
           </div>
+          <Carousel
+            images={[
+              {image:"media/amicus/interface/page.jpg",placeholder:"placeholder/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
+              {image:"media/amicus/design/page.jpg",placeholder:"placeholder/amicus/design/page.jpg",caption:"Amicus Post is a tool to streamline direct mail campaigns."},
+              {image:"media/amicus/design/presentation.png",placeholder:"placeholder/amicus/design/presentation.png",caption:"Amicus Post had to be accessible and fun, so an illustrated aesthetic fit really well."},
+              // {image:"media/amicus/nytm.jpg",placeholder:"placeholder/amicus/nytm.jpg",caption:"Founder Seth Bannon presents my tool Amicus Post at the New York Tech Meetup"},
+            ]}
+            />
         </div>
       </div>
     )

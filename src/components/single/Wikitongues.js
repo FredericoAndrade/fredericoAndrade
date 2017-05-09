@@ -15,21 +15,10 @@ export default class Wikitongues extends React.Component {
         <div className="wrapper">
           <div className="singleHead">
             <Head
-              title="Wikitongues"
               visit="https://wikitongues.org/"
             />
-            <Carousel
-              images={[
-                {image:"media/wikitongues/website.png",placeholder:"placeholder/wikitongues/website.png",caption:"The Wikitongues website is the organization's point of contact with the world."},
-                {image:"media/wikitongues/banner.jpg",placeholder:"placeholder/wikitongues/banner.jpg",caption:"The Wikitongues banner is carefully designed to provide a unique human insight into the project"},
-                {image:"media/wikitongues/pamphlet.jpg",placeholder:"placeholder/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamphlets"},
-                {image:"media/wikitongues/businessCards.jpg",placeholder:"placeholder/wikitongues/businessCards.jpg",caption:"The back of each Wikitongues business card has the phrase 'Every language in the world' in the language of choice of the owner."},
-                {image:"media/wikitongues/calligraphic.jpg",placeholder:"placeholder/wikitongues/calligraphic.jpg",caption:"The calligraphic treatment of the Wikitongues logo was made to be animated."},
-                // {image:"media/wikitongues/logoVariations.png",placeholder:"placeholder/wikitongues/logoVariations.png",caption:"The Wikitongues logo depicting a person with outstretched arms went through dozens of variations before arriving at its current form."},
-                ]}
-              />
-            </div>
-
+          </div>
+          <figure className="fold" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Wikitongues</h1>
@@ -74,6 +63,16 @@ export default class Wikitongues extends React.Component {
               </section>
             </div>
           </div>
+          <Carousel
+              images={[
+                {image:"media/wikitongues/website.png",placeholder:"placeholder/wikitongues/website.png",caption:"The Wikitongues website is the organization's point of contact with the world."},
+                {image:"media/wikitongues/banner.jpg",placeholder:"placeholder/wikitongues/banner.jpg",caption:"The Wikitongues banner is carefully designed to provide a unique human insight into the project"},
+                {image:"media/wikitongues/pamphlet.jpg",placeholder:"placeholder/wikitongues/pamphlet.jpg",caption:"Whenever Wikitongues has a booth at an event, we bring these promotional pamphlets"},
+                {image:"media/wikitongues/businessCards.jpg",placeholder:"placeholder/wikitongues/businessCards.jpg",caption:"The back of each Wikitongues business card has the phrase 'Every language in the world' in the language of choice of the owner."},
+                {image:"media/wikitongues/calligraphic.jpg",placeholder:"placeholder/wikitongues/calligraphic.jpg",caption:"The calligraphic treatment of the Wikitongues logo was made to be animated."},
+                // {image:"media/wikitongues/logoVariations.png",placeholder:"placeholder/wikitongues/logoVariations.png",caption:"The Wikitongues logo depicting a person with outstretched arms went through dozens of variations before arriving at its current form."},
+                ]}
+              />
         </div>
       </div>
     )

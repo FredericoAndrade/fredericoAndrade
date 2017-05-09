@@ -2,7 +2,6 @@ import React from 'react';
 import CarouselArrow from './CarouselArrow'
 import Slider from 'react-slick'
 import ProgressiveImage from 'react-progressive-image'
-import { Link } from 'react-router-dom'
 
 export default class SingleHead extends React.Component {
 
@@ -35,13 +34,13 @@ export default class SingleHead extends React.Component {
               </div>
             )
           })}
-          <div className="last-slide">
-            <h3>More projects</h3>
-            <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/mobile.jpg)"}}></div><p><span>Poly</span></p></Link>
-            <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div><p><span>Wikitongues</span></p></Link>
-            <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div><p><span>Amicus</span></p></Link>
-            <Link to="/more"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div><p><span>More projects</span></p></Link>
-          </div>
+          {/*<div className="last-slide">
+                      <h3>More projects</h3>
+                      <Link to="/poly"><div className="image" style={{backgroundImage:"url(media/poly/interface/mobile.jpg)"}}></div><p><span>Poly</span></p></Link>
+                      <Link to="/wikitongues"><div className="image" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></div><p><span>Wikitongues</span></p></Link>
+                      <Link to="/amicus"><div className="image" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></div><p><span>Amicus</span></p></Link>
+                      <Link to="/more"><div className="image" style={{backgroundImage:"url(media/ns/banner.jpg)"}}></div><p><span>More projects</span></p></Link>
+                    </div>*/}
         </Slider>
       )
     } else {
