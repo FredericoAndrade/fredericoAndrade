@@ -18,7 +18,7 @@ export default class Amicus extends React.Component {
               visit="https://www.amicushq.com/"
             />
           </div>
-          <figure className="fold" style={{backgroundImage:"url(media/amicus/interface/page.jpg)"}}></figure>
+          <figure className="fold" style={{backgroundColor:"#C4EEE4"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Amicus</h1>

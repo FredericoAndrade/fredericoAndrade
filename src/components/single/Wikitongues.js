@@ -18,7 +18,7 @@ export default class Wikitongues extends React.Component {
               visit="https://wikitongues.org/"
             />
           </div>
-          <figure className="fold" style={{backgroundImage:"url(media/wikitongues/website.png)"}}></figure>
+          <figure className="fold" style={{backgroundColor:"#EDC3CD"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Wikitongues</h1>

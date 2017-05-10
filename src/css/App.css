@@ -469,10 +469,10 @@ footer.index p a:hover::after {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-color: #b6e2e9;
   overflow: hidden;
   position: absolute;
   background-size: cover;
+  background-size: 20%;
   background-position: center;
 }
 .gallery .fold img {
@@ -1402,10 +1402,10 @@ footer.index p a:hover::after {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-color: #b6e2e9;
   overflow: hidden;
   position: absolute;
   background-size: cover;
+  background-size: 20%;
   background-position: center;
 }
 .gallery .fold img {
