@@ -23,7 +23,17 @@ export default class Poly extends React.Component {
             <div className="block three-col">
               <h1>Poly</h1>
               <section className="two-col">
-                <p>Poly is open source, modern software to share and learn every language in the world. It is a web app designed to advance the mission of the non-profit organization <Link to="/wikitongues">Wikitongues</Link>, empowering it to produce and aggregate educational materials in every language in the world.</p>
+                <p>Poly is an open source, modern platform to share and learn every language in the world. It is a web app designed to advance the mission of the non-profit organization <Link to="/wikitongues">Wikitongues</Link>, empowering them and others to produce and aggregate educational materials in every language in the world.</p>
+              </section>
+              <section className="three-col">
+                <figure>
+                  <ProgressiveImage src="media/poly/interface/poly.jpg" placeholder="placeholder/poly/interface/poly.jpg">
+                    {(src) => <img src={src} alt=""/>}
+                  </ProgressiveImage>
+                  <figcaption>The dashboard is where users see all their content, their favorites, and an index of the most recently published content.</figcaption>
+                </figure>
+              </section>
+              <section className="two-col">
                 <p>While awareness-raising is an important layer of Wikitongues' mission, it does not go far enough in providing access to language. Originally focused on raising awareness about linguistic diversity by producing, collecting and publishing oral history videos in every language in the world, it did not take long for the organization to realize the need to offer greater access to the languages themselves, and saw an opportunity to create value for the communities who speak them. I resolved to develop a platform to empower speakers and signers of every language in the world to share and document their own languages on an intuitive, free and open platform. </p>
                 <p>This application empowers anyone with an internet connection to produce and consume language lessons and documentation, and is being used by Wikitongues to collect introductory phrases in the world's less documented languages.</p>
               </section>
@@ -123,14 +133,14 @@ export default class Poly extends React.Component {
               </section>
             </div>
           </div>
-          <Carousel
-            images={[
-              {image:"media/poly/interface/page.jpg",placeholder:"placeholder/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
-              {image:"media/poly/interface/mobile.jpg",placeholder:"placeholder/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
-              {image:"media/poly/interface/process3.jpg",placeholder:"placeholder/poly/interface/process3.jpg",caption:"For all of the simplicity from the user's side, Poly has a lot of complexity."},
-              {image:"media/poly/logo/poster.jpg",placeholder:"placeholder/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
-              ]}
-            />
+          {/*<Carousel
+                      images={[
+                        {image:"media/poly/interface/page.jpg",placeholder:"placeholder/poly/interface/page.jpg",caption:"Poly is a tool to share and learn every language in the world."},
+                        {image:"media/poly/interface/mobile.jpg",placeholder:"placeholder/poly/interface/mobile.jpg",caption:"Poly needs to be accessible to people all over the world."},
+                        {image:"media/poly/interface/process3.jpg",placeholder:"placeholder/poly/interface/process3.jpg",caption:"For all of the simplicity from the user's side, Poly has a lot of complexity."},
+                        {image:"media/poly/logo/poster.jpg",placeholder:"placeholder/poly/logo/poster.jpg",caption:"The blue macaw Poly represents hope and determination in the face of adversity"},
+                        ]}
+                      />*/}
         </div>
       </div>
     )
