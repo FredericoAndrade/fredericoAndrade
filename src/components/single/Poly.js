@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from '../Head'
-import Carousel from '../Carousel'
+// import Carousel from '../Carousel'
 import ProgressiveImage from 'react-progressive-image'
 import { Link } from 'react-router-dom'
 
@@ -18,12 +18,12 @@ export default class Poly extends React.Component {
               visit="https://poly.wikitongues.org/"
             />
           </div>
-          <figure className="fold" style={{backgroundColor:"#BFE7EC"}}></figure>
+          <figure className="fold" style={{backgroundColor:"#BFE7EC",borderColor:"#BFE7EC"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Poly</h1>
               <section className="two-col">
-                <p>Poly is an open source, modern platform to share and learn every language in the world. It is a web app designed to advance the mission of the non-profit organization <Link to="/wikitongues">Wikitongues</Link>, empowering them and others to produce and aggregate educational materials in every language in the world.</p>
+                <p>Poly is the first open source, modern platform to share and learn every language in the world. I designed this app to advance the mission of the non-profit organization <Link to="/wikitongues">Wikitongues</Link>, empowering them and others to produce and aggregate educational materials in every language in the world. With it, any person with access to the internet can document their language and learn any other language in the world, supported by Wikitongues' growing global community.</p>
               </section>
               <section className="three-col">
                 <figure>

@@ -18,12 +18,12 @@ export default class Amicus extends React.Component {
               visit="https://www.amicushq.com/"
             />
           </div>
-          <figure className="fold" style={{backgroundColor:"#C4EEE4"}}></figure>
+          <figure className="fold" style={{backgroundColor:"#C4EEE4",borderColor:"#C4EEE4"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Amicus</h1>
               <section className="two-col">
-                <p>Amicus helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines- interaction design and branding.</p>
+                <p>Amicus is a YC-backed start-up that helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines: interaction design and branding.</p>
                 <p>Both Amicus Post and the call tool were built on top of an in-house framework called <Link to="/enddash">EndDash</Link>, itself built on top of backbone.js. I also designed a documentation site for it around the time it was publically announced.</p>
               </section>
               <span><h3>Amicus Post</h3></span>

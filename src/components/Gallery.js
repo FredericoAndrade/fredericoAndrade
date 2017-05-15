@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const routes = [
+  { id:3, title: "Amicus", path: "amicus", show: 1},
   { id:2, title: "Poly", path: "poly", show: 1},
   { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
-  { id:3, title: "Amicus", path: "amicus", show: 1},
   { id:4, title: "EndDash", path: "enddash", show: 0},
   { id:15, title: "Me And You", path: "me-and-you", show:0},
   { id:9, title: "dv01", path: "dv01", show: 0},
@@ -33,11 +33,8 @@ var galleryIndex = routes.map(function(i) {
 
 const GalleryIndex = () => (
   <ul id="galleryIndex">
-    <h3 className="breadcrumb">Check out some of his work</h3>
+    <h3 className="breadcrumb">Check out some of his work below</h3>
     {galleryIndex}
-    {/*<li className="extras first">
-          <Link to="/more">More projects</Link>
-        </li>*/}
     <li className="extras first">
       <Link to="/resume">Résumé</Link>
     </li>
@@ -60,7 +57,7 @@ export default class Gallery extends React.Component {
         <footer className="index">
           <p>All work is Freddie's unless otherwise explicitly stated</p>
           <p>Freddie is open to new and exciting opportunities to do good work.</p>
-          <p>For inquiries, please don't hesitate to reach out at faandrade@gmail.com.</p>
+          <p>For inquiries, please don't hesitate to reach out at <a href="mailto:faandrade@gmail.com">faandrade@gmail.com</a>.</p>
           <p>This website is made with <a href="https://facebook.github.io/react/">React.js</a>, is hosted on <a href="https://www.heroku.com">Heroku</a> and uses some <a href="https://github.com/akiran/react-slick">wonderful</a> <a href="https://github.com/FormidableLabs/react-progressive-image">components</a>! The code is all on <a href="https://github.com/fredericoandrade/fredericoandrade">Github</a> too.</p>
         </footer>
       </div>

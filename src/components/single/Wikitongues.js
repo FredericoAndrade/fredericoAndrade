@@ -18,15 +18,13 @@ export default class Wikitongues extends React.Component {
               visit="https://wikitongues.org/"
             />
           </div>
-          <figure className="fold" style={{backgroundColor:"#EDC3CD"}}></figure>
+          <figure className="fold" style={{backgroundColor:"#EDC3CD",borderColor:"#EDC3CD"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>Wikitongues</h1>
               <section className="two-col">
-                <p>Wikitongues is a movement for language rights. Together with speakers and signers from every language in the world, Wikitongues is raising awareness about linguistic diversity and rallying to defend it</p>
-                <p>I co-founded this non-profit organization with Daniel Bogre Udell in June of 2014, and have worked increasingly more since. I've operated as chief platform officer and am a voting member of the board of directors.</p>
-                <p>As platform officer, I crafted the organization’s brand to meet carefully crafted strategic goals, and designed and produced all of the collateral (<a href="https://www.wikitongues.org">website</a>, business cards, pamplhets, presentation materials and ads, as well as t-shirts, mugs, stickers etc).</p>
-                <p>To date, we have collected and published over 400 videos in almost as many unique languages. Our content has received over three and a half million views, and is growing by more than one hundred thousand views a month.</p>
+                <p>Wikitongues is a movement for language rights. Together with speakers and signers from every language in the world, Wikitongues is raising awareness about linguistic diversity and rallying to defend it. To date, we have collected and published over 400 videos in almost as many unique languages. Our content has received over three and a half million views, and is growing by more than one hundred thousand views a month.</p>
+                <p>I co-founded this non-profit organization with Daniel Bogre Udell in June of 2014, and have worked increasingly more since. I've operated as chief platform officer and am a voting member of the board of directors. As platform officer, I crafted the organization’s brand to meet carefully crafted strategic goals, and designed and produced all of the collateral (<a href="https://www.wikitongues.org">website</a>, business cards, pamplhets, presentation materials and ads, as well as t-shirts, mugs, stickers etc).</p>
               </section>
               <span><h3>Content</h3></span>
               <section className="two-col">

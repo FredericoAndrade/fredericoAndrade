@@ -1,3 +1,4 @@
+$fold = 8vh
 .gallery
   .wrapper
     float left
@@ -11,12 +12,21 @@
   .fold
     margin 0
     width 100%
-    height 100vh
-    overflow hidden
+    height 87vh
     position absolute
-    background-size cover
-    background-size 20%
     background-position center
+
+    &::after
+      background-color transparent
+      height 3vh
+      width 100%
+      content ""
+      position absolute
+      bottom -($fold)
+      right 0
+      border-right 100vw solid
+      border-right-color inherit
+      border-bottom $fold solid transparent
 
     img
       margin auto
@@ -66,10 +76,30 @@
       margin 0 auto 1rem
       display table
       border-left 3px solid
+      position relative
       gradient()
+
+
+      &::before
+        background-color transparent
+        height 0
+        width 100%
+        content ""
+        position absolute
+        top -(.7*($fold))+.2vh
+        border-right 79.4vw solid
+        border-right-color #FFECE4
+        border-top .7*($fold) solid transparent
+        right 0
+
 
       h1
         width 100%
+        margin-top -10%
+        margin-left 0
+        mix-blend-mode color-burn
+        font-size 6rem
+        color #6f2543
 
       &.three-col
         .break
