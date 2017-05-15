@@ -541,10 +541,11 @@ footer.index p a:hover::after {
   background-color: transparent;
   height: 0;
   width: 100%;
+  max-width: 1140px;
   content: "";
   position: absolute;
   top: -5.399999999999999vh;
-  border-right: 79.4vw solid;
+  border-right: 1140px solid;
   border-right-color: #ffece4;
   border-top: 5.6vh solid transparent;
   right: 0;
