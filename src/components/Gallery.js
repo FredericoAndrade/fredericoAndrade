@@ -56,8 +56,7 @@ export default class Gallery extends React.Component {
         <GalleryIndex/>
         <footer className="index">
           <p>All work is Freddie's unless otherwise explicitly stated</p>
-          <p>Freddie is open to new and exciting opportunities to do good work.</p>
-          <p>For inquiries, please don't hesitate to reach out at <a href="mailto:faandrade@gmail.com">faandrade@gmail.com</a>.</p>
+          <p>Freddie is open to new and exciting opportunities to do good work. For inquiries, please reach out at <a href="mailto:faandrade@gmail.com">faandrade@gmail.com</a>.</p>
           <p>This website is made with <a href="https://facebook.github.io/react/">React.js</a>, is hosted on <a href="https://www.heroku.com">Heroku</a> and uses some <a href="https://github.com/akiran/react-slick">wonderful</a> <a href="https://github.com/FormidableLabs/react-progressive-image">components</a>! The code is all on <a href="https://github.com/fredericoandrade/fredericoandrade">Github</a> too.</p>
         </footer>
       </div>
