@@ -356,7 +356,7 @@ h1.statement span {
 #galleryIndex {
   width: 830px;
   float: none;
-  margin: 0rem auto 5rem;
+  margin: 0 0 5rem;
   display: table;
 }
 #galleryIndex .breadcrumb {
@@ -422,7 +422,7 @@ h1.statement span {
 footer.index {
   width: 830px;
   float: none;
-  margin: 0rem auto;
+  margin: 0;
   display: table;
   color: #c05968;
   bottom: 1rem;
