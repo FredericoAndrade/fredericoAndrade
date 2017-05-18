@@ -2,7 +2,7 @@ import React from 'react';
 import Head from '../Head'
 import Carousel from '../Carousel'
 import ProgressiveImage from 'react-progressive-image'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export default class Amicus extends React.Component {
   componentDidMount() {
@@ -24,7 +24,7 @@ export default class Amicus extends React.Component {
               <h1>Amicus</h1>
               <section className="two-col">
                 <p>Amicus is a YC-backed start-up that helps causes organize their volunteers by providing tools for phone banking and direct mail campaigns. I joined the company as a designer in late 2013, and worked to develop their brand as well as to design new app concepts. My work at Amicus consisted of two main disciplines: interaction design and branding.</p>
-                <p>Both Amicus Post and the call tool were built on top of an in-house framework called <Link to="/enddash">EndDash</Link>, itself built on top of backbone.js. I also designed a documentation site for it around the time it was publically announced.</p>
+                <p>Both Amicus Post and the call tool were built on top of an in-house framework called EndDash, itself built on top of backbone.js. I also designed a documentation site for it around the time it was publically announced.</p>
               </section>
               <span><h3>Amicus Post</h3></span>
               <section className="two-col">

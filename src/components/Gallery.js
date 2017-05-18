@@ -39,12 +39,20 @@ const GalleryIndex = () => (
       <Link to="/resume">Résumé</Link>
     </li>
     <li className="extras">
-      <a href="https://www.dropbox.com/s/p9cd2kqqwa7qgc1/Abridged%20Portfolio.pdf?dl=0">More work <span>(pdf)</span></a>
+      <a href="https://www.github.com/fredericoandrade" target="_blank">Github</a>
+    </li>
+    <li className="extras">
+      <a href="https://www.linkedin.com/in/fred-andrade/" target="_blank">LinkedIn</a>
+    </li>
+    <li className="extras">
+      <a href="https://www.dropbox.com/s/p9cd2kqqwa7qgc1/Abridged%20Portfolio.pdf?dl=0" target="_blank">More work <span>(pdf)</span></a>
     </li>
   </ul>
 )
 
 export default class Gallery extends React.Component {
+  // <p className="floater 1">I designed a tool for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</p>
+  //       <p className="floater 2">I founded a non-profit dedicated to preventing the deaths of half of the worlds languages, and designed and built technology to support that cause.</p>
   componentDidMount() {
     window.scrollTo(0, 0)
   }
