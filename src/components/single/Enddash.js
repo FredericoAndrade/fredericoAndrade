@@ -17,7 +17,7 @@ export default class Enddash extends React.Component {
               visit="http://www.enddash.com/"
             />
           </div>
-
+          <figure className="fold" style={{backgroundColor:"#C4EEE4",borderColor:"#C4EEE4"}}></figure>
           <div className="content">
             <div className="block three-col">
               <h1>EndDash</h1>

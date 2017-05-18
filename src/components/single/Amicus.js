@@ -31,13 +31,22 @@ export default class Amicus extends React.Component {
                 <p>I joined Amicus right as they sought to develop a new direct mail tool to sell to their advocacy clients like the Democratic Congressional Campaign Comittee (DCCC) and the Human Rights Campaign Foundation, as well as local political campaigns. The tool, called Amicus Post went on to replace the company's main product.</p>
               </section>
               <figure>
+                <ProgressiveImage src="media/amicus/interface/page.jpg" placeholder="placeholder/amicus/interface/page.jpg">
+                  {(src) => <img src={src} alt=""/>}
+                </ProgressiveImage>
+                <figcaption>Amicus Post guides volunteers through the process of selecting friends to send campaign postcards to.</figcaption>
+              </figure>
+              <section className="two-col">
+                <p>The Post product had to successfully guide users through a potentially very complex and emotionally strange activity - sending direct mail to one's own network on behalf of a cause or organization. Limiting the number of actions to achieve success was key in combating dropoff and guaranteeing that causes were benefitting from their volunteer's actions.</p>
+              </section>
+              <figure>
                 <ProgressiveImage src="media/amicus/interface/post.png" placeholder="placeholder/amicus/interface/post.png">
                   {(src) => <img src={src} alt=""/>}
                 </ProgressiveImage>
                 <figcaption>The Amicus Post interface was prototyped in code to test out action pacing and flow retention.</figcaption>
               </figure>
               <section className="two-col">
-                <p>The Post product had to successfully guide users through a potentially very complex and emotionally strange activity - sending direct mail to one's own network on behalf of a cause or organization. Limiting the number of actions to achieve success was key in combating dropoff and guaranteeing that causes were benefitting from their volunteer's actions.</p>
+                <p>The tool took the shape of a two-step process in which the user approves and customizes a postcard with a picture and signature, and then selects friends from facebook to receive real, physical copies of the postcard at home. How, you might ask? </p><p>Magic.</p>
               </section>
               <figure>
                 <ProgressiveImage src="media/amicus/interface/post1.png" placeholder="placeholder/amicus/interface/post1.png">
@@ -45,9 +54,6 @@ export default class Amicus extends React.Component {
                 </ProgressiveImage>
                 <figcaption>Amicus Post used Facebook's API and their own proprietary data magic to determine addresses.</figcaption>
               </figure>
-              <section className="two-col">
-                <p>The tool took the shape of a two-step process in which the user approves and customizes a postcard with a picture and signature, and then selects friends from facebook to receive real, physical copies of the postcard at home. How, you might ask? </p><p>Magic.</p>
-              </section>
               <span><h3>Admin Redesign</h3></span>
               <section className="two-col">
                 <p>The need to redesign the admin interface came from the need to scale. The original admin tool required significant training, and as the organization took on new clients, onboarding time became an expensive resource.</p>
@@ -75,7 +81,7 @@ export default class Amicus extends React.Component {
                   <figcaption>Admin interface update sketch</figcaption>
                 </figure>
               </section>
-              <span><h3>Amicus Post Brand</h3></span>
+              <span><h3>Amicus Post Illustrations</h3></span>
               <section className="two-col">
                 <p>The Amicus brand was mature by the time I joined the company, but they still needed a few pieces of collateral produced, such as business cards and stickers. Then with the advent of Amicus Post, the opportunity arose to distinguish it from the call tool through visual identity.</p>
               </section>
@@ -114,7 +120,7 @@ export default class Amicus extends React.Component {
           </div>
           <Carousel
             images={[
-              {image:"media/amicus/interface/page.jpg",placeholder:"placeholder/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
+              // {image:"media/amicus/interface/page.jpg",placeholder:"placeholder/amicus/interface/page.jpg",caption:"The tool guides volunteers through the process of selecting friends to send campaign postcards to."},
               {image:"media/amicus/design/page.jpg",placeholder:"placeholder/amicus/design/page.jpg",caption:"Amicus Post is a tool to streamline direct mail campaigns."},
               {image:"media/amicus/design/presentation.png",placeholder:"placeholder/amicus/design/presentation.png",caption:"Amicus Post had to be accessible and fun, so an illustrated aesthetic fit really well."},
               // {image:"media/amicus/nytm.jpg",placeholder:"placeholder/amicus/nytm.jpg",caption:"Founder Seth Bannon presents my tool Amicus Post at the New York Tech Meetup"},
