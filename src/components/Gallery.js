@@ -1,55 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const routes = [
-  { id:3, title: "Amicus", path: "amicus", show: 1},
-  { id:2, title: "Poly", path: "poly", show: 1},
-  { id:1, title: "Wikitongues", path: "wikitongues", show: 1},
-  { id:4, title: "EndDash", path: "enddash", show: 0},
-  { id:15, title: "Me And You", path: "me-and-you", show:0},
-  { id:9, title: "dv01", path: "dv01", show: 0},
-  { id:8, title: "Quotidian Ventures", path: "quotidian-ventures", show: 0},
-  { id:5, title: "Sam Guest", path: "sam-guest", show: 0},
-  { id:10, title: "Matte", path: "matte", show: 0},
-  { id:11, title: "National Sawdust", path: "national-sawdust", show: 0},
-  { id:12, title: "VisionIntoArt", path: "visionIntoArt", show: 0},
-  { id:13, title: "Matchbook", path: "matchbook", show: 0},
-  { id:14, title: "Michelle Bogre", path: "michelle-bogre", show: 0},
-  { id:6, title: "Airtable", path: "airtable", show: 0},
-  { id:7, title: "Datamonkey", path: "datamonkey", show: 0},
-
-]
-
-var galleryIndex = routes.map(function(i) {
-  if(i.show) {
-    return (
-      <li key={i.id}>
-        <Link to={{ pathname:`${i.path}` }}>{i.title}</Link>
-      </li>
-    )
-  }
-  return false;
-});
-
-const GalleryIndex = () => (
-  <ul id="galleryIndex">
-    <h3 className="breadcrumb">Check out some of his work below</h3>
-    {galleryIndex}
-    <li className="extras first">
-      <Link to="/resume">Résumé</Link>
-    </li>
-    <li className="extras">
-      <a href="https://www.github.com/fredericoandrade" target="_blank">Github</a>
-    </li>
-    <li className="extras">
-      <a href="https://www.linkedin.com/in/fred-andrade/" target="_blank">LinkedIn</a>
-    </li>
-    <li className="extras">
-      <a href="https://www.dropbox.com/s/p9cd2kqqwa7qgc1/Abridged%20Portfolio.pdf?dl=0" target="_blank">More work <span>(pdf)</span></a>
-    </li>
-  </ul>
-)
-
 export default class Gallery extends React.Component {
   // <p className="floater 1">I designed a tool for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</p>
   //       <p className="floater 2">I founded a non-profit dedicated to preventing the deaths of half of the worlds languages, and designed and built technology to support that cause.</p>
@@ -61,11 +12,24 @@ export default class Gallery extends React.Component {
     return (
       <div className="App tk-adobe-garamond-pro">
         <h1 className="statement tk-adobe-garamond-pro">Freddie: Product design.</h1>
-        <GalleryIndex/>
+        <ul id="galleryIndex">
+          <h3 className="breadcrumb">Check out some of his work below</h3>
+          <li><Link to="amicus">Amicus</Link></li>
+          <li><Link to="poly">Poly</Link></li>
+          <li><Link to="wikitongues">Wikitongues</Link></li>
+        </ul>
+        <nav className="secondary">
+          <ul>
+            <li><Link to="/resume">Résumé</Link></li>
+            <li><a href="https://www.github.com/fredericoandrade" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/fred-andrade/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.dropbox.com/s/p9cd2kqqwa7qgc1/Abridged%20Portfolio.pdf?dl=0" target="_blank">More work <span>(pdf)</span></a></li>
+          </ul>
+        </nav>
         <footer className="index">
-          <p>All work is Freddie's unless otherwise explicitly stated</p>
+          <p>All work is Freddie's unless otherwise explicitly stated.</p>
           <p>Freddie is open to new and exciting opportunities to do good work. For inquiries, please reach out at <a href="mailto:faandrade@gmail.com">faandrade@gmail.com</a>.</p>
-          <p>This website is made with <a href="https://facebook.github.io/react/">React.js</a>, is hosted on <a href="https://www.heroku.com">Heroku</a> and uses some <a href="https://github.com/akiran/react-slick">wonderful</a> <a href="https://github.com/FormidableLabs/react-progressive-image">components</a>! The code is all on <a href="https://github.com/fredericoandrade/fredericoandrade">Github</a> too.</p>
+          <p>This website is made with <a href="https://facebook.github.io/react/">React.js</a>, hosted on <a href="https://www.heroku.com">Heroku</a> and uses some <a href="https://github.com/akiran/react-slick">wonderful</a> <a href="https://github.com/FormidableLabs/react-progressive-image">components</a>! The code is all on <a href="https://github.com/fredericoandrade/fredericoandrade">Github</a> too.</p>
         </footer>
       </div>
     )

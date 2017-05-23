@@ -1,5 +1,5 @@
 $width = 830px
-
+// $a = #fbeee9
 h1.statement
   font-size 7rem
   font-size 24vh
@@ -9,6 +9,7 @@ h1.statement
   margin 1vh 0
   float none
   display block
+  // text-shadow 1px 2px #ffc3ab, -1px 2px $a, -1px -2px $a, 1px -2px $a
 
   span
     font-size 2rem
@@ -18,81 +19,24 @@ h1.statement
     width 100%
     font-style italic
 
-.toggleType
-  display none
-  float left
-  position absolute
-  right 4rem
-  top 4rem
-  border 2px solid $red
-  color $red
-  width 240px
-
-  h3
-    font-family $sans
-    margin 0 auto
-    display block
-    float initial
-    padding 1.5rem 0
-    text-align center
-    border-bottom 2px solid $red
-
-    &::before
-      content ""
-
-  fieldset
-    border none
-    margin 0
-
-    input
-      display none
-
-    input:checked + label
-      &::after
-        width 106%
-        background-color $pink
-
-    label
-      clear both
-      float left
-      font-size 1.3rem
-      font-family $sans
-      line-height 2
-      position relative
-      cursor pointer
-
-      &:hover
-        &::after
-          width 106%
-
-      &::after
-        pointer-events none
-        width 0
-        content ""
-        mix-blend-mode darken
-        background-color #ffc6c1
-        height 9px
-        position absolute
-        left -3%
-        top 14px
-        transition width 100ms ease-out
-
 #galleryIndex
   width $width
   float none
-  margin 0 0 5rem
+  margin 0 0 15vh
   display table
 
   .breadcrumb
-    margin 9vh 0
+    margin 11vh 0 7vh
     display block
     position relative
-    font-style italic
+    // font-style italic
+    font-family $sans1
     color $red
     float none
     clear both
     font-size 2rem
     font-size 4vh
+    font-size 3vh
 
   li, li a
     text-decoration none
@@ -120,31 +64,53 @@ h1.statement
       &::after
         width 106%
 
-    &.extras
-      &.first
-        margin-top 5vh
+nav.secondary
+  margin-bottom 2rem
+  float none
+  font-family $sans1
+
+  ul
+    li
+      clear none
+      float left
+      margin-right 5vh
 
       a
-        font-size 3rem
-        font-style italic
+        text-decoration none
+        color $red
+        font-size 1.4rem
+        // font-style italic
+        position relative
+
+        &::after
+          width 0
+          content ""
+          mix-blend-mode darken
+          background-color $pink
+          position absolute
+          left -3%
+          top 12px
+          height 20px
+          pointer-events none
+          transition width 150ms ease-out
+
+        &:hover
+          &::after
+            width 106%
 
         span
           float none
           font-size 1.3rem
 
-    &.extras,
-    &.extras a
-      &::after
-        top 15px
-        height 20px
-
 footer.index
+  font-family $sans1
   width $width
   float none
   margin 0
   display table
   color $red
   bottom 1rem
+  padding 0
 
   p
     font-size .8rem
@@ -155,7 +121,7 @@ footer.index
       float initial
       color $red
       text-decoration none
-      font-variant small-caps
+      // font-variant small-caps
       position relative
 
       &::after

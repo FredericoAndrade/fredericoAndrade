@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  background-color: #6c5ab7;
+}
 body {
   margin: 0;
   padding: 0;
@@ -89,7 +92,24 @@ body .toggle {
   margin: auto;
   float: none;
   display: table;
-  padding: 3.5rem 4.75rem 2.25rem 2.5rem;
+  margin-top: -4rem;
+  padding: 5.5rem 2.5rem 5.25rem 2.5rem;
+  border-right: 5px solid #c05968;
+}
+.App.resume::after {
+  border-left: none;
+}
+.App::after {
+  content: "";
+  background-color: transparent;
+  height: 40px;
+  transform: translateX(-50%);
+  margin-left: 45%;
+  position: absolute;
+  bottom: -40px;
+  border-left: 100vw solid;
+  border-left-color: #6c5ab7;
+  border-top: 50px solid transparent;
 }
 .App * {
   line-height: 1.75rem;
@@ -296,79 +316,23 @@ h1.statement span {
   width: 100%;
   font-style: italic;
 }
-.toggleType {
-  display: none;
-  float: left;
-  position: absolute;
-  right: 4rem;
-  top: 4rem;
-  border: 2px solid #c05968;
-  color: #c05968;
-  width: 240px;
-}
-.toggleType h3 {
-  font-family: 'governorregular';
-  margin: 0 auto;
-  display: block;
-  float: initial;
-  padding: 1.5rem 0;
-  text-align: center;
-  border-bottom: 2px solid #c05968;
-}
-.toggleType h3::before {
-  content: "";
-}
-.toggleType fieldset {
-  border: none;
-  margin: 0;
-}
-.toggleType fieldset input {
-  display: none;
-}
-.toggleType fieldset input:checked + label::after {
-  width: 106%;
-  background-color: #ff006a;
-}
-.toggleType fieldset label {
-  clear: both;
-  float: left;
-  font-size: 1.3rem;
-  font-family: 'governorregular';
-  line-height: 2;
-  position: relative;
-  cursor: pointer;
-}
-.toggleType fieldset label:hover::after {
-  width: 106%;
-}
-.toggleType fieldset label::after {
-  pointer-events: none;
-  width: 0;
-  content: "";
-  mix-blend-mode: darken;
-  background-color: #ffc6c1;
-  height: 9px;
-  position: absolute;
-  left: -3%;
-  top: 14px;
-  transition: width 100ms ease-out;
-}
 #galleryIndex {
   width: 830px;
   float: none;
-  margin: 0 0 5rem;
+  margin: 0 0 15vh;
   display: table;
 }
 #galleryIndex .breadcrumb {
-  margin: 9vh 0;
+  margin: 11vh 0 7vh;
   display: block;
   position: relative;
-  font-style: italic;
+  font-family: "europa", sans-serif;
   color: #c05968;
   float: none;
   clear: both;
   font-size: 2rem;
   font-size: 4vh;
+  font-size: 3vh;
 }
 #galleryIndex li,
 #galleryIndex li a {
@@ -398,34 +362,50 @@ h1.statement span {
 #galleryIndex li a:hover::after {
   width: 106%;
 }
-#galleryIndex li.extras.first,
-#galleryIndex li a.extras.first {
-  margin-top: 5vh;
+nav.secondary {
+  margin-bottom: 2rem;
+  float: none;
+  font-family: "europa", sans-serif;
 }
-#galleryIndex li.extras a,
-#galleryIndex li a.extras a {
-  font-size: 3rem;
-  font-style: italic;
+nav.secondary ul li {
+  clear: none;
+  float: left;
+  margin-right: 5vh;
 }
-#galleryIndex li.extras a span,
-#galleryIndex li a.extras a span {
+nav.secondary ul li a {
+  text-decoration: none;
+  color: #c05968;
+  font-size: 1.4rem;
+  position: relative;
+}
+nav.secondary ul li a::after {
+  width: 0;
+  content: "";
+  mix-blend-mode: darken;
+  background-color: #ff006a;
+  position: absolute;
+  left: -3%;
+  top: 12px;
+  height: 20px;
+  pointer-events: none;
+  transition: width 150ms ease-out;
+}
+nav.secondary ul li a:hover::after {
+  width: 106%;
+}
+nav.secondary ul li a span {
   float: none;
   font-size: 1.3rem;
 }
-#galleryIndex li.extras::after,
-#galleryIndex li a.extras::after,
-#galleryIndex li.extras a::after,
-#galleryIndex li a.extras a::after {
-  top: 15px;
-  height: 20px;
-}
 footer.index {
+  font-family: "europa", sans-serif;
   width: 830px;
   float: none;
   margin: 0;
   display: table;
   color: #c05968;
   bottom: 1rem;
+  padding: 0;
 }
 footer.index p {
   font-size: 0.8rem;
@@ -436,7 +416,6 @@ footer.index p a {
   float: initial;
   color: #c05968;
   text-decoration: none;
-  font-variant: small-caps;
   position: relative;
 }
 footer.index p a::after {
@@ -521,6 +500,7 @@ footer.index p a:hover::after {
   font-size: 3rem;
 }
 .gallery .content h3 {
+  font-family: "europa", sans-serif;
   width: initial;
   margin-top: 2rem;
 }
@@ -643,7 +623,7 @@ footer.index p a:hover::after {
 .gallery .content .block section.double span figcaption,
 .gallery .content .block figure.double span figcaption {
   width: 100%;
-  float: left;
+  max-width: 100%;
 }
 .gallery .content .block section .b,
 .gallery .content .block figure .b {
@@ -667,7 +647,7 @@ footer.index p a:hover::after {
 .gallery .content .block span h3::before,
 .gallery .content .block span h3::after {
   width: 20%;
-  height: 1px;
+  height: 2px;
   background-color: #c05968;
   content: "";
   margin-top: 20px;
@@ -686,8 +666,11 @@ footer.index p a:hover::after {
   color: #002b70;
 }
 .gallery .content .block figcaption {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
+  font-family: "europa", sans-serif;
+  max-width: 80%;
+  margin: auto;
 }
 .gallery .content .block p {
   text-indent: 1.5rem;
@@ -797,7 +780,7 @@ footer.index p a:hover::after {
   font-size: 0.8rem;
   line-height: 4;
   color: #aaa;
-  font-family: "cronos-pro-caption", sans-serif;
+  font-family: "europa", sans-serif;
   font-weight: 100;
 }
 .media .slick-slider .slick-list .slick-track .slick-slide p span {
@@ -815,7 +798,7 @@ footer.index p a:hover::after {
 }
 .media .slick-slider .slick-list .slick-track .slick-slide.last-slide h3 {
   color: #ffede6 !important;
-  font-family: "cronos-pro-caption", sans-serif;
+  font-family: "europa", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }

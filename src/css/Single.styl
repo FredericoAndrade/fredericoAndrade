@@ -65,6 +65,7 @@ $fold = 8vh
       font-size 3rem
 
     h3
+      font-family $sans1
       width initial
       margin-top 2rem
 
@@ -182,7 +183,7 @@ $fold = 8vh
             iframe,
             figcaption
               width 100%
-              float left
+              max-width 100%
 
         .b
           background $grey
@@ -202,7 +203,7 @@ $fold = 8vh
           &::before,
           &::after
             width 20%
-            height 1px
+            height 2px
             background-color $red
             content ""
             margin-top 20px
@@ -221,8 +222,11 @@ $fold = 8vh
         color $copy
 
       figcaption
-        font-size .9rem
+        font-size .8rem
         font-style italic
+        font-family $sans1
+        max-width 80%
+        margin auto
 
       p
         text-indent 1.5rem

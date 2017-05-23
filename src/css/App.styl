@@ -1,5 +1,8 @@
 @import 'vars'
 
+html
+  background-color $purple
+
 body
   margin 0
   padding 0
@@ -8,7 +11,7 @@ body
 h1,
 h2
   font-family $sans
-  color $yellow
+  color $red
 
 h1,
 h2,
@@ -43,7 +46,7 @@ h3
       width 0
       content ""
       mix-blend-mode darken
-      background-color lighten($yellow, 50%)
+      background-color lighten($red, 50%)
       background-color $pink
       height 12px
       position absolute
@@ -78,7 +81,25 @@ body
   margin auto
   float none
   display table
-  padding 3.5rem 4.75rem 2.25rem 2.5rem
+  margin-top -4rem
+  padding 5.5rem 2.5rem 5.25rem 2.5rem
+  border-right 5px solid $red
+
+  &.resume
+    &::after
+      border-left none
+
+  &::after
+    content ""
+    background-color transparent
+    height 40px
+    transform translateX(-50%)
+    margin-left 45%
+    position absolute
+    bottom -40px
+    border-left 100vw solid
+    border-left-color $purple
+    border-top 50px solid transparent
 
   *
     line-height 1.75rem
