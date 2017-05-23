@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from '../Head'
-// import Carousel from '../Carousel'
 import ProgressiveImage from 'react-progressive-image'
 import { Link } from 'react-router-dom'
 

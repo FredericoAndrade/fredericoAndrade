@@ -307,14 +307,46 @@ h1.statement {
   margin: 1vh 0;
   float: none;
   display: block;
+  position: relative;
 }
-h1.statement span {
-  font-size: 2rem;
-  font-size: 4vh;
-  text-align: center;
-  margin-top: 8vh;
-  width: 100%;
-  font-style: italic;
+.details {
+  display: none;
+}
+.details .floater {
+  position: absolute;
+  left: -240px;
+  top: 50%;
+  font-size: 1.5rem;
+  mix-blend-mode: color-burn;
+  line-height: 1.1;
+  width: 250px;
+  z-index: 2;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+.details .floater::after {
+  top: 50%;
+  left: 25%;
+  content: "";
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+  position: absolute;
+  background-color: #008000;
+  mix-blend-mode: color-burn;
+  border-radius: 100%;
+}
+.details .floater:last-of-type {
+  right: 15%;
+  text-align: right;
+  top: initial;
+  left: initial;
+  bottom: 250px;
+}
+.details .floater:last-of-type::after {
+  top: 40%;
+  left: -45%;
 }
 #galleryIndex {
   width: 830px;

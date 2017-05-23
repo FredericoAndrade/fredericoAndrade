@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 export default class Gallery extends React.Component {
-  // <p className="floater 1">I designed a tool for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</p>
-  //       <p className="floater 2">I founded a non-profit dedicated to preventing the deaths of half of the worlds languages, and designed and built technology to support that cause.</p>
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -12,6 +10,10 @@ export default class Gallery extends React.Component {
     return (
       <div className="App tk-adobe-garamond-pro">
         <h1 className="statement tk-adobe-garamond-pro">Freddie: Product design.</h1>
+        <div className="details">
+          <Link to="amicus" className="floater">designed tools for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</Link>
+          <Link to="wikitongues" className="floater">founded a non-profit dedicated to preventing the deaths of half of the worlds languages, and designed and built technology to support that cause.</Link>
+        </div>
         <ul id="galleryIndex">
           <h3 className="breadcrumb">Check out some of his work below</h3>
           <li><Link to="amicus">Amicus</Link></li>

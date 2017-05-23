@@ -11,12 +11,10 @@ export default class SingleHead extends React.Component {
 
   render() {
     return (
-      // <div className="singleHead">
-        <nav>
-          <Link to="/" className="linkTo l g">&lsaquo;  Home</Link>
-          {this.renderVisit()}
-        </nav>
-      // </div>
+      <nav>
+        <Link to="/" className="linkTo l g">&lsaquo;  Home</Link>
+        {this.renderVisit()}
+      </nav>
     )
   }
 }
