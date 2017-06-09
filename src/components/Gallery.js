@@ -10,15 +10,13 @@ export default class Gallery extends React.Component {
     return (
       <div className="App tk-adobe-garamond-pro">
         <h1 className="statement tk-adobe-garamond-pro">Freddie: Product design.</h1>
-        <div className="details">
-          <Link to="amicus" className="floater">– designed tools for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</Link>
-          <Link to="wikitongues" className="floater">– founded a non-profit dedicated to preventing the deaths of half of the worlds languages, and designed and built technology to support that cause.</Link>
-        </div>
         <ul id="galleryIndex">
           <h3 className="breadcrumb">Check out some of his work below</h3>
+          <Link to="amicus" className="floater">– designed tools for distributed grassroots movements and political campaigns around the world at YC-backed company Amicus</Link>
           <li><Link to="amicus">Amicus</Link></li>
           <li><Link to="poly">Poly</Link></li>
           <li><Link to="wikitongues">Wikitongues</Link></li>
+          <Link to="wikitongues" className="floater">- fought to prevent the deaths of half of the worlds languages through Wikitongues, designing and building technology to support that cause.</Link>
         </ul>
         <nav className="secondary">
           <ul>

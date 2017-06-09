@@ -14,7 +14,7 @@ h1.statement
   &::after
     height 400px
     width 400px
-    background-color green
+    background-color #3c87ff
     mix-blend-mode color-burn
     border-radius 100%
     content ""
@@ -22,11 +22,27 @@ h1.statement
     right -20%
     pointer-events none
 
-.details
+#galleryIndex
+  width $width
+  float none
+  margin 0 0 8vh
+  display table
+
+  .breadcrumb
+    margin 11vh 0 7vh
+    display block
+    position relative
+    font-family $sans1
+    color $red
+    float none
+    clear both
+    font-size 2rem
+    font-size 4vh
+    font-size 3vh
+
   .floater
-    position absolute
-    left -240px
-    top 50%
+    position relative
+    clear both
     font-size 1.5rem
     mix-blend-mode color-burn
     line-height 1.1
@@ -39,12 +55,17 @@ h1.statement
 
     &:hover
       &::before
-        transform rotateZ(120deg) scale(.8)
-        border-radius 100%
+        width 110%
+        height 110%
+        margin -10%
+        border-width 0
+        opacity 0
 
       &::after
-        transform rotateZ(120deg) scale(1.1)
+        transform rotateZ(180deg) scale(1.1)
         border-radius 0%
+        top -3% !important
+        left 2% !important
 
     &::before
       content ""
@@ -54,51 +75,44 @@ h1.statement
       width 100%
       height 100%
       border 2px solid
-      transition all 200ms ease-out
+      transition all 150ms ease-out
       mix-blend-mode luminosity
 
     &::after
-      top 50%
-      left 25%
       content ""
       width 250px
       height 250px
       pointer-events none
       position absolute
-      background-color green
+      background-color #3c87ff
       mix-blend-mode color-burn
       border-radius 100%
-      transition all 200ms ease-in-out
+      transition all 150ms ease-in-out
 
-    &:last-of-type
-      right 15%
-      text-align right
-      top initial
-      left initial
-      bottom 250px
+    &:first-of-type
+      left -20%
+      margin-bottom 6%
+      margin-top 4%
 
       &::after
-        top 40%
+        top 50%
+        left 60%
+
+    &:last-of-type
+      float right
+      text-align right
+      top initial
+      left -20%
+      margin-top 4%
+
+      &::after
+        top -40%
         left -45%
 
-#galleryIndex
-  width $width
-  float none
-  margin 0 0 15vh
-  display table
-
-  .breadcrumb
-    margin 11vh 0 7vh
-    display block
-    position relative
-    font-family $sans1
-    color $red
-
-    float none
-    clear both
-    font-size 2rem
-    font-size 4vh
-    font-size 3vh
+      &:hover
+        &::after
+          top 2% !important
+          left 7% !important
 
   li, li a
     text-decoration none
@@ -106,7 +120,6 @@ h1.statement
     font-size 5rem
     font-weight bold
     color $red
-
     list-style-type none
     cursor pointer
     position relative

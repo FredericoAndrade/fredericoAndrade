@@ -15,7 +15,7 @@ body {
 h1,
 h2 {
   font-family: 'governorregular';
-  color: #3c87ff;
+  color: #c05968;
 }
 h1,
 h2,
@@ -44,18 +44,18 @@ ul {
   padding: 0;
 }
 h3 {
-  color: #3c87ff;
+  color: #c05968;
 }
 h3 a {
   text-decoration: none;
-  color: #3c87ff;
+  color: #c05968;
   position: relative;
 }
 h3 a::after {
   width: 0;
   content: "";
   mix-blend-mode: darken;
-  background-color: #9dc3ff;
+  background-color: #e0acb3;
   background-color: #ff006a;
   height: 12px;
   position: absolute;
@@ -94,7 +94,7 @@ body .toggle {
   display: table;
   margin-top: -4rem;
   padding: 5.5rem 2.5rem 5.25rem 2.5rem;
-  border-right: 5px solid #3c87ff;
+  border-right: 5px solid #c05968;
 }
 .App.resume::after {
   border-left: none;
@@ -127,7 +127,7 @@ body .toggle {
   font-weight: bold;
   font-size: 3rem;
   text-align: center;
-  color: #3c87ff;
+  color: #c05968;
   position: fixed;
   z-index: 2;
   text-decoration: none;
@@ -142,7 +142,7 @@ body .toggle {
   bottom: 0;
   font-size: 1rem;
   padding-top: 1.2rem;
-  border-top: 2px solid #3c87ff;
+  border-top: 2px solid #c05968;
 }
 .linkTo.g::after {
   left: 25px;
@@ -166,7 +166,7 @@ body .toggle {
 }
 @media (max-width: 1400px) {
   body .App.resume button {
-    color: #3c87ff;
+    color: #c05968;
   }
   body .App.resume a.linkTo.r {
     display: none;
@@ -200,7 +200,7 @@ body .toggle {
     border-width: 0;
   }
   body .App.resume button {
-    color: #3c87ff;
+    color: #c05968;
     text-shadow: none;
   }
   body .App #content #main {
@@ -312,7 +312,7 @@ h1.statement {
 h1.statement::after {
   height: 400px;
   width: 400px;
-  background-color: #008000;
+  background-color: #3c87ff;
   mix-blend-mode: color-burn;
   border-radius: 100%;
   content: "";
@@ -320,10 +320,27 @@ h1.statement::after {
   right: -20%;
   pointer-events: none;
 }
-.details .floater {
-  position: absolute;
-  left: -240px;
-  top: 50%;
+#galleryIndex {
+  width: 830px;
+  float: none;
+  margin: 0 0 8vh;
+  display: table;
+}
+#galleryIndex .breadcrumb {
+  margin: 11vh 0 7vh;
+  display: block;
+  position: relative;
+  font-family: "europa", sans-serif;
+  color: #c05968;
+  float: none;
+  clear: both;
+  font-size: 2rem;
+  font-size: 4vh;
+  font-size: 3vh;
+}
+#galleryIndex .floater {
+  position: relative;
+  clear: both;
   font-size: 1.5rem;
   mix-blend-mode: color-burn;
   line-height: 1.1;
@@ -334,15 +351,20 @@ h1.statement::after {
   text-decoration: none;
   color: #000;
 }
-.details .floater:hover::before {
-  transform: rotateZ(120deg) scale(0.8);
-  border-radius: 100%;
+#galleryIndex .floater:hover::before {
+  width: 110%;
+  height: 110%;
+  margin: -10%;
+  border-width: 0;
+  opacity: 0;
 }
-.details .floater:hover::after {
-  transform: rotateZ(120deg) scale(1.1);
+#galleryIndex .floater:hover::after {
+  transform: rotateZ(180deg) scale(1.1);
   border-radius: 0%;
+  top: -3% !important;
+  left: 2% !important;
 }
-.details .floater::before {
+#galleryIndex .floater::before {
   content: "";
   position: absolute;
   left: -0.15rem;
@@ -350,50 +372,43 @@ h1.statement::after {
   width: 100%;
   height: 100%;
   border: 2px solid;
-  transition: all 200ms ease-out;
+  transition: all 150ms ease-out;
   mix-blend-mode: luminosity;
 }
-.details .floater::after {
-  top: 50%;
-  left: 25%;
+#galleryIndex .floater::after {
   content: "";
   width: 250px;
   height: 250px;
   pointer-events: none;
   position: absolute;
-  background-color: #008000;
+  background-color: #3c87ff;
   mix-blend-mode: color-burn;
   border-radius: 100%;
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
-.details .floater:last-of-type {
-  right: 15%;
+#galleryIndex .floater:first-of-type {
+  left: -20%;
+  margin-bottom: 6%;
+  margin-top: 4%;
+}
+#galleryIndex .floater:first-of-type::after {
+  top: 50%;
+  left: 60%;
+}
+#galleryIndex .floater:last-of-type {
+  float: right;
   text-align: right;
   top: initial;
-  left: initial;
-  bottom: 250px;
+  left: -20%;
+  margin-top: 4%;
 }
-.details .floater:last-of-type::after {
-  top: 40%;
+#galleryIndex .floater:last-of-type::after {
+  top: -40%;
   left: -45%;
 }
-#galleryIndex {
-  width: 830px;
-  float: none;
-  margin: 0 0 15vh;
-  display: table;
-}
-#galleryIndex .breadcrumb {
-  margin: 11vh 0 7vh;
-  display: block;
-  position: relative;
-  font-family: "europa", sans-serif;
-  color: #3c87ff;
-  float: none;
-  clear: both;
-  font-size: 2rem;
-  font-size: 4vh;
-  font-size: 3vh;
+#galleryIndex .floater:last-of-type:hover::after {
+  top: 2% !important;
+  left: 7% !important;
 }
 #galleryIndex li,
 #galleryIndex li a {
@@ -401,7 +416,7 @@ h1.statement::after {
   line-height: 1.1;
   font-size: 5rem;
   font-weight: bold;
-  color: #3c87ff;
+  color: #c05968;
   list-style-type: none;
   cursor: pointer;
   position: relative;
@@ -435,7 +450,7 @@ nav.secondary ul li {
 }
 nav.secondary ul li a {
   text-decoration: none;
-  color: #3c87ff;
+  color: #c05968;
   font-size: 1.4rem;
   position: relative;
 }
@@ -464,7 +479,7 @@ footer.index {
   float: none;
   margin: 0;
   display: table;
-  color: #3c87ff;
+  color: #c05968;
   bottom: 1rem;
   padding: 0;
 }
@@ -475,7 +490,7 @@ footer.index p {
 footer.index p a {
   line-height: 1.2;
   float: initial;
-  color: #3c87ff;
+  color: #c05968;
   text-decoration: none;
   position: relative;
 }
@@ -536,7 +551,7 @@ footer.index p a:hover::after {
 }
 .gallery .content {
   margin: auto;
-  color: #3c87ff;
+  color: #c05968;
   margin-top: 5rem;
   position: relative;
 }
@@ -544,7 +559,7 @@ footer.index p a:hover::after {
 .gallery .content h2,
 .gallery .content h3 {
   font-family: "adobe-garamond-pro", serif;
-  color: #3c87ff;
+  color: #c05968;
   display: block;
   float: none;
   margin-bottom: 1rem;
@@ -709,7 +724,7 @@ footer.index p a:hover::after {
 .gallery .content .block span h3::after {
   width: 20%;
   height: 2px;
-  background-color: #3c87ff;
+  background-color: #c05968;
   content: "";
   margin-top: 20px;
 }
@@ -966,8 +981,8 @@ footer.index p a:hover::after {
   margin: 3.5rem auto 2.25rem;
   display: table;
   float: none;
-  border-right: 3px solid #3c87ff;
-  border-left: 3px solid #3c87ff;
+  border-right: 3px solid #c05968;
+  border-left: 3px solid #c05968;
 }
 .App.resume nav {
   float: right;
@@ -1039,7 +1054,7 @@ footer.index p a:hover::after {
   width: 4px;
   margin-left: 14px;
   margin-top: -0.25rem;
-  background-color: #3c87ff;
+  background-color: #c05968;
 }
 .App #content #main section h2 {
   width: 25%;
